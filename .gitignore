@@ -1,1 +1,7 @@
+*.py
+encrypt_manifest.py
 upload_website.bat
+config_source.json
+GUIDA_CARTELLA.md
+__pycache__/
+*.pyc
