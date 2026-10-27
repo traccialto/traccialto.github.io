@@ -4,7 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Traccialto — Navigazione e tracciamento outdoor</title>
-  <meta name="description" content="Traccialto: la tua app per escursioni, camminate e sentieri. Mappe offline, altimetria precisa, replay 3D e massimo rispetto della privacy.">
+  <meta name="description" content="Traccialto: la tua app per escursioni, camminate e sentieri. Mappe offline, orografia 3D, profilo altimetrico, import/export GPX e totale rispetto della privacy.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="apple-touch-icon" href="assets/icon_512.png">
+  <meta property="og:title" content="Traccialto — Navigazione Alpina & Tracciamento Outdoor">
+  <meta property="og:description" content="Mappe offline, orografia 3D, profilo altimetrico, esportazione GPX e privacy totale. Senza account e senza pubblicità.">
+  <meta property="og:image" content="https://traccialto.github.io/assets/feature_graphic_1024x500.png">
+  <meta name="theme-color" content="#203b2e">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,16 +18,18 @@
   <header>
     <div class="container header-inner">
       <div class="brand">
-        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 26L14 8l6 10 3-4 5 12H4z"/>
-          <path d="M14 8l4 6"/>
-          <circle cx="9" cy="22" r="1.5" fill="currentColor"/>
-          <circle cx="21" cy="22" r="1.5" fill="currentColor"/>
+        <svg class="brand-logo" viewBox="0 0 200 200" width="36" height="36" aria-hidden="true">
+          <rect width="200" height="200" rx="44" fill="#F7F7F2" stroke="#CADCD1" stroke-width="5"/>
+          <g transform="translate(15, 70) scale(0.85)">
+            <path d="M16,94 L56,38 L68,56 L98,14 L140,94 Z M94,94 L138,33 L181,94 Z M98,5 C78,-15 102,-29 106,-15 C108,-9 98,5 98,5 M55,94 L61,86 M66,80 L70,77 M75,73 L80,72 M86,71 L91,70 M98,68 L102,65 M108,62 L110,57 M107,51 L104,49 M93,40 L96,34 M99,28 L100,24" fill="none" stroke="#08191C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M59,94 A4,4 0,1 0,51,94 A4,4 0,1 0,59,94 M92,44 A4,4 0,1 0,84,44 A4,4 0,1 0,92,44 M111,57 A4,4 0,1 0,103,57 A4,4 0,1 0,111,57 M102,14 A4,4 0,1 0,94,14 A4,4 0,1 0,102,14" fill="#F7F7F2" stroke="#08191C" stroke-width="3"/>
+          </g>
         </svg>
         <span>Traccialto</span>
       </div>
       <nav>
         <a href="#caratteristiche">Funzionalità</a>
+        <a href="#schermate">Schermate</a>
         <a href="#privacy">Privacy</a>
         <a href="privacy.html">Informativa Privacy</a>
       </nav>
@@ -31,15 +39,47 @@
   <main>
     <section class="hero">
       <div class="container">
-        <span class="hero-tag">Il tuo cammino sui sentieri</span>
-        <h1>Navigazione outdoor con mappe offline e rispetto totale della privacy.</h1>
-        <p>Crea, importa e segui itinerari con istruzioni chiare, profili altimetrici e replay in 3D. Tutti i tuoi dati restano esclusivamente sul tuo telefono.</p>
+        <span class="hero-tag">Navigazione Alpina & Outdoor</span>
+        <h1>La tua traccia in quota. Mappe offline, rilievo 3D e rispetto totale della privacy.</h1>
+        <p>Crea, importa e segui itinerari con istruzioni chiare, profili altimetrici e rilievo in 3D. Tutti i tuoi dati restano esclusivamente sul tuo telefono.</p>
         <a href="https://play.google.com/store/apps/details?id=it.lanzonavigator.app" class="badge-btn" target="_blank" rel="noopener">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
             <path d="M3.609 1.814L13.792 12 3.61 22.186a1.996 1.996 0 0 1-.61-1.424V3.238c0-.555.226-1.057.609-1.424zm11.233 11.233l2.274 2.274-11.83 6.83 9.556-9.104zm0-2.094L5.286 1.849l11.83 6.83-2.274 2.274zm1.485 1.047l3.864 2.23a1.5 1.5 0 0 1 0 2.596l-3.864 2.23-2.046-2.047 2.046-2.009z"/>
           </svg>
           Disponibile su Google Play
         </a>
+      </div>
+    </section>
+
+    <section class="showcase" id="schermate">
+      <div class="container">
+        <div class="showcase-header">
+          <h2>Progettata per chi vive la montagna</h2>
+          <p>Un'interfaccia chiara, leggibile sotto la luce diretta del sole e ottimizzata per i sentieri.</p>
+        </div>
+        <div class="showcase-grid">
+          <div class="showcase-card">
+            <img src="assets/screenshot_1_mappa_3d.png" alt="Mappa 3D Satellitare" class="showcase-img" loading="lazy">
+            <div class="showcase-caption">
+              <h4>Mappa 3D Satellitare</h4>
+              <p>Orografia in rilievo e traccia escursionistica con quote reali</p>
+            </div>
+          </div>
+          <div class="showcase-card">
+            <img src="assets/screenshot_2_mappa_3d_chiaro.png" alt="Cartografia Topografica Chiara" class="showcase-img" loading="lazy">
+            <div class="showcase-caption">
+              <h4>Topografia Chiara</h4>
+              <p>Curve di livello, tappe intermedie e sentieri CAI visibili</p>
+            </div>
+          </div>
+          <div class="showcase-card">
+            <img src="assets/screenshot_3_rilievo_panoramico.png" alt="Rilievo Panoramico e Profilo" class="showcase-img" loading="lazy">
+            <div class="showcase-caption">
+              <h4>Rilievo Panoramico</h4>
+              <p>Visuale a volo d'uccello sui versanti montani e canaloni</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -62,21 +102,35 @@
           <div class="card">
             <div class="card-icon">
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                <polyline points="2 17 12 22 22 17"/>
+                <polyline points="2 12 12 17 22 12"/>
+              </svg>
+            </div>
+            <h3>Orografia & Rilievo 3D</h3>
+            <p>Esplora il terreno montano in 3D con modelli di elevazione digitali precisi (DEM) per comprendere pendenze, valli e crinali.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
               </svg>
             </div>
-            <h3>Importazione GPX & KML</h3>
+            <h3>Import & Export GPX e KML</h3>
             <p>Carica qualsiasi traccia GPX o KML in un istante. Pianifica tappe intermedie, consulta distanze reali e ricevi indicazioni alle svolte.</p>
           </div>
 
           <div class="card">
             <div class="card-icon">
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                <circle cx="8.5" cy="8.5" r="1.5"/>
+                <polyline points="21 15 16 10 5 21"/>
               </svg>
             </div>
-            <h3>Rivivi il Cammino in 3D</h3>
-            <p>Visualizza la traccia sul rilievo orografico tridimensionale, analizza il passo, le pendenze massime e condividi le tue uscite.</p>
+            <h3>Adesivi e Condivisione Grafica</h3>
+            <p>Genera adesivi trasparenti e schede di viaggio con traccia, altimetria, dislivello e tempi da condividere sulle tue storie e app preferite.</p>
           </div>
 
           <div class="card">
@@ -87,7 +141,7 @@
               </svg>
             </div>
             <h3>Traguardi Vocali e AMOLED</h3>
-            <p>Ricevi avvisi vocali sui metri di dislivello scalati e risparmia batteria con la modalità AMOLED a basso consumo durante le lunghe uscite.</p>
+            <p>Ricevi avvisi vocali sui metri di dislivello scalati per non estrarre il telefono, e risparmia batteria con la modalità AMOLED a basso consumo.</p>
           </div>
 
           <div class="card">
@@ -99,10 +153,10 @@
               </svg>
             </div>
             <h3>SOS & Punti Utili</h3>
-            <p>Punti acqua, ripari e coordinate immediate a portata di mano. Segnale luminoso SOS integrato per le emergenze.</p>
+            <p>Punti acqua, rifugi, ripari e coordinate GPS immediate a portata di mano. Segnale luminoso ottico SOS integrato per le emergenze.</p>
           </div>
 
-          <div class="card">
+          <div class="card" style="grid-column: 1 / -1;">
             <div class="card-icon">
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
@@ -110,7 +164,7 @@
               </svg>
             </div>
             <h3>Privato per Definizione</h3>
-            <p>Nessun account, nessuna registrazione obbligatoria e zero pubblicità. I tuoi percorsi e il diario restano salvati in locale.</p>
+            <p>Nessun account obbligatorio, nessuna profilazione commerciale e zero annunci pubblicitari. Tutti i tuoi itinerari, le tue registrazioni e i tuoi diari rimangono memorizzati esclusivamente nello spazio protetto del tuo dispositivo.</p>
           </div>
 
         </div>
@@ -118,7 +172,7 @@
         <div class="privacy-banner" id="privacy">
           <div>
             <h2>La tua privacy non è una merce di scambio</h2>
-            <p>Traccialto è progettata da escursionisti per escursionisti. I tuoi spostamenti, le tue mete e le tue foto non finiscono su server centralizzati o piattaforme pubblicitarie.</p>
+            <p>Traccialto è progettata da escursionisti per escursionisti. I tuoi spostamenti, le tue mete e i tuoi diari non finiscono su server centralizzati o piattaforme pubblicitarie.</p>
           </div>
           <a href="privacy.html" class="btn-secondary">Leggi l’Informativa Privacy</a>
         </div>

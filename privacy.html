@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Informativa Privacy — Traccialto</title>
   <meta name="description" content="Informativa sulla privacy di Traccialto per la navigazione outdoor e la gestione dei dati personali.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="apple-touch-icon" href="assets/icon_512.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,11 +14,12 @@
   <header>
     <div class="container header-inner">
       <a href="index.html" class="brand">
-        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 26L14 8l6 10 3-4 5 12H4z"/>
-          <path d="M14 8l4 6"/>
-          <circle cx="9" cy="22" r="1.5" fill="currentColor"/>
-          <circle cx="21" cy="22" r="1.5" fill="currentColor"/>
+        <svg class="brand-logo" viewBox="0 0 200 200" width="36" height="36" aria-hidden="true">
+          <rect width="200" height="200" rx="44" fill="#F7F7F2" stroke="#CADCD1" stroke-width="5"/>
+          <g transform="translate(15, 70) scale(0.85)">
+            <path d="M16,94 L56,38 L68,56 L98,14 L140,94 Z M94,94 L138,33 L181,94 Z M98,5 C78,-15 102,-29 106,-15 C108,-9 98,5 98,5 M55,94 L61,86 M66,80 L70,77 M75,73 L80,72 M86,71 L91,70 M98,68 L102,65 M108,62 L110,57 M107,51 L104,49 M93,40 L96,34 M99,28 L100,24" fill="none" stroke="#08191C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M59,94 A4,4 0,1 0,51,94 A4,4 0,1 0,59,94 M92,44 A4,4 0,1 0,84,44 A4,4 0,1 0,92,44 M111,57 A4,4 0,1 0,103,57 A4,4 0,1 0,111,57 M102,14 A4,4 0,1 0,94,14 A4,4 0,1 0,102,14" fill="#F7F7F2" stroke="#08191C" stroke-width="3"/>
+          </g>
         </svg>
         <span>Traccialto</span>
       </a>
@@ -30,34 +33,67 @@
   <main class="container">
     <div class="legal-content">
       <h1>Informativa privacy di Traccialto</h1>
-<p>Aggiornamento: 25 ottobre 2026. Titolare: <strong>Traccialto</strong>. Contatto: <a href="mailto:traccialto.app@gmail.com">traccialto.app@gmail.com</a>. Versione pubblica: <a href="https://traccialto.github.io/privacy.html">https://traccialto.github.io/privacy.html</a>.</p>
-<h2>Cosa fa l’app</h2><p>Traccialto permette di creare, importare e seguire itinerari, registrare camminate e conservare foto e descrizioni. Non richiede un account, non contiene pubblicità e non integra analytics pubblicitari. Il titolare non gestisce un server a cui vengono caricate automaticamente le registrazioni.</p>
-<h2>Posizione e registrazione</h2><p>Con il permesso Android, la posizione serve a centrare la mappa, mostrare la navigazione e registrare la camminata avviata da te. Una registrazione attiva continua a schermo spento tramite un servizio con notifica; puoi metterla in pausa o terminarla dall’app o dalla notifica. Puoi revocare il permesso dalle impostazioni Android. La posizione precisa migliora l’accuratezza; senza permesso puoi comunque consultare e importare percorsi.</p>
-<h2>Servizi online facoltativi</h2><p>Prima delle connessioni dell’app scegli se abilitare i servizi online. Puoi modificare la scelta in Impostazioni → Privacy e servizi online. Senza di essi restano disponibili registrazione GPS, tracce locali e cartografia già scaricata; ricerca, calcolo e nuovi dati cartografici richiedono Internet.</p>
-<p>Le richieste HTTPS comunicano ai fornitori l’indirizzo IP e i parametri necessari. Una tessera cartografica identifica un’area e un livello di zoom; l’area può derivare dalla posizione GPS e aggiornarsi mentre cammini, anche durante una registrazione a schermo spento. Il calcolo può inviare coordinate precise delle tappe. Il meteo e i punti utili usano aree arrotondate, non coordinate precise in tempo reale. Arrotondare non rende necessariamente anonima la posizione.</p>
-<table><tr><th>Fornitore</th><th>Finalità e dati</th></tr>
-<tr><td>OpenStreetMap Foundation e OpenTopoMap</td><td>Tessere delle mappe e miniature della zona visualizzata.</td></tr>
-<tr><td>OpenFreeMap</td><td>Tessere vettoriali per mappe offline e aggancio della registrazione ai sentieri.</td></tr>
-<tr><td>EOX IT Services GmbH</td><td>Immagini satellitari Sentinel-2 per mappe, 3D ed esportazioni.</td></tr>
-<tr><td>Regione autonoma Valle d’Aosta, swisstopo, IGN/Géoplateforme, Città di Vienna e amministrazioni austriache (basemap.at), Provincia autonoma di Bolzano, IGN/CNIG spagnolo (PNOA), USGS (The National Map, Stati Uniti), Provincia autonoma di Trento, Regione Toscana, Regione Emilia-Romagna, PDOK/Beeldmateriaal Nederland, ČÚZK (Repubblica Ceca), AGEA (Italia)</td><td>Ortofoto dettagliate nelle zone coperte, per mappe, 3D ed esportazioni. Ricevono IP, area richiesta e zoom quando i servizi online sono abilitati. Nei pressi dei confini possono essere consultate più fonti per verificare la copertura. Non viene inviato il file del percorso.</td></tr>
-<tr><td>Mapterhorn</td><td>Tessere altimetriche per quote, profili e terreno 3D.</td></tr>
-<tr><td>Photon/Komoot</td><td>Testo inserito nella ricerca dei luoghi; non inviamo il GPS a questa ricerca.</td></tr>
-<tr><td>Valhalla/FOSSGIS</td><td>Coordinate delle tappe e parametri necessari per calcolare il percorso. Solo dopo conferma specifica, viene inviata anche la geometria del percorso per recuperare le difficoltà SAC; il consenso vale per quella traccia. L’invio di una tappa ricavata dal GPS richiede anche la conferma mostrata nell’app.</td></tr>
-<tr><td>Overpass API e private.coffee</td><td>Categorie di punti utili e centro approssimato della tessera cartografica. Attivando i colori delle difficoltà, vengono richiesti anche i sentieri nelle celle cartografiche di 0,1 gradi attraversate dal percorso; il confronto con la traccia esatta avviene sul telefono.</td></tr>
-<tr><td>Open-Meteo</td><td>Area della meta arrotondata a 0,02 gradi per le previsioni.</td></tr></table>
-<h2>Base del trattamento e scelta dell’utente</h2><p>I dati necessari alle funzioni che richiedi sono trattati per erogare tali funzioni; l’attivazione dei servizi online facoltativi si basa sulla tua scelta espressa, revocabile per le richieste future. I permessi Android regolano l’accesso ai sensori e non sostituiscono questa informativa. Il titolare deve verificare e mantenere aggiornate le basi giuridiche applicabili e i rapporti con i fornitori prima della pubblicazione.</p>
-<h2>Foto, file e condivisioni</h2><p>Importi GPX/KML e foto tramite il selettore del sistema: l’app non richiede accesso generale a tutti i file. Foto, descrizioni e itinerari restano nello spazio privato dell’app. Le esportazioni, i backup e la condivisione di messaggi, immagini o GIF avvengono su tua richiesta verso la destinazione scelta. Questi file possono rivelare luoghi visitati e orari. Le app destinatarie applicano le proprie informative e non sono controllate da Traccialto.</p>
-<h2>Conservazione e cancellazione</h2><p>Percorsi e diari rimangono sul dispositivo finché li elimini. I viaggi spostati nel cestino sono recuperabili fino alla loro eliminazione definitiva. Le cache cartografiche e delle anteprime possono rimanere fino alla pulizia, alla sostituzione o ai limiti di spazio dell’app; non equivalgono alla pubblicazione dei tuoi percorsi. Puoi gestire lo spazio dalle impostazioni. Cancellare i dati Android o disinstallare rimuove i dati privati dell’app, ma non le copie già esportate o condivise. I backup sono file scelti da te, non backup automatici su un cloud del titolare; proteggili e cancellali separatamente quando non servono.</p>
-<p>I fornitori online possono conservare log tecnici secondo le proprie informative; non promettiamo che tutte le richieste vengano cancellate immediatamente. Open-Meteo dichiara log che possono includere coordinate e una conservazione fino a 90 giorni. Mapterhorn dichiara log tecnici, compreso IP e percorso richiesto, fino a 30 giorni. Per gli altri fornitori valgono le politiche collegate sotto, da verificare periodicamente.</p>
-<h2>Sicurezza, servizi di sistema e trasferimenti</h2><p>Le connessioni dell’app usano HTTPS; i dati locali sono protetti dall’isolamento delle applicazioni Android. La condivisione usa autorizzazioni temporanee sui file. La cifratura e il blocco del dispositivo dipendono dalle sue impostazioni; i file esportati non sono automaticamente cifrati da Traccialto. Il motore vocale e i servizi di localizzazione del dispositivo sono forniti dal sistema o dal produttore e possono avere propri trattamenti. I fornitori Internet possono operare in paesi diversi da quello dell’utente: prima della pubblicazione il titolare deve documentare le condizioni e le garanzie applicabili agli eventuali trasferimenti extra SEE.</p>
-<h2>Diritti e contatti</h2><p>Puoi chiedere informazioni, accesso, rettifica, cancellazione, limitazione, portabilità e opposizione nei casi previsti, scrivendo al contatto sopra. Il titolare non può leggere o cancellare a distanza archivi conservati soltanto sul tuo telefono. Per i dati eventualmente detenuti dai fornitori occorre considerare anche i loro ruoli e canali. Puoi revocare la scelta online e i permessi senza effetto retroattivo sui trattamenti già effettuati. Puoi presentare reclamo all’autorità competente, in Italia al Garante per la protezione dei dati personali.</p>
-<h2>Informative dei servizi</h2><ul>
-<li><a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap</a> · <a href="https://opentopomap.org/about">OpenTopoMap</a></li>
-<li><a href="https://openfreemap.org/privacy/">OpenFreeMap</a> · <a href="https://eox.at/privacy-policy/">EOX</a> · <a href="https://mapterhorn.com/privacy-policy/">Mapterhorn</a></li>
-<li><a href="https://www.komoot.com/privacy">Komoot</a> · <a href="https://routing.openstreetmap.de/about.html">FOSSGIS</a></li>
-<li><a href="https://overpass-api.de/">Overpass API</a> · <a href="https://private.coffee/privacy.html">private.coffee</a> · <a href="https://open-meteo.com/en/terms">Open-Meteo</a></li></ul>
-<p>Un aggiornamento delle funzioni o dei fornitori può richiedere una nuova informativa e una nuova scelta nell’app.</p><p>I punti utili (acqua, rifugi, ripari e parcheggi) vengono ricavati anche dalle tessere vettoriali mondiali OpenFreeMap/OpenMapTiles, basate su OpenStreetMap. Il fornitore riceve gli indici delle tessere della zona visualizzata, non la traccia completa. I punti estratti restano nella cache locale, limitata a 16 MB, e vengono aggiornati dopo sette giorni. La copertura dipende dai dati presenti: la mancanza di risultati non garantisce l’assenza di punti sul posto. Per l’acqua, la potabilità non viene dedotta quando il dato non è disponibile.</p>
-<h2>Strumenti SOS, batteria ed esportazioni locali</h2><p>La luce SOS utilizza esclusivamente il flash del telefono tramite il sistema Android, senza richiedere il permesso Fotocamera e senza acquisire immagini o video. Il segnale si arresta quando viene spento o quando si chiude la schermata SOS. L’apertura delle impostazioni di ottimizzazione batteria indirizza alle schermate di sistema Android e non garantisce l’assenza di restrizioni del produttore. La modalità AMOLED mantiene la registrazione in corso e mostra i dati essenziali su sfondo nero; il risparmio effettivo dipende dal dispositivo. I traguardi vocali usano una stima filtrata della salita GPS e rispettano il silenziamento. Il promemoria ZIP è locale. I file HTML condivisi contengono la traccia, le quote disponibili e una copia della cartografia: chi li riceve può leggerli offline. Le estensioni SAC dei GPX includono solo classificazioni disponibili, senza garanzia di lettura da parte di ogni software.</p>
+      <p>Aggiornamento: 27 ottobre 2026. Titolare: <strong>Traccialto</strong>. Contatto: <a href="mailto:traccialto.app@gmail.com">traccialto.app@gmail.com</a>. Versione pubblica: <a href="https://traccialto.github.io/privacy.html">https://traccialto.github.io/privacy.html</a>.</p>
+
+      <h2>Cosa fa l’app</h2>
+      <p>Traccialto permette di creare, importare e seguire itinerari, registrare camminate e conservare foto e descrizioni. Non richiede un account, non contiene pubblicità e non integra analytics pubblicitari. Il titolare non gestisce un server a cui vengono caricate automaticamente le registrazioni.</p>
+
+      <h2>Posizione e registrazione</h2>
+      <p>Con il permesso Android, la posizione serve a centrare la mappa, mostrare la navigazione e registrare la camminata avviata da te. Una registrazione attiva continua a schermo spento tramite un servizio con notifica; puoi metterla in pausa o terminarla dall’app o dalla notifica. Puoi revocare il permesso dalle impostazioni Android. La posizione precisa migliora l’accuratezza; senza permesso puoi comunque consultare e importare percorsi.</p>
+
+      <h2>Servizi online facoltativi</h2>
+      <p>Prima delle connessioni dell’app scegli se abilitare i servizi online. Puoi modificare la scelta in Impostazioni → Privacy e servizi online. Senza di essi restano disponibili registrazione GPS, tracce locali e cartografia già scaricata; ricerca, calcolo e nuovi dati cartografici richiedono Internet.</p>
+      <p>Le richieste HTTPS comunicano ai fornitori l’indirizzo IP e i parametri necessari. Una tessera cartografica identifica un’area e un livello di zoom; l’area può derivare dalla posizione GPS e aggiornarsi mentre cammini, anche durante una registrazione a schermo spento. Il calcolo può inviare coordinate precise delle tappe. Il meteo e i punti utili usano aree arrotondate, non coordinate precise in tempo reale. Arrotondare non rende necessariamente anonima la posizione.</p>
+
+      <table>
+        <thead>
+          <tr><th>Fornitore</th><th>Finalità e dati</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>OpenStreetMap Foundation e OpenTopoMap</td><td>Tessere delle mappe e miniature della zona visualizzata.</td></tr>
+          <tr><td>OpenFreeMap</td><td>Tessere vettoriali per mappe offline e aggancio della registrazione ai sentieri.</td></tr>
+          <tr><td>EOX IT Services GmbH</td><td>Immagini satellitari Sentinel-2 per mappe, 3D ed esportazioni.</td></tr>
+          <tr><td>Regione autonoma Valle d’Aosta, swisstopo, IGN/Géoplateforme, Città di Vienna e amministrazioni austriache (basemap.at), Provincia autonoma di Bolzano, IGN/CNIG spagnolo (PNOA), USGS (The National Map, Stati Uniti), Provincia autonoma di Trento, Regione Toscana, Regione Emilia-Romagna, PDOK/Beeldmateriaal Nederland, ČÚZK (Repubblica Ceca), AGEA (Italia)</td><td>Ortofoto dettagliate nelle zone coperte, per mappe, 3D ed esportazioni. Ricevono IP, area richiesta e zoom quando i servizi online sono abilitati. Nei pressi dei confini possono essere consultate più fonti per verificare la copertura. Non viene inviato il file del percorso.</td></tr>
+          <tr><td>Mapterhorn</td><td>Tessere altimetriche per quote, profili e terreno 3D.</td></tr>
+          <tr><td>Photon/Komoot</td><td>Testo inserito nella ricerca dei luoghi; non inviamo il GPS a questa ricerca.</td></tr>
+          <tr><td>Valhalla/FOSSGIS</td><td>Coordinate delle tappe e parametri necessari per calcolare il percorso. Solo dopo conferma specifica, viene inviata anche la geometria del percorso per recuperare le difficoltà SAC; il consenso vale per quella traccia. L’invio di una tappa ricavata dal GPS richiede anche la conferma mostrata nell’app.</td></tr>
+          <tr><td>Overpass API e private.coffee</td><td>Categorie di punti utili e centro approssimato della tessera cartografica. Attivando i colori delle difficoltà, vengono richiesti anche i sentieri nelle celle cartografiche di 0,1 gradi attraversate dal percorso; il confronto con la traccia esatta avviene sul telefono.</td></tr>
+          <tr><td>Open-Meteo</td><td>Area della meta arrotondata a 0,02 gradi per le previsioni.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Base del trattamento e scelta dell’utente</h2>
+      <p>I dati necessari alle funzioni che richiedi sono trattati per erogare tali funzioni; l’attivazione dei servizi online facoltativi si basa sulla tua scelta espressa, revocabile per le richieste future. I permessi Android regolano l’accesso ai sensori e non sostituiscono questa informativa.</p>
+
+      <h2>Foto, file e condivisioni</h2>
+      <p>Importi GPX/KML e foto tramite il selettore del sistema: l’app non richiede accesso generale a tutti i file. Foto, descrizioni e itinerari restano nello spazio privato dell’app. Le esportazioni, i backup e la condivisione di messaggi, immagini o GIF avvengono su tua richiesta verso la destinazione scelta. Questi file possono rivelare luoghi visitati e orari. Le app destinatarie applicano le proprie informative e non sono controllate da Traccialto.</p>
+
+      <h2>Conservazione e cancellazione</h2>
+      <p>Percorsi e diari rimangono sul dispositivo finché li elimini. I viaggi spostati nel cestino sono recuperabili fino alla loro eliminazione definitiva. Le cache cartografiche e delle anteprime possono rimanere fino alla pulizia, alla sostituzione o ai limiti di spazio dell’app; non equivalgono alla pubblicazione dei tuoi percorsi. Puoi gestire lo spazio dalle impostazioni. Cancellare i dati Android o disinstallare rimuove i dati privati dell’app, ma non le copie già esportate o condivise. I backup sono file scelti da te, non backup automatici su un cloud del titolare; proteggili e cancellali separatamente quando non servono.</p>
+      <p>I fornitori online possono conservare log tecnici secondo le proprie informative; non promettiamo che tutte le richieste vengano cancellate immediatamente. Open-Meteo dichiara log che possono includere coordinate e una conservazione fino a 90 giorni. Mapterhorn dichiara log tecnici, compreso IP e percorso richiesto, fino a 30 giorni. Per gli altri fornitori valgono le politiche collegate sotto, da verificare periodicamente.</p>
+
+      <h2>Sicurezza, servizi di sistema e trasferimenti</h2>
+      <p>Le connessioni dell’app usano HTTPS; i dati locali sono protetti dall’isolamento delle applicazioni Android. La condivisione usa autorizzazioni temporanee sui file. La cifratura e il blocco del dispositivo dipendono dalle sue impostazioni; i file esportati non sono automaticamente cifrati da Traccialto. Il motore vocale e i servizi di localizzazione del dispositivo sono forniti dal sistema o dal produttore e possono avere propri trattamenti. Le richieste raggiungono i fornitori indicati, che possono utilizzare infrastrutture anche fuori dallo Spazio economico europeo. I dettagli dei rispettivi trattamenti sono disponibili nelle informative collegate. Puoi disabilitare le nuove richieste online dalle impostazioni.</p>
+
+      <h2>Diritti e contatti</h2>
+      <p>Puoi chiedere informazioni, accesso, rettifica, cancellazione, limitazione, portabilità e opposizione nei casi previsti, scrivendo al contatto sopra. Il titolare non può leggere o cancellare a distanza archivi conservati soltanto sul tuo telefono. Per i dati eventualmente detenuti dai fornitori occorre considerare anche i loro ruoli e canali. Puoi revocare la scelta online e i permessi senza effetto retroattivo sui trattamenti già effettuati. Puoi presentare reclamo all’autorità competente, in Italia al Garante per la protezione dei dati personali.</p>
+
+      <h2>Informative dei servizi</h2>
+      <ul>
+        <li><a href="https://osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">OpenStreetMap</a> · <a href="https://opentopomap.org/about" target="_blank" rel="noopener">OpenTopoMap</a></li>
+        <li><a href="https://openfreemap.org/privacy/" target="_blank" rel="noopener">OpenFreeMap</a> · <a href="https://eox.at/privacy-policy/" target="_blank" rel="noopener">EOX</a> · <a href="https://mapterhorn.com/privacy-policy/" target="_blank" rel="noopener">Mapterhorn</a></li>
+        <li><a href="https://www.komoot.com/privacy" target="_blank" rel="noopener">Komoot</a> · <a href="https://routing.openstreetmap.de/about.html" target="_blank" rel="noopener">FOSSGIS</a></li>
+        <li><a href="https://overpass-api.de/" target="_blank" rel="noopener">Overpass API</a> · <a href="https://private.coffee/privacy.html" target="_blank" rel="noopener">private.coffee</a> · <a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">Open-Meteo</a></li>
+      </ul>
+      <p>Un aggiornamento delle funzioni o dei fornitori può richiedere una nuova informativa e una nuova scelta nell’app.</p>
+      <p>I punti utili (acqua, rifugi, ripari e parcheggi) vengono ricavati anche dalle tessere vettoriali mondiali OpenFreeMap/OpenMapTiles, basate su OpenStreetMap. Il fornitore riceve gli indici delle tessere della zona visualizzata, non la traccia completa. I punti estratti restano nella cache locale, limitata a 16 MB, e vengono aggiornati dopo sette giorni. La copertura dipende dai dati presenti: la mancanza di risultati non garantisce l’assenza di punti sul posto. Per l’acqua, la potabilità non viene dedotta quando il dato non è disponibile.</p>
+
+      <h2>Strumenti SOS, batteria ed esportazioni locali</h2>
+      <p>La luce SOS utilizza esclusivamente il flash del telefono tramite il sistema Android, senza richiedere il permesso Fotocamera e senza acquisire immagini o video. Il segnale si arresta quando viene spento o quando si chiude la schermata SOS. L’apertura delle impostazioni di ottimizzazione batteria indirizza alle schermate di sistema Android e non garantisce l’assenza di restrizioni del produttore. La modalità AMOLED mantiene la registrazione in corso e mostra i dati essenziali su sfondo nero; il risparmio effettivo dipende dal dispositivo. I traguardi vocali usano una stima filtrata della salita GPS e rispettano il silenziamento. Il promemoria ZIP è locale. I file HTML condivisi contengono la traccia, le quote disponibili e una copia della cartografia: chi li riceve può leggerli offline. Le estensioni SAC dei GPX includono solo classificazioni disponibili, senza garanzia di lettura da parte di ogni software.</p>
+
+      <h2>HTML condivisi</h2>
+      <p>Il file contiene una vista satellitare e un profilo altimetrico incorporati, leggibili senza Internet e senza inviare la traccia. Su iPhone viene mostrata questa vista statica. Su Android e computer compatibili, la vista interattiva contatta EOX (immagini), Mapterhorn (rilievi), OpenFreeMap (strade) e unpkg (libreria MapLibre). Questi fornitori ricevono IP e informazioni tecniche; quelli cartografici ricevono anche le aree visualizzate. Le preferenze privacy del telefono che ha creato il file non controllano il browser del destinatario. Le immagini EOX 2024 e i loro adattamenti sono soggetti a CC BY-NC-SA 4.0: attribuzione, uso non commerciale e condivisione alle stesse condizioni.</p>
+      <p><a href="https://cloudless.eox.at/license-non-commercial" target="_blank" rel="noopener">EOX</a> · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> · <a href="https://unpkg.com" target="_blank" rel="noopener">unpkg</a></p>
 
     </div>
   </main>
