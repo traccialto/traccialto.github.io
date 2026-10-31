@@ -2,590 +2,632 @@
 <html lang="it">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>TRACCIALTO // Sistema di Navigazione Outdoor Indipendente</title>
-  <meta name="description" content="Trekking, bicicletta e corsa in natura. Cartografia topografica offline, rilievi 3D, calcolo anelli automatici e display AMOLED. Gratis, senza account e senza telemetria.">
-  <meta name="theme-color" content="#111513">
-  <meta property="og:title" content="TRACCIALTO // Navigazione Outdoor Indipendente">
-  <meta property="og:description" content="Cartografia offline, rilievi 3D e anelli automatici per trekking, bici e corsa. Senza account. Senza server.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Traccialto — Navigazione e Cartografia Outdoor Offline</title>
+  <meta name="description" content="Trekking, bicicletta e corsa in natura. Cartografia topografica offline, rilievi 3D, calcolo anelli automatici e display AMOLED. Gratis, senza account e senza pubblicità.">
+  <meta name="theme-color" content="#1c3829">
+  <meta property="og:title" content="Traccialto — Navigazione Outdoor Offline">
+  <meta property="og:description" content="Cartografia offline, rilievi 3D e anelli automatici per trekking, bici e corsa. Senza account. Senza pubblicità.">
   <meta property="og:image" content="https://traccialto.github.io/assets/feature_graphic_1024x500.png">
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="landing.css">
 </head>
 <body class="landing">
 
-<a class="skip mono" href="#contenuto">[VAI AL CONTENUTO]</a>
+<a class="skip" href="#contenuto">Vai al contenuto</a>
 
-<!-- Top Telemetry & Coordinates Bar -->
-<aside class="telemetry-bar">
-  <div class="wrap telemetry-inner">
-    <div class="telemetry-item">
-      <span class="pulse-dot"></span>
-      <span>SYS // TRACCIALTO 6.29 · PROGETTO OUTDOOR AUTONOMO</span>
-    </div>
-    <div class="telemetry-item">
-      <span>COORD // 45°18′22″N 07°24′05″E</span>
-    </div>
-    <div class="telemetry-item">
-      <span>100% OFFLINE · ZERO ACCOUNT · ZERO TELEMETRIA</span>
-    </div>
-    <div>
-      <a href="privacy.html">[INFORMATIVA PRIVACY]</a>
-    </div>
-  </div>
-</aside>
-
-<!-- Architectural Navigation Header -->
+<!-- Header di Navigazione Moderno & Morbido -->
 <header class="site-header">
   <div class="wrap nav-row">
-    <a class="brand-mark" href="#" aria-label="Traccialto inizio">
-      <svg viewBox="12 25 172 132" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <g transform="translate(0, 60)">
-          <path d="M16,94 L56,38 L68,56 L98,14 L140,94 Z M94,94 L138,33 L181,94 Z M98,5 C78,-15 102,-29 106,-15 C108,-9 98,5 98,5 M55,94 L61,86 M66,80 L70,77 M75,73 L80,72 M86,71 L91,70 M98,68 L102,65 M108,62 L110,57 M107,51 L104,49 M93,40 L96,34 M99,28 L100,24" stroke="currentColor" stroke-width="8.5"/>
-          <path d="M59,94 A4,4 0,1 0,51,94 A4,4 0,1 0,59,94 M92,44 A4,4 0,1 0,84,44 A4,4 0,1 0,92,44 M111,57 A4,4 0,1 0,103,57 A4,4 0,1 0,111,57 M102,14 A4,4 0,1 0,94,14 A4,4 0,1 0,102,14" fill="#ffffff" stroke="currentColor" stroke-width="6"/>
-        </g>
+    <a class="brand-link" href="#" aria-label="Traccialto inizio">
+      <svg width="38" height="38" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="40" height="40" rx="12" fill="#1c3829"/>
+        <path d="M10 28L18 16L22 22L27 13L32 28H10Z" stroke="#e8efe9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M15 28C17 23 20 20 23 19C25 18 28 20 30 18" stroke="#55e688" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="3 3"/>
+        <circle cx="27" cy="13" r="2.5" fill="#fbf9f5" stroke="#1c3829" stroke-width="1.5"/>
       </svg>
-      <span class="brand-title">Traccialto</span>
+      <span class="brand-name">Traccialto</span>
     </a>
 
-    <nav class="main-nav" aria-label="Navigazione">
-      <a href="#discipline">[01] DISCIPLINE</a>
-      <a href="#strumenti">[02] STRUMENTI</a>
-      <a href="#manifesto">[03] MANIFESTO</a>
-      <a href="#domande">[04] FAQ</a>
-      <a class="btn-nav-download" href="#scarica">SCARICA PER ANDROID ↓</a>
+    <nav class="nav-links" aria-label="Menu principale">
+      <a href="#attivita">Attività</a>
+      <a href="#funzioni">Funzioni</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#domande">Domande</a>
+      <a class="btn-header-cta" href="#scarica">
+        <span class="btn-text-full">Scarica per Android</span>
+        <span class="btn-text-short">Scarica</span>
+        <svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 14l6 6 6-6M10 3v17"/>
+        </svg>
+      </a>
     </nav>
   </div>
 </header>
 
 <main id="contenuto">
 
-  <!-- Monumental Hero Section -->
-  <section class="hero-block wrap">
-    <div class="hero-meta-strip">
-      <span>CATEGORIA // STRUMENTI CARTOGRAFICI PER IL TERRITORIO</span>
-      <span class="badge-field">● STATO: PUBBLICAZIONE IN CORSO</span>
-    </div>
+  <!-- Hero Section Morbida con Paesaggio Alpino Naturale -->
+  <section class="hero-section wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="badge-pill">
+          <span class="dot"></span>
+          Progetto outdoor indipendente • 100% offline
+        </div>
 
-    <h1 class="hero-headline">
-      MENO SCHERMO.<br>
-      <span class="serif-italic">Più dislivello.</span>
-    </h1>
+        <h1>
+          La montagna autentica<br>
+          <span class="serif-accent">un passo o una pedalata alla volta.</span>
+        </h1>
 
-    <div class="hero-content-split">
-      <p class="hero-lead-text">
-        Traccialto è lo strumento per chi vive la montagna, pedala o corre senza intermediari. Cartografia topografica offline, isolinee 3D, pianificazione automatica di percorsi ad anello e display AMOLED ad alto contrasto. Nessun account. Nessun abbonamento. Nessun dato che lascia il tuo telefono.
-      </p>
+        <p class="hero-lead">
+          Traccialto è il navigatore essenziale per chi esplora sentieri, pedala su strade bianche o corre in quota. Mappe topografiche offline, rilievi 3D, calcolo automatico di percorsi ad anello e display AMOLED ad alto contrasto. Nessun account, nessuna pubblicità, nessun dato che lascia il telefono.
+        </p>
 
-      <div class="hero-action-cell">
-        <a class="btn-hero-primary" href="#discipline">
-          ESPLORA LE FUNZIONI →
-        </a>
-        <div class="hero-specs-list">
-          COMPATIBILE ANDROID 10+ · 0 TRACKER · 100% LOCALE
+        <div class="hero-buttons">
+          <a class="btn-pill-primary" href="#funzioni">
+            <span>Esplora le funzioni</span>
+            <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 10h12M11 5l5 5-5 5"/>
+            </svg>
+          </a>
+          <a class="btn-pill-secondary" href="#attivita">
+            Le 3 discipline
+          </a>
+        </div>
+
+        <div class="hero-trust-bar">
+          <div>Gratis</div>
+          <span>•</span>
+          <div>Nessun account</div>
+          <span>•</span>
+          <div>Zero pubblicità</div>
+          <span>•</span>
+          <div>100% Offline</div>
         </div>
       </div>
-    </div>
 
-    <!-- Vector Topographic Elevation HUD (Pure Graphic Architecture, NO SCREENSHOT) -->
-    <div class="topo-hud-box" aria-label="Visualizzazione telemetrica del rilievo e del profilo altimetrico">
-      <div class="topo-hud-header">
-        <span class="hud-title-tag">HUD // RILIEVO CARTOGRAFICO VETTORIALE &amp; PROFILO D+</span>
-        <span>SETTORE ALPI NORD-OCCIDENTALI · TRACCIA ATTIVA</span>
-      </div>
-
-      <svg class="topo-svg-container" viewBox="0 0 1000 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <!-- Grid and Coordinates -->
-        <line x1="40" y1="20" x2="960" y2="20" stroke="#1c2c20" stroke-width="1" stroke-dasharray="4 4"/>
-        <line x1="40" y1="70" x2="960" y2="70" stroke="#1c2c20" stroke-width="1" stroke-dasharray="4 4"/>
-        <line x1="40" y1="120" x2="960" y2="120" stroke="#1c2c20" stroke-width="1" stroke-dasharray="4 4"/>
-        <line x1="40" y1="170" x2="960" y2="170" stroke="#1c2c20" stroke-width="1" stroke-dasharray="4 4"/>
-        <line x1="40" y1="220" x2="960" y2="220" stroke="#253a2b" stroke-width="1.5"/>
-
-        <line x1="200" y1="20" x2="200" y2="220" stroke="#1c2c20" stroke-width="1" stroke-dasharray="4 4"/>
-        <line x1="400" y1="20" x2="400" y2="220" stroke="#1c2c20" stroke-width="1" stroke-dasharray="4 4"/>
-        <line x1="600" y1="20" x2="600" y2="220" stroke="#1c2c20" stroke-width="1" stroke-dasharray="4 4"/>
-        <line x1="800" y1="20" x2="800" y2="220" stroke="#1c2c20" stroke-width="1" stroke-dasharray="4 4"/>
-
-        <!-- Y Axis Altitude Legend -->
-        <text x="45" y="32" fill="#5c7a66" font-family="Space Mono, monospace" font-size="10">3.000m</text>
-        <text x="45" y="82" fill="#5c7a66" font-family="Space Mono, monospace" font-size="10">2.600m</text>
-        <text x="45" y="132" fill="#5c7a66" font-family="Space Mono, monospace" font-size="10">2.200m</text>
-        <text x="45" y="182" fill="#5c7a66" font-family="Space Mono, monospace" font-size="10">1.800m</text>
-
-        <!-- Topographic Contour Reliefs (Background Alpine Layer) -->
-        <path d="M40 220 L90 195 L170 170 L260 185 L350 140 L440 160 L540 95 L650 35 L760 110 L840 165 L960 220 Z" fill="#142419" opacity="0.6"/>
-        <path d="M40 220 L120 185 L220 150 L310 165 L410 115 L500 135 L610 65 L690 40 L790 95 L880 180 L960 220 Z" fill="#182c1e" opacity="0.8"/>
-
-        <!-- Real Track Profile (Foreground Neon Line) -->
-        <path d="M60 210 Q 140 205, 220 175 T 380 130 T 520 85 T 670 42 T 780 100 T 890 160 T 940 190" fill="none" stroke="#39e378" stroke-width="3.5" stroke-linecap="round"/>
-        <path d="M60 210 Q 140 205, 220 175 T 380 130 T 520 85 T 670 42 T 780 100 T 890 160 T 940 190 L940 220 L60 220 Z" fill="url(#trackGrad)" opacity="0.15"/>
-
-        <!-- Waypoint Altitude Markers -->
-        <circle cx="60" cy="210" r="5" fill="#f6f5f0" stroke="#111513" stroke-width="2"/>
-        <text x="72" y="212" fill="#d4ebd9" font-family="Space Mono, monospace" font-size="11" font-weight="700">START // 1.900m</text>
-
-        <circle cx="670" cy="42" r="6" fill="#d9531e" stroke="#ffffff" stroke-width="2"/>
-        <text x="682" y="44" fill="#ffffff" font-family="Space Mono, monospace" font-size="12" font-weight="700">VETTA // 2.814m s.l.m.</text>
-        <line x1="670" y1="48" x2="670" y2="220" stroke="#d9531e" stroke-width="1.5" stroke-dasharray="3 3"/>
-
-        <!-- Grade callout -->
-        <rect x="420" y="70" width="85" height="22" rx="4" fill="#111513" stroke="#253a2b" stroke-width="1"/>
-        <text x="428" y="85" fill="#e06828" font-family="Space Mono, monospace" font-size="10" font-weight="700">PEND. MAX 37%</text>
-
-        <!-- Gradient Definition -->
-        <defs>
-          <linearGradient id="trackGrad" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#39e378"/>
-            <stop offset="100%" stop-color="#39e378" stop-opacity="0"/>
-          </linearGradient>
-        </defs>
-      </svg>
-
-      <div class="topo-hud-footer">
-        <div class="hud-stat-cell">
-          <span class="hud-stat-label">DISLIVELLO REALE POSITIVO</span>
-          <span class="hud-stat-value">+833 m D+</span>
+      <!-- Hero Visual: Paesaggio Alpino con Card Fluttuanti Morbide (NO SCREENSHOT) -->
+      <div class="hero-stage">
+        <div class="hero-image-frame">
+          <img src="assets/alpine-lake.webp" alt="Paesaggio alpino con lago d'alta quota e vette innevate" loading="eager">
         </div>
-        <div class="hud-stat-cell">
-          <span class="hud-stat-label">DISTANZA EFFETTIVA</span>
-          <span class="hud-stat-value">11,87 km</span>
+
+        <!-- Fluttuante 1: Statistiche Quota -->
+        <div class="glass-card card-top-right">
+          <div class="glass-icon-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 20L10 8L15 15L19 9L22 20H3Z"/>
+              <path d="M10 8l2-4 3 3"/>
+            </svg>
+          </div>
+          <div class="glass-card-info">
+            <strong>+833 m D+</strong>
+            <span>Dislivello reale su modello DEM</span>
+          </div>
         </div>
-        <div class="hud-stat-cell">
-          <span class="hud-stat-label">TEMPO IN MOVIMENTO</span>
-          <span class="hud-stat-value">03:38:21</span>
-        </div>
-        <div class="hud-stat-cell">
-          <span class="hud-stat-label">DIFFICOLTÀ SENTIERO</span>
-          <span class="hud-stat-value">SAC T3 // EE</span>
+
+        <!-- Fluttuante 2: Loop Planner -->
+        <div class="glass-card card-bottom">
+          <div class="glass-icon-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M12 7v5l3 3"/>
+              <path d="M8 3.5L12 7l4-3.5"/>
+            </svg>
+          </div>
+          <div class="glass-card-info">
+            <strong>Loop Planner: anello da 12,4 km</strong>
+            <span>Generato su sentieri reali con ritorno al punto di partenza</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Architectural Principles Strip -->
-  <section class="strip-banner wrap" aria-label="Linee guida del progetto">
-    <div class="strip-col">
-      <div class="strip-num">[01]</div>
-      <div class="strip-heading">Mappe Offline Reali</div>
-      <div class="strip-desc">swisstopo, IGN, ortofoto regionali italiane e Sentinel-2 scaricabili per navigare senza segnale.</div>
-    </div>
-    <div class="strip-col">
-      <div class="strip-num">[02]</div>
-      <div class="strip-heading">Rilievi e Vette 3D</div>
-      <div class="strip-desc">Modello digitale di elevazione per osservare pareti, versanti e pendenze prima di partire.</div>
-    </div>
-    <div class="strip-col">
-      <div class="strip-num">[03]</div>
-      <div class="strip-heading">Loop Planner</div>
-      <div class="strip-desc">Calcolo automatico di percorsi ad anello da 1 a 30 km sulla rete pedonale e ciclabile reale.</div>
-    </div>
-    <div class="strip-col">
-      <div class="strip-num">[04]</div>
-      <div class="strip-heading">Sovranità dei Dati</div>
-      <div class="strip-desc">Nessun database remoto. Esportazione e ripristino in formato ZIP universale e aperto.</div>
+  <!-- Barra Certezze: 4 Punti Chiave Morbidi -->
+  <section class="certezze-section wrap" aria-label="I punti fermi di Traccialto">
+    <div class="certezze-grid">
+      <div class="certezza-item">
+        <div class="certezza-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/>
+            <line x1="8" y1="2" x2="8" y2="18"/>
+            <line x1="16" y1="6" x2="16" y2="22"/>
+          </svg>
+        </div>
+        <div class="certezza-text">
+          <strong>Mappe Offline Reali</strong>
+          <span>swisstopo, IGN, ortofoto regionali e Sentinel-2</span>
+        </div>
+      </div>
+
+      <div class="certezza-item">
+        <div class="certezza-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 20h20"/>
+            <path d="M5 20l7-13 4 7 2-3 4 9"/>
+          </svg>
+        </div>
+        <div class="certezza-text">
+          <strong>Rilievi &amp; Vette 3D</strong>
+          <span>Morfologia del terreno e pendenze continue</span>
+        </div>
+      </div>
+
+      <div class="certezza-item">
+        <div class="certezza-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="8"/>
+            <path d="M12 4v4"/>
+            <path d="M12 16v4"/>
+            <path d="M4 12h4"/>
+            <path d="M16 12h4"/>
+          </svg>
+        </div>
+        <div class="certezza-text">
+          <strong>Loop Planner</strong>
+          <span>Anelli automatici da 1 a 30 km con un tocco</span>
+        </div>
+      </div>
+
+      <div class="certezza-item">
+        <div class="certezza-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="4" ry="4"/>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+          </svg>
+        </div>
+        <div class="certezza-text">
+          <strong>Sovranità dei Dati</strong>
+          <span>Nessun server remoto: backup privato in ZIP aperto</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Section 01: Three Disciplines Architecture -->
-  <section class="wrap" id="discipline">
-    <div class="section-masthead">
-      <div>
-        <div class="section-tag">[ ARCHITETTURA DISCIPLINARE ]</div>
-        <h2 class="section-title">Tre modi di muoversi.<br>Una sola precisione.</h2>
+  <!-- Sezione 01: Tre Discipline Concepite su Misura -->
+  <section class="disciplines-section wrap" id="attivita">
+    <div class="section-intro">
+      <div class="badge-pill">
+        <span class="dot"></span>
+        Attività &amp; Discipline Outdoor
       </div>
-      <p class="section-subtitle">
-        Traccialto non applica una formula generica a tutti gli sport. Ogni modalità adotta motori di calcolo, scale di difficoltà e metriche di movimento ingegnerizzate per la specifica disciplina.
+      <h2>Tre modi di vivere la natura<br><span class="serif-accent">con una sola precisione.</span></h2>
+      <p>
+        Traccialto non applica una formula generica a tutti gli sport. Ogni modalità adotta motori di calcolo, scale di difficoltà e metriche pensate per le esigenze specifiche di chi cammina, pedala o corre.
       </p>
     </div>
 
     <div class="disciplines-grid">
-      <!-- Discipline 1: Trekking -->
-      <article class="discipline-box">
-        <div class="discipline-top">
-          <span class="discipline-id">MODO // 01</span>
-          <span class="discipline-discipline-tag">MONTAGNA</span>
+      <!-- 1. Trekking -->
+      <article class="discipline-card">
+        <div class="discipline-card-top">
+          <div class="discipline-glyph">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 20L10 8L15 15L19 9L22 20H3Z"/>
+              <path d="M10 8l2-4 3 3"/>
+            </svg>
+          </div>
+          <span class="discipline-tag">Montagna</span>
         </div>
-        <h3 class="discipline-title">Trekking &amp; Alpinismo</h3>
-        <div class="discipline-motto">«Un passo alla volta.»</div>
-        <p class="discipline-text">
-          Concepito per i sentieri d'alta quota, le traversate alpine e i cammini a tappe. Integra le scale ufficiali CAI e il sistema svizzero SAC per distinguere chiaramente una mulattiera da una cengia esposta.
+
+        <h3>Trekking &amp; Alpinismo</h3>
+        <div class="discipline-quote">«Un passo alla volta.»</div>
+        <p class="discipline-desc">
+          Concepito per i sentieri d'alta quota, le traversate alpine e i cammini a tappe. Integra le scale ufficiali CAI e il sistema svizzero SAC per distinguere chiaramente una comoda mulattiera da una cengia esposta.
         </p>
 
-        <div class="discipline-specs">
-          <div class="spec-row">
-            <span class="spec-key">Classificazione</span>
-            <span class="spec-val">SAC T1 – T6 (Trekking / Alpinismo)</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Altimetria</span>
-            <span class="spec-val">Profilo DEM continuo + Filtro sosta</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Sicurezza</span>
-            <span class="spec-val">Avviso vocale ogni 500 m D+</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Cartografia</span>
-            <span class="spec-val">Topografica con curve di livello</span>
-          </div>
+        <ul class="discipline-features">
+          <li><strong>Scale SAC T1–T6</strong> integrate per valutare l'impegno tecnico prima di partire</li>
+          <li><strong>Profilo altimetrico DEM</strong> con calcolo continuo del dislivello e filtro soste</li>
+          <li><strong>Avvisi vocali di quota</strong> ogni 500 m D+ per gestire le energie</li>
+          <li><strong>Bussola orientata</strong> sulla cartografia topografica con curve di livello</li>
+        </ul>
+
+        <div class="discipline-pill-footer">
+          <span class="dot"></span>
+          Compatibile con tracce GPX ufficiali CAI e regionali
         </div>
       </article>
 
-      <!-- Discipline 2: Bicycle -->
-      <article class="discipline-box">
-        <div class="discipline-top">
-          <span class="discipline-id">MODO // 02</span>
-          <span class="discipline-discipline-tag">DUE RUOTE</span>
+      <!-- 2. Bicicletta -->
+      <article class="discipline-card">
+        <div class="discipline-card-top">
+          <div class="discipline-glyph">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="5.5" cy="17.5" r="3.5"/>
+              <circle cx="18.5" cy="17.5" r="3.5"/>
+              <path d="M15 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-3 11.5L9 11l3-4 3.5 3.5L18.5 14"/>
+              <path d="M5.5 17.5l4-6.5h4"/>
+            </svg>
+          </div>
+          <span class="discipline-tag">Due Ruote</span>
         </div>
-        <h3 class="discipline-title">Bicicletta &amp; Gravel</h3>
-        <div class="discipline-motto">«Una pedalata alla volta.»</div>
-        <p class="discipline-text">
-          Algoritmo di routing calibrato per ciclovie, strade bianche e viabilità a basso scorrimento. Display a contrasto elevato concepito per essere letto in un colpo d'occhio sul supporto da manubrio.
+
+        <h3>Bicicletta &amp; Gravel</h3>
+        <div class="discipline-quote">«Una pedalata alla volta.»</div>
+        <p class="discipline-desc">
+          Algoritmo di routing calibrato per ciclovie, strade bianche e viabilità a basso scorrimento. Schermata ad alto contrasto concepita per essere letta all'istante dal supporto da manubrio.
         </p>
 
-        <div class="discipline-specs">
-          <div class="spec-row">
-            <span class="spec-key">Routing</span>
-            <span class="spec-val">Ciclovie e strade secondarie</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Telemetria</span>
-            <span class="spec-val">Velocità istantanea, media e moving</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Pendenze</span>
-            <span class="spec-val">Calcolo inclinazione e tratti critici</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Ergonomia</span>
-            <span class="spec-val">Caratteri ad alta leggibilità rapida</span>
-          </div>
+        <ul class="discipline-features">
+          <li><strong>Routing ciclistico dedicato</strong> con priorità a piste ciclabili e sterrati compatti</li>
+          <li><strong>Display ad alto contrasto</strong> leggibile anche in pieno sole con riflessi</li>
+          <li><strong>Pendenza istantanea e media</strong> calcolata in tempo reale sul profilo del terreno</li>
+          <li><strong>Registrazione continua</strong> della traccia senza consumo eccessivo di batteria</li>
+        </ul>
+
+        <div class="discipline-pill-footer">
+          <span class="dot"></span>
+          Perfetto per bikepacking, gravel e viaggi su strada
         </div>
       </article>
 
-      <!-- Discipline 3: Running -->
-      <article class="discipline-box">
-        <div class="discipline-top">
-          <span class="discipline-id">MODO // 03</span>
-          <span class="discipline-discipline-tag">RITMO NATURALE</span>
+      <!-- 3. Corsa -->
+      <article class="discipline-card">
+        <div class="discipline-card-top">
+          <div class="discipline-glyph">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M13 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+              <path d="M7 21l3-6 3 2 3-5"/>
+              <path d="M10 11l4-2 3 3"/>
+              <path d="M6 13l4-2"/>
+            </svg>
+          </div>
+          <span class="discipline-tag">Velocità</span>
         </div>
-        <h3 class="discipline-title">Corsa &amp; Camminata</h3>
-        <div class="discipline-motto">«Una falcata alla volta.»</div>
-        <p class="discipline-text">
-          Dedicato alle uscite podistiche su strada o sterrato. Calcolo dell'andatura in tempo reale (min/km) con precisione al secondo e algoritmo di auto-pausa che elimina le soste passive dalla media.
+
+        <h3>Corsa &amp; Trail Running</h3>
+        <div class="discipline-quote">«Il tuo ritmo, ovunque.»</div>
+        <p class="discipline-desc">
+          Interfaccia essenziale per correre nei parchi, colline e sentieri montani. Genera anelli rapidi della lunghezza desiderata e ti permette di correre senza distrazioni e senza segnale telefonico.
         </p>
 
-        <div class="discipline-specs">
-          <div class="spec-row">
-            <span class="spec-key">Andatura</span>
-            <span class="spec-val">Passo live al secondo (min/km)</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Auto-Pause</span>
-            <span class="spec-val">Sospensione automatica alle soste</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">GPS Engine</span>
-            <span class="spec-val">Filtro compatto a basso jitter</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Esportazione</span>
-            <span class="spec-val">GPX standard con timestamp puliti</span>
-          </div>
+        <ul class="discipline-features">
+          <li><strong>Anelli rapidi su misura</strong> da 3 a 25 km generati all'istante attorno a te</li>
+          <li><strong>Passo medio, distanza e tempo</strong> in movimento aggiornati ogni secondo</li>
+          <li><strong>Funzione Trip Trim</strong> per ripulire code o soste accidentali a fine uscita</li>
+          <li><strong>Funzionamento offline totale:</strong> corri nei boschi senza connessione dati</li>
+        </ul>
+
+        <div class="discipline-pill-footer">
+          <span class="dot"></span>
+          Nessuna distrazione: solo passo, distanza e sentiero
         </div>
       </article>
     </div>
   </section>
 
-  <!-- Section 02: Precision Tools Grid -->
-  <section class="wrap" id="strumenti">
-    <div class="section-masthead">
-      <div>
-        <div class="section-tag">[ STRUMENTI DI PRECISIONE ]</div>
-        <h2 class="section-title">Funzioni essenziali.<br>Niente fronzoli.</h2>
+  <!-- Sezione 02: Strumenti di Precisione (Bento Grid Morbida) -->
+  <section class="features-section wrap" id="funzioni">
+    <div class="section-intro">
+      <div class="badge-pill">
+        <span class="dot"></span>
+        Tecnologia Cartografica
       </div>
-      <p class="section-subtitle">
-        Ogni funzione risponde a un'esigenza reale sul terreno: risparmiare batteria sotto il sole battente, pianificare anelli senza ripercorrere la stessa strada, condividere mappe autonome.
+      <h2>Strumenti costruiti<br><span class="serif-accent">per il terreno reale.</span></h2>
+      <p>
+        Ogni funzione nasce da un bisogno concreto: orientarsi nella nebbia, pianificare un anello prima del tramonto e non restare a piedi con la batteria.
       </p>
     </div>
 
-    <div class="tools-grid">
-      <!-- Tool 1: Loop Planner (Col 7) -->
-      <article class="tool-tile col-span-7">
-        <div class="tool-header">
-          <span class="tool-label">FUNZIONE // LOOP PLANNER</span>
-          <span class="mono">ALGORITMO RETE REALE</span>
-        </div>
-        <h3 class="tool-title">Pianificazione automatica di anelli da 1 a 30 km</h3>
-        <p class="tool-text">
-          Parti dal rifugio, dal parcheggio o da un bivio e non vuoi ripercorrere lo stesso tragitto al ritorno? Imposti il punto di partenza e i chilometri desiderati: Traccialto interroga la rete sentieristica e stradale reale generando opzioni circolari con calcolo esatto del dislivello, pendenza e profilo altimetrico.
+    <div class="features-grid">
+      <!-- Feature 1: Rilievi 3D & Curve di Livello (Col 7) -->
+      <div class="feature-card col-7">
+        <div class="feature-tag-mini">Morfologia del Territorio</div>
+        <h3>Rilievi 3D e curve di livello DEM</h3>
+        <p>
+          Il modello digitale del terreno ad alta risoluzione trasforma la mappa in una vista tridimensionale naturale. Osserva versanti, creste e canaloni prima di imboccarli per valutare l'esposizione al sole e la ripidezza del percorso.
         </p>
 
-        <div class="loop-vector-box">
-          <svg viewBox="0 0 340 120" style="max-width: 280px; margin: auto; display: block;" fill="none" stroke="currentColor">
-            <!-- Topo contours surrounding the loop -->
-            <path d="M20 60 C40 20, 120 15, 170 15 C240 15, 320 30, 320 60 C320 90, 240 105, 170 105 C100 105, 20 95, 20 60 Z" stroke="#cadcd0" stroke-width="1" stroke-dasharray="3 3"/>
-            <path d="M40 60 C60 30, 120 25, 170 25 C230 25, 300 40, 300 60 C300 80, 230 95, 170 95 C110 95, 40 85, 40 60 Z" stroke="#cadcd0" stroke-width="1"/>
+        <div class="vector-topo-box" aria-label="Illustrazione vettoriale del rilievo topografico">
+          <svg viewBox="0 0 600 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Curve di livello morbide -->
+            <path d="M0 150 Q 150 120, 300 135 T 600 110 L600 170 L0 170 Z" fill="#e8efe9" opacity="0.9"/>
+            <path d="M0 120 Q 160 85, 320 100 T 600 70 L600 170 L0 170 Z" fill="#d2e0d4" opacity="0.8"/>
+            <path d="M0 85 Q 180 40, 340 65 T 600 35 L600 170 L0 170 Z" fill="#b9cebc" opacity="0.7"/>
+            <path d="M0 50 Q 200 10, 380 30 T 600 10 L600 170 L0 170 Z" fill="#9dbba1" opacity="0.6"/>
+
+            <!-- Linea del sentiero attivo -->
+            <path d="M30 145 C 120 135, 180 110, 240 85 C 310 55, 390 40, 520 22" fill="none" stroke="#1c3829" stroke-width="3.5" stroke-linecap="round"/>
+            <path d="M30 145 C 120 135, 180 110, 240 85 C 310 55, 390 40, 520 22" fill="none" stroke="#55e688" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 4"/>
+
+            <circle cx="30" cy="145" r="5" fill="#fbf9f5" stroke="#1c3829" stroke-width="2.5"/>
+            <circle cx="520" cy="22" r="6" fill="#c46849" stroke="#fbf9f5" stroke-width="2"/>
+
+            <!-- Badge altimetrici -->
+            <rect x="440" y="42" width="130" height="28" rx="14" fill="#ffffff" stroke="#d2e0d4" stroke-width="1"/>
+            <text x="505" y="60" text-anchor="middle" fill="#1c3829" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700">Vetta • 2.814 m</text>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Feature 2: Loop Planner Intelligente (Col 5) -->
+      <div class="feature-card col-5">
+        <div class="feature-tag-mini">Itinerari Circolari</div>
+        <h3>Loop Planner Istantaneo</h3>
+        <p>
+          Imposta il chilometraggio desiderato: Traccialto calcola all'istante un anello sulla rete sentieristica reale con partenza e rientro coincidenti, senza mai farti ripercorrere lo stesso tratto.
+        </p>
+
+        <div class="loop-compass-box">
+          <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin: 0 auto; display: block;">
+            <!-- Cerchio traccia percorso -->
+            <circle cx="60" cy="60" r="46" stroke="#d2e0d4" stroke-width="3" stroke-dasharray="4 4"/>
+            <path d="M60 14 A46 46 0 1 1 24 92" stroke="#1c3829" stroke-width="4" stroke-linecap="round"/>
             
-            <!-- Calculated Circular Route -->
-            <path d="M65 60 C75 35, 130 30, 170 30 C220 30, 275 45, 275 60 C275 80, 220 90, 170 90 C120 90, 65 80, 65 60 Z" stroke="#1d3d2a" stroke-width="3" stroke-linecap="round"/>
-            <circle cx="65" cy="60" r="6" fill="#d9531e" stroke="#ffffff" stroke-width="2"/>
-            <polygon points="175,26 185,30 175,34" fill="#1d3d2a"/>
+            <circle cx="60" cy="14" r="6" fill="#55e688" stroke="#1c3829" stroke-width="2.5"/>
+            
+            <circle cx="60" cy="60" r="28" fill="#e8efe9"/>
+            <path d="M60 44 L60 60 L72 68" stroke="#1c3829" stroke-width="2.5" stroke-linecap="round"/>
           </svg>
 
-          <div class="loop-stats-row">
-            <div class="loop-stat-item">
-              <span class="mono" style="color: #647a6a;">DISTANZA</span>
+          <div class="loop-metrics-row">
+            <div class="loop-metric-col">
               <strong>12,4 km</strong>
+              <span>Distanza</span>
             </div>
-            <div class="loop-stat-item">
-              <span class="mono" style="color: #647a6a;">SALITA REALE</span>
-              <strong>+540 m</strong>
+            <div class="loop-metric-col">
+              <strong>+430 m</strong>
+              <span>Dislivello</span>
             </div>
-            <div class="loop-stat-item">
-              <span class="mono" style="color: #647a6a;">STIMA TEMPO</span>
-              <strong>~3h 15m</strong>
-            </div>
-            <div class="loop-stat-item">
-              <span class="mono" style="color: #647a6a;">PARTENZA/ARRIVO</span>
-              <strong>COINCIDENTI</strong>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- Tool 2: AMOLED Cockpit Display (Col 5) -->
-      <article class="tool-tile col-span-5">
-        <div class="tool-header">
-          <span class="tool-label">EFFICIENZA // AMOLED COCKPIT</span>
-          <span class="mono">CONSUMO MINIMO</span>
-        </div>
-        <h3 class="tool-title">Display per sole diretto e zero consumo</h3>
-        <p class="tool-text">
-          Sotto il sole pieno d'alta quota, la mappa a colori è difficile da leggere e consuma molta batteria. La modalità AMOLED trasforma lo schermo in uno strumento di bordo nero assoluto con numeri giganti ad altissimo contrasto: WebView sospesa, CPU alleggerita, batteria preservata per l'intera traversata.
-        </p>
-
-        <div class="amoled-cockpit">
-          <div class="cockpit-header">
-            <span>STRUMENTO DI BORDO // MODALITÀ SOLE</span>
-            <span class="mono" style="color: #49ea87;">● ATTIVO</span>
-          </div>
-          <div class="cockpit-display-grid">
-            <div class="cockpit-digit-box">
-              <div class="cockpit-digit-label">DISTANZA</div>
-              <div class="cockpit-digit-val">11,87 km</div>
-            </div>
-            <div class="cockpit-digit-box accent-box">
-              <div class="cockpit-digit-label">SALITA CUMULATA</div>
-              <div class="cockpit-digit-val" style="color: #ffaa44;">+833 m</div>
-            </div>
-            <div class="cockpit-digit-box">
-              <div class="cockpit-digit-label">QUOTA ATTUALE</div>
-              <div class="cockpit-digit-val">2.814 m</div>
-            </div>
-            <div class="cockpit-digit-box">
-              <div class="cockpit-digit-label">TEMPO ATTIVO</div>
-              <div class="cockpit-digit-val" style="color: #ffffff;">03:38:21</div>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- Tool 3: Standalone Interactive HTML Map (Col 6) -->
-      <article class="tool-tile col-span-6">
-        <div class="tool-header">
-          <span class="tool-label">CONDIVISIONE // MAPPA WEB AUTONOMA</span>
-          <span class="mono">FORMATO .HTML</span>
-        </div>
-        <h3 class="tool-title">Mappa Web Interattiva in un solo file</h3>
-        <p class="tool-text">
-          Dimentica le piattaforme proprietarie che obbligano i tuoi amici a scaricare app o registrarsi. Traccialto esporta un unico file HTML autonomo: lo invii via messaggio o email e chiunque può aprirlo su iPhone, Android, Mac o PC, esplorando pan, zoom, traccia GPS e profilo altimetrico senza connessione di rete.
-        </p>
-        <div style="background: #f4f6f1; border: 1px solid var(--paper-border); padding: 20px; font-family: var(--font-mono); font-size: 12px; margin-top: auto;">
-          <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
-            <span style="color: var(--ink-faint);">FILE EXPORT:</span>
-            <span style="color: var(--signal-orange); font-weight: 700;">percorso-anello-goilet.html</span>
-          </div>
-          <div style="color: var(--ink-muted); line-height: 1.5;">
-            ✓ Cartografia incorporata in base64<br>
-            ✓ Zoom vettoriale + cursore di quota reattivo<br>
-            ✓ Compatibile con qualsiasi browser senza server
-          </div>
-        </div>
-      </article>
-
-      <!-- Tool 4: Safety Morse & Trip Trim (Col 6) -->
-      <article class="tool-tile col-span-6">
-        <div class="tool-header">
-          <span class="tool-label">SICUREZZA &amp; PRECISIONE</span>
-          <span class="mono">TRIP TRIM &amp; MORSE</span>
-        </div>
-        <h3 class="tool-title">SOS ottico e rifinitura traccia registrata</h3>
-        <p class="tool-text">
-          In situazioni di emergenza in quota, puoi attivare il segnale <strong>SOS Morse luminoso</strong> sul flash posteriore dello smartphone (3 brevi, 3 lunghi, 3 brevi cadenzati a 250 ms). Al rientro, se hai dimenticato di fermare la registrazione all'arrivo in auto o al rifugio, la funzione <strong>Trip Trim</strong> ti permette di ritagliare la traccia con precisione millimetrica senza inventare salti o corrompere i dati.
-        </p>
-        <div style="background: #f4f6f1; border: 1px solid var(--paper-border); padding: 20px; font-family: var(--font-mono); font-size: 12px; margin-top: auto;">
-          <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
-            <span style="color: var(--ink-faint);">PROTOCOLLO SEGNALE:</span>
-            <span style="color: var(--signal-orange); font-weight: 700;">SOS // ··· ——— ···</span>
-          </div>
-          <div style="color: var(--ink-muted); line-height: 1.5;">
-            ✓ Luce di soccorso alpina visibile a chilometri<br>
-            ✓ Trip Trim: ritaglio reale dei campioni GPS registrati<br>
-            ✓ Avvisi vocali ai traguardi di quota senza estrarre il telefono
-          </div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- Section 03: The Zero-Cloud Manifesto (Dark Architectural Section) -->
-  <section class="manifesto-section" id="manifesto">
-    <div class="wrap manifesto-grid">
-      <div>
-        <div class="manifesto-tag">[ MANIFESTO DELL'ARCHITETTURA LOCALE ]</div>
-        <h2 class="manifesto-title">I tuoi passi non appartengono a un server.</h2>
-        <p class="manifesto-body">
-          Le app commerciali per l'outdoor monetizzano le tue abitudini: profili pubblici forzati, classifiche social, sincronizzazione automatica su cloud remoti e telemetria continua della tua posizione geografica. Traccialto rigetta questo modello.
-        </p>
-
-        <div class="manifesto-pillars">
-          <div class="pillar-row">
-            <span class="pillar-num">01</span>
-            <div>
-              <div class="pillar-title">Nessun Account Obbligatorio</div>
-              <div class="pillar-desc">Non ti chiediamo email, password o registrazione. Apri l'app e sei subito operativo, sul sentiero come a casa.</div>
-            </div>
-          </div>
-
-          <div class="pillar-row">
-            <span class="pillar-num">02</span>
-            <div>
-              <div class="pillar-title">Memoria Locale Privata</div>
-              <div class="pillar-desc">Tutte le tracce registrate, i diari di bordo, le fotografie e le note personali risiedono unicamente nello spazio isolato del tuo telefono.</div>
-            </div>
-          </div>
-
-          <div class="pillar-row">
-            <span class="pillar-num">03</span>
-            <div>
-              <div class="pillar-title">Zero Analytics Pubblicitari</div>
-              <div class="pillar-desc">Nessun SDK pubblicitario, nessun tracciamento di comportamento. I server cartografici aperti vengono interrogati solo per fornirti le mappe richieste.</div>
+            <div class="loop-metric-col">
+              <strong>1h 45m</strong>
+              <span>Stima</span>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Technical Seal & Backup Box -->
-      <div class="manifesto-technical-card">
-        <div>
-          <div class="tech-seal-header">FORMATO APERTO // ARCHIVIO APERTO</div>
-          <div class="tech-seal-body">
-            <h3>Backup &amp; Ripristino Privato (ZIP)</h3>
-            <p>
-              I tuoi ricordi non devono restare intrappolati in un'app. Dalle impostazioni puoi esportare in qualsiasi momento un unico archivio protetto standard contenente percorsi, foto, diari e persino le mappe scaricate offline.
-            </p>
-            <p style="margin-top: 14px; font-family: var(--font-mono); font-size: 12px; color: #7f9986;">
-              Se cambi telefono, ripristini l'intero archivio in 10 secondi selezionando il file ZIP, senza passare da server esterni e senza dipendere da nessuno.
-            </p>
+      <!-- Feature 3: Cockpit AMOLED ad Alto Contrasto (Col 6) -->
+      <div class="feature-card col-6">
+        <div class="feature-tag-mini">Efficienza Energetica</div>
+        <h3>Display AMOLED ad alto contrasto</h3>
+        <p>
+          I pixel neri sugli schermi OLED sono fisicamente spenti. La modalità scura nativa azzera il consumo inutile di batteria e ti garantisce una leggibilità istantanea anche quando il sole batte forte sullo schermo.
+        </p>
+
+        <div class="amoled-soft-box" aria-label="Simulatore del cockpit AMOLED">
+          <div class="amoled-soft-header">
+            <span>MODALITÀ AMOLED ATTIVA</span>
+            <span style="color: #55e688;">GPS: PRECISO</span>
+          </div>
+          <div class="amoled-soft-grid">
+            <div class="amoled-soft-stat highlight">
+              <span class="amoled-soft-label">Quota Attuale</span>
+              <span class="amoled-soft-val">2.140 m</span>
+            </div>
+            <div class="amoled-soft-stat">
+              <span class="amoled-soft-label">Dislivello D+</span>
+              <span class="amoled-soft-val">+833 m</span>
+            </div>
+            <div class="amoled-soft-stat">
+              <span class="amoled-soft-label">Distanza</span>
+              <span class="amoled-soft-val">11,8 km</span>
+            </div>
+            <div class="amoled-soft-stat">
+              <span class="amoled-soft-label">Autonomia</span>
+              <span class="amoled-soft-val">+60%</span>
+            </div>
           </div>
         </div>
+      </div>
 
-        <a class="btn-manifesto-link" href="privacy.html">
-          LEGGI L'INFORMATIVA TRASPARENZA COMPLETA →
+      <!-- Feature 4: Condivisione Autonoma & Sicurezza (Col 6) -->
+      <div class="feature-card col-6">
+        <div class="feature-tag-mini">Autonomia &amp; Soccorso</div>
+        <h3>Mappa HTML autonoma e sicurezza alpina</h3>
+        <p>
+          Esporta le tue avventure come una pagina HTML autonoma e interattiva: chiunque può aprirla e navigarla su PC o smartphone senza scaricare app. In situazioni d'emergenza, hai a disposizione strumenti acustici e luminosi essenziali.
+        </p>
+
+        <div class="feature-spec-pills">
+          <div class="spec-pill-item">
+            <span class="check-icon">✓</span>
+            <span>File HTML standalone con mappa interattiva e profilo dislivello</span>
+          </div>
+          <div class="spec-pill-item">
+            <span class="check-icon">✓</span>
+            <span>Torcia ottica e avvisatore acustico con segnale SOS in codice Morse</span>
+          </div>
+          <div class="spec-pill-item">
+            <span class="check-icon">✓</span>
+            <span>Strumento Trip Trim per rimuovere tempi morti all'inizio e alla fine</span>
+          </div>
+          <div class="spec-pill-item">
+            <span class="check-icon">✓</span>
+            <span>Tradotto integralmente in 5 lingue (IT, EN, FR, DE, ES)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sezione 03: Privacy e Zero-Cloud (Card Ricca in Verde Pino Profondo) -->
+  <section class="privacy-section wrap" id="privacy">
+    <div class="privacy-rich-card">
+      <div class="privacy-grid-inner">
+        <div>
+          <div class="badge-pill" style="background: rgba(255,255,255,0.12); color: #8ef0a8; border-color: rgba(255,255,255,0.2);">
+            <span class="dot" style="background: #55e688;"></span>
+            Architettura Zero-Cloud
+          </div>
+
+          <h2>I tuoi sentieri<br><span style="color: #9fe8b4; font-family: var(--font-serif); font-style: italic; font-weight: 400;">appartengono solo a te.</span></h2>
+          <p>
+            La maggior parte delle app trasmette le coordinate GPS a server centralizzati. Traccialto adotta la filosofia opposta: l'applicazione funziona interamente in locale sul tuo telefono. Nessun server remoto raccoglie la tua posizione, nessun profilo personale viene profilato, nessun dato viene venduto a terzi.
+          </p>
+
+          <div class="privacy-bullet-box">
+            <div class="privacy-bullet">
+              <div class="privacy-bullet-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <div class="privacy-bullet-text">
+                <strong>100% Locale sul dispositivo</strong>
+                <span>Mappe, tracce registrate e impostazioni risiedono esclusivamente nella memoria interna del telefono.</span>
+              </div>
+            </div>
+
+            <div class="privacy-bullet">
+              <div class="privacy-bullet-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                </svg>
+              </div>
+              <div class="privacy-bullet-text">
+                <strong>Backup privato in archivio ZIP</strong>
+                <span>Salva e ripristina l'intero archivio con un clic in formato ZIP aperto, conservabile su PC o chiavetta USB.</span>
+              </div>
+            </div>
+
+            <div class="privacy-bullet">
+              <div class="privacy-bullet-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/>
+                </svg>
+              </div>
+              <div class="privacy-bullet-text">
+                <strong>Zero cookie e zero tracciamento</strong>
+                <span>Né questo sito né l'app includono Google Analytics, Facebook Pixel o reti pubblicitarie di monetizzazione.</span>
+              </div>
+            </div>
+          </div>
+
+          <a class="btn-pill-ghost" href="privacy.html">
+            <span>Leggi l'informativa completa sulla privacy</span>
+            <svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 10h12M11 5l5 5-5 5"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="privacy-side-badge">
+          <div class="shield-glyph">
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="M9 12l2 2 4-4"/>
+            </svg>
+          </div>
+          <h4>Sovranità Digitale Totale</h4>
+          <p>
+            I tuoi itinerari non sono un prodotto da monetizzare. Sei tu l'unico proprietario delle tue tracce, delle tue vette e del tuo tempo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sezione 04: Domande Frequenti (Accordion Morbidi) -->
+  <section class="faq-section wrap" id="domande">
+    <div class="faq-container">
+      <div class="faq-intro-col">
+        <div class="badge-pill">
+          <span class="dot"></span>
+          FAQ &amp; Chiarezza
+        </div>
+        <h2>Tutto quello che<br><span class="serif-accent">c'è da sapere.</span></h2>
+        <p>
+          Risposte semplici e trasparenti su licenza, funzionamento offline, privacy e compatibilità con i tuoi dispositivi Android.
+        </p>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-card" open>
+          <summary>Traccialto è davvero completamente gratuita?</summary>
+          <div class="faq-card-content">
+            Sì. Non ci sono canoni mensili, non esistono funzioni 'pro' a pagamento e non ci sono banner pubblicitari. Traccialto nasce come progetto indipendente e artigianale dedicato a chi ama camminare e pedalare in natura con uno strumento pulito e trasparente.
+          </div>
+        </details>
+
+        <details class="faq-card">
+          <summary>Funziona in alta quota dove non c'è campo telefonico?</summary>
+          <div class="faq-card-content">
+            Assolutamente sì. Prima di partire puoi scaricare e salvare in memoria le aree geografiche che ti interessano (topografia swisstopo, carte francesi IGN, ortofoto regionali italiane ad alta risoluzione o OpenStreetMap). Una volta sul posto, il ricevitore GPS del telefono ti localizza con precisione senza bisogno di rete cellulare o Wi-Fi.
+          </div>
+        </details>
+
+        <details class="faq-card">
+          <summary>Posso importare i miei percorsi e tracce GPX esistenti?</summary>
+          <div class="faq-card-content">
+            Certamente. Puoi aprire qualsiasi traccia GPX (da siti CAI, guide escursionistiche, portali di bikepacking o amici): Traccialto la importa all'istante, calcola il dislivello su modello altimetrico e ti permette di seguirla con allarmi di fuori rotta.
+          </div>
+        </details>
+
+        <details class="faq-card">
+          <summary>Come funziona il backup dei miei percorsi?</summary>
+          <div class="faq-card-content">
+            Tutti i tuoi percorsi e waypoint possono essere esportati con un tocco in un archivio ZIP standard non proprietario. Puoi salvare il file sul computer, su una chiavetta o su qualsiasi cartella personale, e ripristinarlo in qualsiasi momento.
+          </div>
+        </details>
+
+        <details class="faq-card">
+          <summary>Quali versioni di Android sono supportate?</summary>
+          <div class="faq-card-content">
+            Traccialto è ottimizzato per tutti i dispositivi con Android 10 o superiore (fino ad Android 15), inclusi smartphone di qualsiasi marca (Google Pixel, Samsung, Xiaomi, Motorola, ecc.).
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sezione Conclusiva CTA: Invito Morbido al Download -->
+  <section class="closing-card-section wrap" id="scarica">
+    <div class="closing-rounded-card">
+      <div class="badge-pill" style="margin-bottom: 20px;">
+        <span class="dot"></span>
+        Pronto per la prossima uscita
+      </div>
+      <h2>La natura ti aspetta.<br><span class="serif-accent">Portati solo l'essenziale.</span></h2>
+      <p>
+        Scarica Traccialto gratuitamente e scopri un modo pulito, autonomo e rispettoso della tua privacy per camminare, pedalare e correre all'aria aperta.
+      </p>
+
+      <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+        <a class="btn-pill-primary" href="assets/Traccialto.apk" download>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          <span>Scarica applicazione Android</span>
         </a>
       </div>
-    </div>
-  </section>
 
-  <!-- Section 04: Technical FAQs -->
-  <section class="wrap faq-block" id="domande">
-    <div class="faq-inner-grid">
-      <div>
-        <div class="section-tag">[ SPECIFICHE TECNICHE ]</div>
-        <h2 class="section-title">Domande<br>Frequenti</h2>
-        <p class="section-subtitle" style="margin-top: 16px;">
-          Tutto quello che c'è da sapere sulla cartografia, sulla gestione offline e sui formati supportati da Traccialto.
-        </p>
+      <div style="margin-top: 24px; font-size: 13px; color: var(--ink-muted);">
+        Compatibile con Android 10+ • Zero costi • Zero pubblicità • 100% Open &amp; Privacy-First
       </div>
-
-      <div class="faq-accordion">
-        <details class="faq-entry">
-          <summary>Traccialto è davvero gratuita e priva di pubblicità?</summary>
-          <div class="faq-body">
-            Sì. Traccialto è un progetto indipendente e autofinanziato per l'escursionismo autentico. Non contiene banner pubblicitari, non offre piani "premium" a pagamento, non propone acquisti in-app e non monetizza i dati degli utenti.
-          </div>
-        </details>
-
-        <details class="faq-entry">
-          <summary>Come funziona l'utilizzo offline senza copertura di rete?</summary>
-          <div class="faq-body">
-            Sul campo, la localizzazione GPS, la registrazione della traccia, la navigazione turn-by-turn e la consultazione delle mappe scaricate funzionano al 100% senza alcuna connessione cellulare. Anche il display AMOLED e gli avvisi vocali operano interamente in locale. La ricerca toponimi e il download di nuove porzioni cartografiche richiedono una connessione prima della partenza.
-          </div>
-        </details>
-
-        <details class="faq-entry">
-          <summary>Quali fonti cartografiche vengono utilizzate?</summary>
-          <div class="faq-body">
-            Traccialto integra cartografia topografica ad alta definizione proveniente da fonti territoriali aperte ufficiali: OpenStreetMap e OpenTopoMap, swisstopo (Svizzera), IGN Géoplateforme (Francia), ortofoto regionali italiane (Valle d'Aosta, Bolzano, Trento, Toscana, Emilia-Romagna, AGEA) e immagini satellitari Sentinel-2 di EOxCloudless.
-          </div>
-        </details>
-
-        <details class="faq-entry">
-          <summary>Posso importare ed esportare file GPX e KML?</summary>
-          <div class="faq-body">
-            Certamente. Puoi importare qualsiasi traccia in formato standard GPX o KML, anche creata su Komoot, AllTrails, Garmin Connect o scaricata da guide locali. Traccialto legge le quote reali e rispetta le scale di difficoltà dei sentieri. Puoi esportare i tuoi percorsi negli stessi formati o generare adesivi trasparenti PNG/GIF per le storie.
-          </div>
-        </details>
-
-        <details class="faq-entry">
-          <summary>Come trasferisco i miei percorsi su un nuovo smartphone?</summary>
-          <div class="faq-body">
-            Nelle Impostazioni dell'app selezioni "Backup e ripristino": Traccialto crea un unico archivio compatto (.zip) con tutte le tue tracce, il diario delle uscite, le fotografie e le mappe offline. Copi il file sul nuovo telefono (tramite chiavetta USB, Bluetooth o cartella personale) e premi "Ripristina" per ritrovare tutto in pochi secondi.
-          </div>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- Download Terminal Block -->
-  <section class="wrap download-terminal" id="scarica">
-    <div class="mono" style="font-size: 12px; color: var(--signal-orange); margin-bottom: 12px;">
-      [ DISTRIBUZIONE ANDROID ]
-    </div>
-    <h2>Il prossimo sentiero ti aspetta</h2>
-    <p>
-      Traccialto per smartphone Android. Leggera, reattiva, rispettosa della tua privacy e della tua batteria.
-    </p>
-
-    <div class="terminal-actions">
-      <span class="btn-hero-primary" style="cursor: default;">
-        COMPATIBILE ANDROID 10, 11, 12, 13, 14, 15+
-      </span>
-      <a class="btn-hero-primary" style="background: var(--ink);" href="mailto:traccialto.app@gmail.com">
-        CONTATTA IL TITOLARE →
-      </a>
     </div>
   </section>
 
 </main>
 
-<!-- Site Footer -->
+<!-- Footer Morbido ed Elegante -->
 <footer class="site-footer">
-  <div class="wrap footer-grid">
-    <div>
-      <strong>TRACCIALTO // PROGETTO OUTDOOR INDIPENDENTE</strong>
+  <div class="wrap footer-row">
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <svg width="28" height="28" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="40" height="40" rx="8" fill="#1c3829"/>
+        <path d="M10 28L18 16L22 22L27 13L32 28H10Z" stroke="#e8efe9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span style="font-weight: 800; font-size: 17px; color: var(--pine-900);">Traccialto</span>
     </div>
 
-    <div class="footer-nav">
-      <a href="privacy.html">INFORMATIVA PRIVACY</a>
-      <a href="mailto:traccialto.app@gmail.com">SUPPORTO &amp; CONTATTI</a>
+    <div class="footer-links">
+      <a href="#attivita">Attività</a>
+      <a href="#funzioni">Funzioni</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#domande">FAQ</a>
+      <a href="privacy.html">Informativa Privacy</a>
     </div>
 
-    <div class="footer-credits">
-      © 2026 TRACCIALTO. DATI CARTOGRAFICI © OPENSTREETMAP, SWISSTOPO, IGN, AGEA. NESSUN COOKIE PROFILANTE.
+    <div class="footer-copy">
+      © 2026 Traccialto. Progetto indipendente di cartografia e navigazione per il territorio. Nessun cookie, nessun server remoto.
     </div>
   </div>
 </footer>
