@@ -179,6 +179,41 @@ body.landing * {
   box-shadow: 0 6px 20px rgba(28, 56, 41, 0.28);
 }
 
+/* Language Switcher Pill */
+.site-lang-pill {
+  display: inline-flex;
+  align-items: center;
+  background: var(--sage-100);
+  border: 1px solid var(--sage-200);
+  border-radius: var(--radius-pill);
+  padding: 3px;
+  gap: 2px;
+}
+.site-lang-pill button {
+  background: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--sage-700);
+  padding: 4px 8px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+.site-lang-pill button:hover {
+  color: var(--pine-900);
+}
+.site-lang-pill button.active {
+  background: var(--pine-800);
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(28, 56, 41, 0.2);
+}
+
+
 /* Hero Section */
 .hero-section {
   padding: 60px 0 80px;
@@ -1024,7 +1059,15 @@ body.landing * {
     height: 68px;
   }
   .nav-links {
-    gap: 0;
+    gap: 8px;
+  }
+  .site-lang-pill {
+    padding: 2px;
+    gap: 1px;
+  }
+  .site-lang-pill button {
+    padding: 3px 6px;
+    font-size: 10.5px;
   }
   .nav-links a:not(.btn-header-cta) {
     display: none;

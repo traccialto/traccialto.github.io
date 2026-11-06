@@ -24,13 +24,19 @@
     </a>
 
     <nav class="nav-links" aria-label="Menu principale">
-      <a href="#attivita">Attività</a>
-      <a href="#funzioni">Funzioni</a>
-      <a href="#privacy">Privacy</a>
-      <a href="#domande">Domande</a>
+      <a href="#attivita" data-i18n="navActivities">Attività</a>
+      <a href="#funzioni" data-i18n="navFeatures">Funzioni</a>
+      <a href="#privacy" data-i18n="navPrivacy">Privacy</a>
+      <a href="#domande" data-i18n="navFaq">Domande</a>
+      <div class="site-lang-pill" role="group" aria-label="Language">
+        <button type="button" data-l="it" class="active">IT</button>
+        <button type="button" data-l="en">EN</button>
+        <button type="button" data-l="fr">FR</button>
+        <button type="button" data-l="es">ES</button>
+      </div>
       <a class="btn-header-cta" href="#scarica">
-        <span class="btn-text-full">Disponibilità Android</span>
-        <span class="btn-text-short">Disponibilità</span>
+        <span class="btn-text-full" data-i18n="btnAvailability">Disponibilità Android</span>
+        <span class="btn-text-short" data-i18n="btnAvailabilityShort">Disponibilità</span>
         <svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M4 14l6 6 6-6M10 3v17"/>
         </svg>
@@ -47,38 +53,38 @@
       <div class="hero-copy">
         <div class="badge-pill">
           <span class="dot"></span>
-          Trekking · Bicicletta · Corsa e camminata
+          <span data-i18n="heroBadge">Trekking · Bicicletta · Corsa e camminata</span>
         </div>
 
-        <h1>
+        <h1 data-i18n-html="heroTitle">
           La tua prossima uscita<br>
           <span class="serif-accent">comincia da qui.</span>
         </h1>
 
-        <p class="hero-lead">
+        <p class="hero-lead" data-i18n="heroLead">
           Scegli come vuoi muoverti. Prepara un percorso, guarda i rilievi in 3D e ritrova ogni uscita nel tuo archivio personale. Gratis, senza account e senza pubblicità.
         </p>
 
         <div class="hero-buttons">
           <a class="btn-pill-primary" href="#funzioni">
-            <span>Esplora le funzioni</span>
+            <span data-i18n="btnHeroExplore">Esplora le funzioni</span>
             <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M4 10h12M11 5l5 5-5 5"/>
             </svg>
           </a>
-          <a class="btn-pill-secondary" href="#attivita">
+          <a class="btn-pill-secondary" href="#attivita" data-i18n="btnHeroDisciplines">
             Le 3 discipline
           </a>
         </div>
 
         <div class="hero-trust-bar">
-          <div>Gratis</div>
+          <div data-i18n="trustFree">Gratis</div>
           <span>•</span>
-          <div>Nessun account</div>
+          <div data-i18n="trustNoAccount">Nessun account</div>
           <span>•</span>
-          <div>Zero pubblicità</div>
+          <div data-i18n="trustNoAds">Zero pubblicità</div>
           <span>•</span>
-          <div>Mappe scaricabili</div>
+          <div data-i18n="trustOfflineMaps">Mappe scaricabili</div>
         </div>
       </div>
 
@@ -97,8 +103,8 @@
             </svg>
           </div>
           <div class="glass-card-info">
-            <strong>+833 m D+</strong>
-            <span>Dislivello reale su modello DEM</span>
+            <strong data-i18n="cardElevationValue">+833 m D+</strong>
+            <span data-i18n="cardElevationDesc">Dislivello reale su modello DEM</span>
           </div>
         </div>
 
@@ -112,8 +118,8 @@
             </svg>
           </div>
           <div class="glass-card-info">
-            <strong>Esempio di anello · 12,4 km</strong>
-            <span>Imposta un obiettivo. Confronta le alternative.</span>
+            <strong data-i18n="cardLoopTitle">Esempio di anello · 12,4 km</strong>
+            <span data-i18n="cardLoopDesc">Imposta un obiettivo. Confronta le alternative.</span>
           </div>
         </div>
       </div>
@@ -127,10 +133,10 @@
     <div class="section-intro">
       <div class="badge-pill">
         <span class="dot"></span>
-        Attività &amp; Discipline Outdoor
+        <span data-i18n="discIntroBadge">Attività &amp; Discipline Outdoor</span>
       </div>
-      <h2>Tre modi di vivere la natura<br><span class="serif-accent">con strumenti dedicati.</span></h2>
-      <p>
+      <h2 data-i18n-html="discIntroTitle">Tre modi di vivere la natura<br><span class="serif-accent">con strumenti dedicati.</span></h2>
+      <p data-i18n="discIntroDesc">
         Traccialto non applica una formula generica a tutti gli sport. Ogni modalità adotta motori di calcolo, scale di difficoltà e metriche pensate per le esigenze specifiche di chi cammina, pedala o corre.
       </p>
     </div>
@@ -145,25 +151,25 @@
               <path d="M10 8l2-4 3 3"/>
             </svg>
           </div>
-          <span class="discipline-tag">Montagna</span>
+          <span class="discipline-tag" data-i18n="trekTag">Montagna</span>
         </div>
 
-        <h3>Trekking &amp; Montagna</h3>
-        <div class="discipline-quote">«Un passo alla volta.»</div>
-        <p class="discipline-desc">
+        <h3 data-i18n="trekTitle">Trekking &amp; Montagna</h3>
+        <div class="discipline-quote" data-i18n="trekQuote">«Un passo alla volta.»</div>
+        <p class="discipline-desc" data-i18n="trekDesc">
           Prepara escursioni e cammini con una pianificazione che privilegia i sentieri. Confronta quote, salita e durata stimata prima di partire.
         </p>
 
         <ul class="discipline-features">
-          <li><strong>Difficoltà T1–T6 in Italia</strong> dove presenti nei dati; i tratti non classificati restano indicati</li>
-          <li><strong>Profilo altimetrico</strong> e salita stimati dalla cartografia</li>
-          <li><strong>Avvisi vocali di quota</strong> ogni 500 m D+ per gestire le energie</li>
-          <li><strong>Bussola orientata</strong> sulla cartografia topografica con curve di livello</li>
+          <li data-i18n-html="trekF1"><strong>Difficoltà T1–T6 in Italia</strong> dove presenti nei dati; i tratti non classificati restano indicati</li>
+          <li data-i18n-html="trekF2"><strong>Profilo altimetrico</strong> e salita stimati dalla cartografia</li>
+          <li data-i18n-html="trekF3"><strong>Avvisi vocali di quota</strong> ogni 500 m D+ per gestire le energie</li>
+          <li data-i18n-html="trekF4"><strong>Bussola orientata</strong> sulla cartografia topografica con curve di livello</li>
         </ul>
 
         <div class="discipline-pill-footer">
           <span class="dot"></span>
-          Compatibile con tracce GPX ufficiali CAI e regionali
+          <span data-i18n="trekPill">Compatibile con tracce GPX ufficiali CAI e regionali</span>
         </div>
       </article>
 
@@ -178,25 +184,25 @@
               <path d="M5.5 17.5l4-6.5h4"/>
             </svg>
           </div>
-          <span class="discipline-tag">Due Ruote</span>
+          <span class="discipline-tag" data-i18n="bikeTag">Due Ruote</span>
         </div>
 
-        <h3>Bicicletta</h3>
-        <div class="discipline-quote">«Una pedalata alla volta.»</div>
-        <p class="discipline-desc">
+        <h3 data-i18n="bikeTitle">Bicicletta</h3>
+        <div class="discipline-quote" data-i18n="bikeQuote">«Una pedalata alla volta.»</div>
+        <p class="discipline-desc" data-i18n="bikeDesc">
           Algoritmo di routing calibrato per ciclovie, strade bianche e viabilità a basso scorrimento. Schermata ad alto contrasto concepita per essere letta all'istante dal supporto da manubrio.
         </p>
 
         <ul class="discipline-features">
-          <li><strong>Routing ciclistico dedicato</strong> con priorità a piste ciclabili e sterrati compatti</li>
-          <li><strong>Display ad alto contrasto</strong> con dati essenziali in evidenza</li>
-          <li><strong>Distanza, velocità e quota</strong> a vista durante la pedalata</li>
-          <li><strong>Registrazione continua</strong> della traccia senza consumo eccessivo di batteria</li>
+          <li data-i18n-html="bikeF1"><strong>Routing ciclistico dedicato</strong> con priorità a piste ciclabili e sterrati compatti</li>
+          <li data-i18n-html="bikeF2"><strong>Display ad alto contrasto</strong> con dati essenziali in evidenza</li>
+          <li data-i18n-html="bikeF3"><strong>Distanza, velocità e quota</strong> a vista durante la pedalata</li>
+          <li data-i18n-html="bikeF4"><strong>Registrazione continua</strong> della traccia senza consumo eccessivo di batteria</li>
         </ul>
 
         <div class="discipline-pill-footer">
           <span class="dot"></span>
-          Verifica fondo e accessibilità per la tua bicicletta
+          <span data-i18n="bikePill">Verifica fondo e accessibilità per la tua bicicletta</span>
         </div>
       </article>
 
@@ -211,43 +217,43 @@
               <path d="M6 13l4-2"/>
             </svg>
           </div>
-          <span class="discipline-tag">Velocità</span>
+          <span class="discipline-tag" data-i18n="runTag">Velocità</span>
         </div>
 
-        <h3>Corsa &amp; Camminata</h3>
-        <div class="discipline-quote">«Il tuo ritmo, ovunque.»</div>
-        <p class="discipline-desc">
+        <h3 data-i18n="runTitle">Corsa &amp; Camminata</h3>
+        <div class="discipline-quote" data-i18n="runQuote">«Il tuo ritmo, ovunque.»</div>
+        <p class="discipline-desc" data-i18n="runDesc">
           Per le uscite nei parchi e sulle vie pedonali: pianificazione dedicata, passo al chilometro e tempo in movimento. Prepara un anello oppure registra liberamente.
         </p>
 
         <ul class="discipline-features">
-          <li><strong>Anelli personalizzabili</strong> per distanza o durata, con limite D+ facoltativo</li>
-          <li><strong>Passo medio, distanza e tempo</strong> in movimento aggiornati ogni secondo</li>
-          <li><strong>Funzione Trip Trim</strong> per ripulire code o soste accidentali a fine uscita</li>
-          <li><strong>Registrazione GPS offline:</strong> scarica prima la cartografia che ti serve</li>
+          <li data-i18n-html="runF1"><strong>Anelli personalizzabili</strong> per distanza o durata, con limite D+ facoltativo</li>
+          <li data-i18n-html="runF2"><strong>Passo medio, distanza e tempo</strong> in movimento aggiornati ogni secondo</li>
+          <li data-i18n-html="runF3"><strong>Funzione Trip Trim</strong> per ripulire code o soste accidentali a fine uscita</li>
+          <li data-i18n-html="runF4"><strong>Registrazione GPS offline:</strong> scarica prima la cartografia che ti serve</li>
         </ul>
 
         <div class="discipline-pill-footer">
           <span class="dot"></span>
-          Nessuna distrazione: solo passo, distanza e sentiero
+          <span data-i18n="runPill">Nessuna distrazione: solo passo, distanza e sentiero</span>
         </div>
       </article>
     </div>
   </section>
 
 <section class="start-guide wrap" aria-labelledby="start-title">
-<div class="section-intro"><span class="feature-tag-mini">Dall’idea al sentiero</span><h2 id="start-title">Meno preparativi.<br><span class="serif-accent">Più tempo fuori.</span></h2></div>
-<ol class="steps-grid"><li><span class="step-number">01</span><h3>Scegli l’attività</h3><p>Trekking, bicicletta o corsa e camminata: metriche e pianificazione seguono la tua scelta.</p></li><li><span class="step-number">02</span><h3>Prepara la tua uscita</h3><p>Crea tappe, importa una traccia o cerca un anello. Controlla il percorso e scarica le mappe disponibili.</p></li><li><span class="step-number">03</span><h3>Parti e ritrova i tuoi progressi</h3><p>Segui il percorso o registra liberamente. Al ritorno trovi mappa, tempi e profilo nel tuo storico.</p></li></ol>
+<div class="section-intro"><span class="feature-tag-mini" data-i18n="startTag">Dall’idea al sentiero</span><h2 id="start-title" data-i18n-html="startTitle">Meno preparativi.<br><span class="serif-accent">Più tempo fuori.</span></h2></div>
+<ol class="steps-grid"><li><span class="step-number">01</span><h3 data-i18n="s1Title">Scegli l’attività</h3><p data-i18n="s1Desc">Trekking, bicicletta o corsa e camminata: metriche e pianificazione seguono la tua scelta.</p></li><li><span class="step-number">02</span><h3 data-i18n="s2Title">Prepara la tua uscita</h3><p data-i18n="s2Desc">Crea tappe, importa una traccia o cerca un anello. Controlla il percorso e scarica le mappe disponibili.</p></li><li><span class="step-number">03</span><h3 data-i18n="s3Title">Parti e ritrova i tuoi progressi</h3><p data-i18n="s3Desc">Segui il percorso o registra liberamente. Al ritorno trovi mappa, tempi e profilo nel tuo storico.</p></li></ol>
 </section>
   <!-- Sezione 02: Strumenti di Precisione (Bento Grid Morbida) -->
   <section class="features-section wrap" id="funzioni">
     <div class="section-intro">
       <div class="badge-pill">
         <span class="dot"></span>
-        Tecnologia Cartografica
+        <span data-i18n="featIntroBadge">Tecnologia Cartografica</span>
       </div>
-      <h2>Strumenti costruiti<br><span class="serif-accent">per il terreno reale.</span></h2>
-      <p>
+      <h2 data-i18n-html="featIntroTitle">Strumenti costruiti<br><span class="serif-accent">per il terreno reale.</span></h2>
+      <p data-i18n="featIntroDesc">
         Prepara l’itinerario, osserva il terreno e scegli quali dati tenere a vista durante l’uscita.
       </p>
     </div>
@@ -255,9 +261,9 @@
     <div class="features-grid">
       <!-- Feature 1: Rilievi 3D & Curve di Livello (Col 7) -->
       <div class="feature-card col-7">
-        <div class="feature-tag-mini">Morfologia del Territorio</div>
-        <h3>Rilievi 3D e curve di livello DEM</h3>
-        <p>
+        <div class="feature-tag-mini" data-i18n="feat1Tag">Morfologia del Territorio</div>
+        <h3 data-i18n="feat1Title">Rilievi 3D e curve di livello DEM</h3>
+        <p data-i18n="feat1Desc">
           Il modello digitale del terreno ad alta risoluzione trasforma la mappa in una vista tridimensionale naturale. Osserva versanti, creste e canaloni prima di imboccarli per valutare l'esposizione al sole e la ripidezza del percorso.
         </p>
 
@@ -278,16 +284,16 @@
 
             <!-- Badge altimetrici -->
             <rect x="440" y="42" width="130" height="28" rx="14" fill="#ffffff" stroke="#d2e0d4" stroke-width="1"/>
-            <text x="505" y="60" text-anchor="middle" fill="#1c3829" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700">Vetta • 2.814 m</text>
+            <text x="505" y="60" text-anchor="middle" fill="#1c3829" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" data-i18n="feat1Badge">Vetta • 2.814 m</text>
           </svg>
         </div>
       </div>
 
       <!-- Feature 2: Percorsi ad anello Intelligente (Col 5) -->
       <div class="feature-card col-5">
-        <div class="feature-tag-mini">Itinerari Circolari</div>
-        <h3>Un anello, come lo vuoi tu</h3>
-        <p>
+        <div class="feature-tag-mini" data-i18n="feat2Tag">Itinerari Circolari</div>
+        <h3 data-i18n="feat2Title">Un anello, come lo vuoi tu</h3>
+        <p data-i18n="feat2Desc">
           Scegli distanza oppure durata e, se vuoi, un limite alla salita totale. Confronta le alternative sulla rete disponibile per la tua modalità. Distanza e tempo sono stime; alcuni tratti possono ripetersi. Il calcolo richiede internet.
         </p>
 
@@ -306,15 +312,15 @@
           <div class="loop-metrics-row">
             <div class="loop-metric-col">
               <strong>12,4 km</strong>
-              <span>Distanza</span>
+              <span data-i18n="feat2Dist">Distanza</span>
             </div>
             <div class="loop-metric-col">
               <strong>+430 m</strong>
-              <span>Dislivello</span>
+              <span data-i18n="feat2Gain">Dislivello</span>
             </div>
             <div class="loop-metric-col">
               <strong>1h 45m</strong>
-              <span>Stima</span>
+              <span data-i18n="feat2Est">Stima</span>
             </div>
           </div>
         </div>
@@ -322,32 +328,32 @@
 
       <!-- Feature 3: Cockpit AMOLED ad Alto Contrasto (Col 6) -->
       <div class="feature-card col-6">
-        <div class="feature-tag-mini">Efficienza Energetica</div>
-        <h3>Display AMOLED ad alto contrasto</h3>
-        <p>
+        <div class="feature-tag-mini" data-i18n="feat3Tag">Efficienza Energetica</div>
+        <h3 data-i18n="feat3Title">Display AMOLED ad alto contrasto</h3>
+        <p data-i18n="feat3Desc">
           Una vista nera con le metriche essenziali, per consultare l’attività con meno elementi sullo schermo. La registrazione continua anche a schermo spento; autonomia e leggibilità dipendono dal telefono e dalle impostazioni.
         </p>
 
         <div class="amoled-soft-box" aria-label="Simulatore del cockpit AMOLED">
           <div class="amoled-soft-header">
-            <span>MODALITÀ AMOLED ATTIVA</span>
-            <span style="color: #55e688;">GPS: PRECISO</span>
+            <span data-i18n="feat3Header">MODALITÀ AMOLED ATTIVA</span>
+            <span style="color: #55e688;" data-i18n="feat3Gps">GPS: PRECISO</span>
           </div>
           <div class="amoled-soft-grid">
             <div class="amoled-soft-stat highlight">
-              <span class="amoled-soft-label">Quota Attuale</span>
+              <span class="amoled-soft-label" data-i18n="feat3Altitude">Quota Attuale</span>
               <span class="amoled-soft-val">2.140 m</span>
             </div>
             <div class="amoled-soft-stat">
-              <span class="amoled-soft-label">Dislivello D+</span>
+              <span class="amoled-soft-label" data-i18n="feat3Gain">Dislivello D+</span>
               <span class="amoled-soft-val">+833 m</span>
             </div>
             <div class="amoled-soft-stat">
-              <span class="amoled-soft-label">Distanza</span>
+              <span class="amoled-soft-label" data-i18n="feat3Dist">Distanza</span>
               <span class="amoled-soft-val">11,8 km</span>
             </div>
             <div class="amoled-soft-stat">
-              <span class="amoled-soft-label">Autonomia</span>
+              <span class="amoled-soft-label" data-i18n="feat3Battery">Autonomia</span>
               <span class="amoled-soft-val">01:45</span>
             </div>
           </div>
@@ -356,28 +362,28 @@
 
       <!-- Feature 4: Condivisione Autonoma & Sicurezza (Col 6) -->
       <div class="feature-card col-6">
-        <div class="feature-tag-mini">Ricordi da portare con te</div>
-        <h3>Il tuo percorso, da condividere</h3>
-        <p>
+        <div class="feature-tag-mini" data-i18n="feat4Tag">Ricordi da portare con te</div>
+        <h3 data-i18n="feat4Title">Il tuo percorso, da condividere</h3>
+        <p data-i18n="feat4Desc">
           Crea una storia con foto, traccia e dati, oppure esporta una pagina HTML. Nei browser compatibili la mappa è interattiva; nelle anteprime iPhone rimangono visibili la vista salvata e il profilo altimetrico.
         </p>
 
         <div class="feature-spec-pills">
           <div class="spec-pill-item">
             <span class="check-icon">✓</span>
-            <span>File HTML standalone con mappa interattiva e profilo dislivello</span>
+            <span data-i18n="feat4P1">File HTML standalone con mappa interattiva e profilo dislivello</span>
           </div>
           <div class="spec-pill-item">
             <span class="check-icon">✓</span>
-            <span>Torcia ottica e avvisatore acustico con segnale SOS in codice Morse</span>
+            <span data-i18n="feat4P2">Torcia ottica e avvisatore acustico con segnale SOS in codice Morse</span>
           </div>
           <div class="spec-pill-item">
             <span class="check-icon">✓</span>
-            <span>Strumento Trip Trim per rimuovere tempi morti all'inizio e alla fine</span>
+            <span data-i18n="feat4P3">Strumento Trip Trim per rimuovere tempi morti all'inizio e alla fine</span>
           </div>
           <div class="spec-pill-item">
             <span class="check-icon">✓</span>
-            <span>Disponibile in italiano, inglese, francese e spagnolo</span>
+            <span data-i18n="feat4P4">Disponibile in italiano, inglese, francese e spagnolo</span>
           </div>
         </div>
       </div>
@@ -391,11 +397,11 @@
         <div>
           <div class="badge-pill" style="background: rgba(255,255,255,0.12); color: #8ef0a8; border-color: rgba(255,255,255,0.2);">
             <span class="dot" style="background: #55e688;"></span>
-            Privacy, con chiarezza
+            <span data-i18n="privTag">Privacy, con chiarezza</span>
           </div>
 
-          <h2>I tuoi sentieri<br><span style="color: #9fe8b4; font-family: var(--font-serif); font-style: italic; font-weight: 400;">appartengono solo a te.</span></h2>
-          <p>
+          <h2 data-i18n-html="privTitle">I tuoi sentieri<br><span style="color: #9fe8b4; font-family: var(--font-serif); font-style: italic; font-weight: 400;">appartengono solo a te.</span></h2>
+          <p data-i18n="privDesc">
             Lo storico rimane nel tuo archivio sul telefono, senza un account Traccialto. Le funzioni online, come mappe, ricerca e calcolo dei percorsi, contattano fornitori esterni e inviano i dati necessari alla richiesta. Puoi gestire i servizi online nelle impostazioni.
           </p>
 
@@ -407,8 +413,8 @@
                 </svg>
               </div>
               <div class="privacy-bullet-text">
-                <strong>Il tuo storico sul dispositivo</strong>
-                <span>Conserva attività e impostazioni sul telefono. Scegli tu quando esportarle o condividerle.</span>
+                <strong data-i18n="privB1Title">Il tuo storico sul dispositivo</strong>
+                <span data-i18n="privB1Desc">Conserva attività e impostazioni sul telefono. Scegli tu quando esportarle o condividerle.</span>
               </div>
             </div>
 
@@ -419,8 +425,8 @@
                 </svg>
               </div>
               <div class="privacy-bullet-text">
-                <strong>Backup privato in archivio ZIP</strong>
-                <span>Salva e ripristina l'intero archivio con un clic in formato ZIP aperto, conservabile su PC o chiavetta USB.</span>
+                <strong data-i18n="privB2Title">Backup privato in archivio ZIP</strong>
+                <span data-i18n="privB2Desc">Salva e ripristina l'intero archivio con un clic in formato ZIP aperto, conservabile su PC o chiavetta USB.</span>
               </div>
             </div>
 
@@ -432,14 +438,14 @@
                 </svg>
               </div>
               <div class="privacy-bullet-text">
-                <strong>Zero cookie e zero tracciamento</strong>
-                <span>Né questo sito né l'app includono Google Analytics, Facebook Pixel o reti pubblicitarie di monetizzazione.</span>
+                <strong data-i18n="privB3Title">Zero cookie e zero tracciamento</strong>
+                <span data-i18n="privB3Desc">Né questo sito né l'app includono Google Analytics, Facebook Pixel o reti pubblicitarie di monetizzazione.</span>
               </div>
             </div>
           </div>
 
           <a class="btn-pill-ghost" href="privacy.html">
-            <span>Leggi l'informativa completa sulla privacy</span>
+            <span data-i18n="privBtn">Leggi l'informativa completa sulla privacy</span>
             <svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M4 10h12M11 5l5 5-5 5"/>
             </svg>
@@ -453,8 +459,8 @@
               <path d="M9 12l2 2 4-4"/>
             </svg>
           </div>
-          <h4>Ricorda il backup</h4>
-          <p>
+          <h4 data-i18n="privSideTitle">Ricorda il backup</h4>
+          <p data-i18n="privSideDesc">
             Senza sincronizzazione cloud, una copia ZIP è importante: conserva un backup fuori dal telefono per non perdere le tue attività.
           </p>
         </div>
@@ -468,46 +474,46 @@
       <div class="faq-intro-col">
         <div class="badge-pill">
           <span class="dot"></span>
-          FAQ &amp; Chiarezza
+          <span data-i18n="faqTag">FAQ &amp; Chiarezza</span>
         </div>
-        <h2>Tutto quello che<br><span class="serif-accent">c'è da sapere.</span></h2>
-        <p>
+        <h2 data-i18n-html="faqTitle">Tutto quello che<br><span class="serif-accent">c'è da sapere.</span></h2>
+        <p data-i18n="faqDesc">
           Risposte semplici e trasparenti su licenza, funzionamento offline, privacy e compatibilità con i tuoi dispositivi Android.
         </p>
       </div>
 
       <div class="faq-list">
         <details class="faq-card" open>
-          <summary>Traccialto è davvero completamente gratuita?</summary>
-          <div class="faq-card-content">
+          <summary data-i18n="q1">Traccialto è davvero completamente gratuita?</summary>
+          <div class="faq-card-content" data-i18n="a1">
             Sì. Non ci sono canoni mensili, non esistono funzioni 'pro' a pagamento e non ci sono banner pubblicitari. Traccialto nasce come progetto indipendente e artigianale dedicato a chi ama camminare e pedalare in natura con uno strumento pulito e trasparente.
           </div>
         </details>
 
         <details class="faq-card">
-          <summary>Funziona in alta quota dove non c'è campo telefonico?</summary>
-          <div class="faq-card-content">
+          <summary data-i18n="q2">Funziona in alta quota dove non c'è campo telefonico?</summary>
+          <div class="faq-card-content" data-i18n="a2">
             Puoi registrare con il GPS e seguire una traccia salvata senza connessione. Scarica prima le mappe disponibili per il percorso e verifica che siano presenti. Ricerca dei luoghi, nuovi itinerari e contenuti non scaricati richiedono internet. La precisione GPS dipende dalle condizioni.
           </div>
         </details>
 
         <details class="faq-card">
-          <summary>Posso importare i miei percorsi e tracce GPX esistenti?</summary>
-          <div class="faq-card-content">
+          <summary data-i18n="q3">Posso importare i miei percorsi e tracce GPX esistenti?</summary>
+          <div class="faq-card-content" data-i18n="a3">
             Puoi importare file GPX e KML compatibili, visualizzarli e seguirli. La disponibilità delle quote dipende dal file e dai dati cartografici. Usa tracce di cui hai il diritto di disporre.
           </div>
         </details>
 
         <details class="faq-card">
-          <summary>Come funziona il backup dei miei percorsi?</summary>
-          <div class="faq-card-content">
+          <summary data-i18n="q4">Come funziona il backup dei miei percorsi?</summary>
+          <div class="faq-card-content" data-i18n="a4">
             Tutti i tuoi percorsi e waypoint possono essere esportati con un tocco in un archivio ZIP standard non proprietario. Puoi salvare il file sul computer, su una chiavetta o su qualsiasi cartella personale, e ripristinarlo in qualsiasi momento.
           </div>
         </details>
 
         <details class="faq-card">
-          <summary>Quali versioni di Android sono supportate?</summary>
-          <div class="faq-card-content">
+          <summary data-i18n="q5">Quali versioni di Android sono supportate?</summary>
+          <div class="faq-card-content" data-i18n="a5">
             L’app richiede Android 8 o successivo. Prestazioni del 3D, ricezione GPS e registrazione in background dipendono dal dispositivo. Alcune funzioni richiedono versioni Android più recenti.
           </div>
         </details>
@@ -520,25 +526,25 @@
     <div class="closing-rounded-card">
       <div class="badge-pill" style="margin-bottom: 20px;">
         <span class="dot"></span>
-        Pronto per la prossima uscita
+        <span data-i18n="closingTag">Pronto per la prossima uscita</span>
       </div>
-      <h2>La natura ti aspetta.<br><span class="serif-accent">Portati solo l'essenziale.</span></h2>
-      <p>
-        La versione pubblica è in preparazione. Qui troverai il collegamento ufficiale quando sarà disponibile. Nel frattempo puoi contattarci per informazioni.
+      <h2 data-i18n-html="closingTitle">La natura ti aspetta.<br><span class="serif-accent">Portati solo l'essenziale.</span></h2>
+      <p data-i18n="closingDesc">
+        Disponibile su Google Play Store. Scarica l'applicazione gratuita e inizia a esplorare.
       </p>
 
       <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
-        <a class="btn-pill-primary" href="mailto:traccialto.app@gmail.com">
+        <a class="btn-pill-primary" href="https://play.google.com/store/apps/details?id=com.lanzo.navigator" target="_blank" rel="noopener noreferrer">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
             <polyline points="7 10 12 15 17 10"/>
             <line x1="12" y1="15" x2="12" y2="3"/>
           </svg>
-          <span>Chiedi informazioni sul rilascio</span>
+          <span data-i18n="closingBtn">Disponibile su Google Play</span>
         </a>
       </div>
 
-      <div style="margin-top: 24px; font-size: 13px; color: var(--ink-muted);">
+      <div style="margin-top: 24px; font-size: 13px; color: var(--ink-muted);" data-i18n="closingFoot">
         Android 8+ · Gratis · Senza pubblicità
       </div>
     </div>
@@ -555,18 +561,19 @@
     </div>
 
     <div class="footer-links">
-      <a href="#attivita">Attività</a>
-      <a href="#funzioni">Funzioni</a>
-      <a href="#privacy">Privacy</a>
-      <a href="#domande">FAQ</a>
+      <a href="#attivita" data-i18n="navActivities">Attività</a>
+      <a href="#funzioni" data-i18n="navFeatures">Funzioni</a>
+      <a href="#privacy" data-i18n="navPrivacy">Privacy</a>
+      <a href="#domande" data-i18n="navFaq">FAQ</a>
       <a href="privacy.html">Informativa Privacy</a>
     </div>
 
-    <div class="footer-copy">
+    <div class="footer-copy" data-i18n="footerCopy">
       © 2026 Traccialto. Progetto indipendente di cartografia e navigazione per il territorio. Senza strumenti pubblicitari. Consulta l’informativa privacy.
     </div>
   </div>
 </footer>
 
+<script src="i18n.js"></script>
 </body>
 </html>
