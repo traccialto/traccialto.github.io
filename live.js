@@ -10,12 +10,12 @@ const bytes=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
 const pace=v=>{if(!(v>0))return "—";const s=Math.round(1000/v);return Math.floor(s/60)+":"+String(s%60).padStart(2,"0")+" /km";};
 const finite=(v,min,max)=>typeof v==="number"&&Number.isFinite(v)&&v>=min&&v<=max;
 function filteredTrack(tail,now){
- if(!Array.isArray(tail)||!tail.length||tail.length>48)return false;
+ if(!Array.isArray(tail)||!tail.length||tail.length>250)return false;
  let previous=0;
  for(const p of tail){if(!Array.isArray(p)||p.length!==4||!finite(p[0],-85,85)||!finite(p[1],-180,180)||!Number.isSafeInteger(p[2])||p[2]<=previous||p[2]>now+120000||typeof p[3]!=="boolean")return false;previous=p[2];}
  const from=tail[0][2];receivedTrack=receivedTrack.filter(p=>p[2]<from).concat(tail).slice(-10000);
  points=[];previous=0;
- for(const p of receivedTrack){if(!points.length||p[3]||p[2]-previous>30000)points.push([]);points[points.length-1].push([p[0],p[1]]);previous=p[2];}
+ for(const p of receivedTrack){if(!points.length||p[3]||(previous>0&&p[2]-previous>300000))points.push([]);points[points.length-1].push([p[0],p[1]]);previous=p[2];}
  line.setLatLngs(points);return true;
 }
 async function init(){
@@ -57,7 +57,7 @@ async function init(){
    if(finite(p.gpsTime,0,now+120000))lastGps=p.gpsTime;
    const filtered=filteredTrack(p.track,now);
    if(finite(p.lat,-85,85)&&finite(p.lon,-180,180)&&finite(p.fixTime,0,now+120000)&&p.fixTime>lastFix){
-    if(!filtered&&lastFix&&p.fixTime-lastFix>30000)points.push([]);lastFix=p.fixTime;
+    if(!filtered&&lastFix&&p.fixTime-lastFix>300000)points.push([]);lastFix=p.fixTime;
     const ll=[p.lat,p.lon];if(!marker)marker=L.circleMarker(ll,{radius:9,color:"white",weight:3,fillColor:"#1780df",fillOpacity:1}).addTo(map);else marker.setLatLng(ll);
     if(!filtered&&!Array.isArray(p.track)){if(!points.length)points.push([]);points[points.length-1].push(ll);if(points.reduce((s,a)=>s+a.length,0)>10000){points[0].shift();if(!points[0].length)points.shift();}line.setLatLngs(points);}
     if(following)map.setView(ll,map.getZoom()<12?16:map.getZoom());
