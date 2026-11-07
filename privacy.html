@@ -66,13 +66,13 @@
 
       <h1>Informativa privacy di Traccialto</h1>
 
-      <p>Aggiornamento: 3 novembre 2026. Titolare: <strong>Traccialto</strong>. Contatto: <a href="mailto:traccialto.app@gmail.com">traccialto.app@gmail.com</a>. Versione pubblica: <a href="https://traccialto.github.io/privacy.html">https://traccialto.github.io/privacy.html</a>.</p>
+      <p>Aggiornamento: 7 novembre 2026. Titolare: <strong>Traccialto</strong>. Contatto: <a href="mailto:traccialto.app@gmail.com">traccialto.app@gmail.com</a>. Versione pubblica: <a href="https://traccialto.github.io/privacy.html">https://traccialto.github.io/privacy.html</a>.</p>
 
 
 
       <h2>Cosa fa l’app</h2>
 
-      <p>Traccialto permette di creare, importare e seguire itinerari, registrare camminate e conservare foto e descrizioni. Non richiede un account, non contiene pubblicità e non integra analytics pubblicitari. Il titolare non gestisce un server a cui vengono caricate automaticamente le registrazioni.</p>
+      <p>Traccialto permette di creare, importare e seguire itinerari, registrare camminate e conservare foto e descrizioni. Non richiede un account obbligatorio, non contiene pubblicità e non integra analytics pubblicitari. Le registrazioni restano locali sul telefono; puoi scegliere facoltativamente di sincronizzarle nella cartella privata dell’app (<code>appDataFolder</code>) del tuo Google Drive personale. Solo se attivi la condivisione live, il progetto Firebase del titolare riceve i dati cifrati descritti sotto.</p>
 
 
 
@@ -138,7 +138,7 @@
 
       <h2>Conservazione e cancellazione</h2>
 
-      <p>Percorsi e diari rimangono sul dispositivo finché li elimini. I viaggi spostati nel cestino sono recuperabili fino alla loro eliminazione definitiva. Le cache cartografiche e delle anteprime possono rimanere fino alla pulizia, alla sostituzione o ai limiti di spazio dell’app; non equivalgono alla pubblicazione dei tuoi percorsi. Puoi gestire lo spazio dalle impostazioni. Cancellare i dati Android o disinstallare rimuove i dati privati dell’app, ma non le copie già esportate o condivise. I backup sono file scelti da te, non backup automatici su un cloud del titolare; proteggili e cancellali separatamente quando non servono.</p>
+      <p>Percorsi e diari rimangono sul dispositivo finché li elimini. I viaggi spostati nel cestino sono recuperabili fino alla loro eliminazione definitiva. Le cache cartografiche e delle anteprime possono rimanere fino alla pulizia, alla sostituzione o ai limiti di spazio dell’app; non equivalgono alla pubblicazione dei tuoi percorsi. Puoi gestire lo spazio dalle impostazioni. Cancellare i dati Android o disinstallare rimuove i dati privati dell’app sul telefono, ma non le copie già esportate, condivise o salvate nel tuo Google Drive personale tramite il backup facoltativo.</p>
 
       <p>I fornitori online possono conservare log tecnici secondo le proprie informative; non promettiamo che tutte le richieste vengano cancellate immediatamente. Open-Meteo dichiara log che possono includere coordinate e una conservazione fino a 90 giorni. Mapterhorn dichiara log tecnici, compreso IP e percorso richiesto, fino a 30 giorni. Per gli altri fornitori valgono le politiche collegate sotto, da verificare periodicamente.</p>
 
@@ -178,7 +178,7 @@
 
       <h2>Strumenti SOS, batteria ed esportazioni locali</h2>
 
-      <p>La luce SOS utilizza esclusivamente il flash del telefono tramite il sistema Android, senza richiedere il permesso Fotocamera e senza acquisire immagini o video. Il segnale si arresta quando viene spento o quando si chiude la schermata SOS. L’apertura delle impostazioni di ottimizzazione batteria indirizza alle schermate di sistema Android e non garantisce l’assenza di restrizioni del produttore. La modalità AMOLED mantiene la registrazione in corso e mostra i dati essenziali su sfondo nero; il risparmio effettivo dipende dal dispositivo. I traguardi vocali usano una stima filtrata della salita GPS e rispettano il silenziamento. Il promemoria ZIP è locale. I file HTML condivisi contengono la traccia, le quote disponibili e una copia della cartografia: chi li riceve può leggerli offline. Le estensioni SAC dei GPX includono solo classificazioni disponibili, senza garanzia di lettura da parte di ogni software.</p>
+      <p>La luce SOS utilizza esclusivamente il flash del telefono tramite il sistema Android, senza richiedere il permesso Fotocamera e senza acquisire immagini o video. Il segnale si arresta quando viene spento o quando si chiude la schermata SOS. L’apertura delle impostazioni di ottimizzazione batteria indirizza alle schermate di sistema Android e non garantisce l’assenza di restrizioni del produttore. La modalità AMOLED mantiene la registrazione in corso e mostra i dati essenziali su sfondo nero; il risparmio effettivo dipende dal dispositivo. I traguardi vocali usano una stima filtrata della salita GPS e rispettano il silenziamento. Il promemoria di backup è locale. I file HTML condivisi contengono la traccia, le quote disponibili e una copia della cartografia: chi li riceve può leggerli offline. Le estensioni SAC dei GPX includono solo classificazioni disponibili, senza garanzia di lettura da parte di ogni software.</p>
 
 
 
@@ -187,6 +187,14 @@
       <p>Il file contiene una vista satellitare e un profilo altimetrico incorporati, leggibili senza Internet e senza inviare la traccia. Su iPhone viene mostrata questa vista statica. Su Android e computer compatibili, la vista interattiva contatta EOX (immagini), Mapterhorn (rilievi), OpenFreeMap (strade) e unpkg (libreria MapLibre). Questi fornitori ricevono IP e informazioni tecniche; quelli cartografici ricevono anche le aree visualizzate. Le preferenze privacy del telefono che ha creato il file non controllano il browser del destinatario. Le immagini EOX 2024 e i loro adattamenti sono soggetti a CC BY-NC-SA 4.0: attribuzione, uso non commerciale e condivisione alle stesse condizioni.</p>
 
       <p><a href="https://cloudless.eox.at/license-non-commercial" target="_blank" rel="noopener">EOX</a> · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> · <a href="https://unpkg.com" target="_blank" rel="noopener">unpkg</a></p>
+
+      <h2>Backup privato su Google Drive (facoltativo)</h2>
+
+      <p>Se scegli di collegare il tuo account Google in Impostazioni → Backup e ripristino, l’app utilizza Google Sign-In e il permesso limitato <code>https://www.googleapis.com/auth/drive.appdata</code> per salvare e sincronizzare in modo incrementale percorsi, camminate registrate, note del diario, foto, luoghi preferiti e preferenze esclusivamente nella cartella nascosta dell’applicazione (<code>appDataFolder</code>) del tuo Google Drive personale. L’indirizzo email dell’account collegato viene letto e mostrato solo sul dispositivo per indicare quale account è attivo. Traccialto non può leggere, modificare o vedere nessun altro file o cartella del tuo Google Drive. Il trasferimento avviene direttamente via HTTPS tra il tuo telefono e Google Drive (anche tramite un servizio in primo piano con notifica di avanzamento durante il backup o il ripristino), senza transitare da server del titolare; non vengono caricati file eseguibili né archivi ZIP esterni. Dopo il primo backup o ripristino confermato, le modifiche vengono sincronizzate automaticamente nel tuo spazio <code>appDataFolder</code> (con possibilità di limitare il caricamento alla sola rete Wi‑Fi). Puoi scollegare l’account in qualsiasi momento dalle impostazioni dell’app o eliminare i dati salvati dalle impostazioni di Google Drive (Impostazioni → Gestisci applicazioni). L’uso e il trasferimento delle informazioni ricevute dalle API di Google rispettano la <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, inclusi i requisiti di uso limitato (Limited Use). Informativa Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>.</p>
+
+      <h2>Health Connect e sensori cardiaci</h2>
+
+      <p>Su Android 14 o successivo, il collegamento facoltativo a Health Connect legge solo le attività, le distanze e, se autorizzate, le misure cardiache necessarie a importare l’attività scelta nello storico. La traccia GPS richiede una scelta separata del sistema. La lettura avviene quando usi questa schermata; non scriviamo in Health Connect. Per i battiti in diretta, il collegamento Bluetooth facoltativo legge il servizio cardiaco standard da un sensore selezionato durante le attività. Le misure cardiache non vengono inviate a un nostro server, usate per pubblicità o vendute. Le copie importate, le misure registrate e la fonte restano nell’archivio privato dell’app e, se attivi il backup su Google Drive, nella cartella privata <code>appDataFolder</code> del tuo account Google. L’indirizzo Bluetooth del sensore scelto rimane sul telefono. Puoi revocare l’accesso in Health Connect, rimuovere il sensore e cancellare le attività dallo storico e dal cestino; la revoca non cancella le copie già importate. Le mappe delle tracce importate seguono le normali preferenze per i servizi cartografici descritte sopra. Dati mancanti non vengono inventati. L’uso dei dati Health Connect rispetta la policy sulle autorizzazioni sanitarie di Google Play, inclusi i requisiti di uso limitato.</p>
 
 
 
