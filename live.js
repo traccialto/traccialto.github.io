@@ -314,10 +314,33 @@ async function init() {
   text("status", t("waitingFirstFix"));
 }
 
+let wakeLock = null;
+async function requestWakeLock() {
+  if (ended || !("wakeLock" in navigator) || document.visibilityState !== "visible") return;
+  try {
+    if (!wakeLock) {
+      wakeLock = await navigator.wakeLock.request("screen");
+      wakeLock.addEventListener("release", () => { wakeLock = null; });
+    }
+  } catch (_) { }
+}
+function releaseWakeLock() {
+  if (wakeLock) { try { wakeLock.release(); } catch (_) { } wakeLock = null; }
+}
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "visible") {
+    requestWakeLock();
+    try { map.invalidateSize(); } catch (_) { }
+    if (latestPosition) updateTelemetryDisplay(latestPosition);
+    updateFreshness();
+  }
+});
+document.addEventListener("pointerdown", () => { requestWakeLock(); }, { passive: true });
+
 function updateFreshness() {
-  if (ended) return;
+  if (ended) { releaseWakeLock(); return; }
   if (expires && Date.now() > expires) {
-    ended = true; text("status", t("sessionExpired"));
+    ended = true; releaseWakeLock(); text("status", t("sessionExpired"));
     clients.forEach(c => { try { c.disconnect(); } catch (_) { } });
     return;
   }
@@ -329,6 +352,7 @@ function updateFreshness() {
 }
 
 setInterval(updateFreshness, 1000);
+requestWakeLock();
 init().catch(() => text("status", t("connectionUnavailable")));
 
 document.getElementById("collapseStats").onclick = function () {
