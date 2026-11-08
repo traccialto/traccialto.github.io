@@ -12,17 +12,17 @@ function decodeLiveRoute(encoded){
 }
 window.updateLivePlanned=p=>{
  if(typeof p.planned==='string'){
-  try{if(p.planned!==plannedEncoded){const coords=decodeLiveRoute(p.planned);plannedCoordinates=coords;plannedEncoded=p.planned;plannedLine.setLatLngs(coords);line.bringToFront();}}
+  try{if(p.planned!==plannedEncoded){const coords=decodeLiveRoute(p.planned);plannedCoordinates=coords;plannedEncoded=p.planned;plannedLine.setLatLngs(coords);line.setLatLngs([]);}}
   catch(_){return;}
   document.getElementById('routeProgress').hidden=false;
   const valid=finite(p.progress,0,100);text('progressValue',valid?'Avanzamento · '+Math.round(p.progress)+'%':'Percorso previsto · in attesa di una posizione affidabile');
   const bar=document.getElementById('progressBar');if(valid)bar.value=p.progress;else bar.removeAttribute('value');
- }else{plannedCoordinates=[];plannedEncoded='';plannedLine.setLatLngs([]);document.getElementById('routeProgress').hidden=true;}
+ }else if(!p.routeVersion){plannedCoordinates=[];plannedEncoded='';plannedLine.setLatLngs([]);document.getElementById('routeProgress').hidden=true;}
 };
 function geoLines(lines){return {type:'Feature',properties:{},geometry:{type:'MultiLineString',coordinates:lines.filter(x=>x.length>1).map(a=>a.map(p=>[p[1],p[0]]))}};}
 window.syncLive3d=()=>{
  if(!live3dReady)return;
- live3d.getSource('planned').setData(geoLines([plannedCoordinates]));live3d.getSource('actual').setData(geoLines(points));
+ live3d.getSource('planned').setData(geoLines([plannedCoordinates]));live3d.getSource('actual').setData(geoLines(plannedCoordinates.length?[]:points));
  if(marker){const ll=marker.getLatLng();live3d.getSource('position').setData({type:'Feature',properties:{},geometry:{type:'Point',coordinates:[ll.lng,ll.lat]}});if(following&&mapMode==='3d')live3d.easeTo({center:[ll.lng,ll.lat],duration:700});}
 };
 function load3dLibrary(){

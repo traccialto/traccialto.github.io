@@ -276,18 +276,24 @@ async function init() {
       if (p.kind === "waiting") { text("status", t("waitingFirstFix")); return; }
       if (p.ended === true) { ended = true; text("status", t("activityEnded")); clients.forEach(c => { try { c.disconnect(); } catch (_) { } }); return; }
       latestPosition = p;
+      const hasPlanned = Boolean((typeof p.routeVersion === "string" && p.routeVersion.length) || cachedRoute);
+      if (hasPlanned) {
+        receivedTrack = [];
+        points = [];
+        line.setLatLngs([]);
+      }
       showRoute();
       updateTelemetryDisplay(p);
       isPaused = p.paused === true;
       if (finite(p.gpsTime, 0, now + 120000)) lastGps = p.gpsTime;
-      const filtered = filteredTrack(p.track, now);
+      const filtered = hasPlanned ? false : filteredTrack(p.track, now);
       if (finite(p.lat, -85, 85) && finite(p.lon, -180, 180) && finite(p.fixTime, 0, now + 120000) && p.fixTime > lastFix) {
-        if (!filtered && lastFix && p.fixTime - lastFix > 300000) points.push([]);
+        if (!hasPlanned && !filtered && lastFix && p.fixTime - lastFix > 300000) points.push([]);
         lastFix = p.fixTime;
         const ll = [p.lat, p.lon];
         if (!marker) marker = L.circleMarker(ll, { radius: 9, color: "white", weight: 3, fillColor: "#1780df", fillOpacity: 1 }).addTo(map);
         else marker.setLatLng(ll);
-        if (!filtered && !Array.isArray(p.track)) {
+        if (!hasPlanned && !filtered && !Array.isArray(p.track)) {
           if (!points.length) points.push([]);
           points[points.length - 1].push(ll);
           if (points.reduce((s, a) => s + a.length, 0) > 10000) { points[0].shift(); if (!points[0].length) points.shift(); }
