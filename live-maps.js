@@ -54,3 +54,11 @@ async function selectLiveMap(mode){
  }catch(_){text('mapNotice','Il 3D non è supportato da questo browser.');mapMode='satellite';await selectLiveMap('satellite');}
 }
 document.querySelectorAll('[data-map]').forEach(b=>b.onclick=()=>selectLiveMap(b.dataset.map));
+window.setLiveMapModeVisibility=function(activityMode){
+ const isTrekking=(activityMode==='trekking');
+ const nav=document.getElementById('mapModes');
+ if(nav)nav.hidden=!isTrekking;
+ if(!isTrekking&&mapMode!=='streets'){
+  selectLiveMap('streets');
+ }
+};

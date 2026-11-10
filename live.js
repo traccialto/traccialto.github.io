@@ -278,6 +278,7 @@ function updateTelemetryDisplay(p) {
     text(`c${i + 1}Val`, cards[i][1]);
   }
   text("movingTime", finite(p.moving, 0, 1e9) ? t("movingTime") + " " + Math.floor(p.moving / 3600000) + "h " + (Math.floor(p.moving / 60000) % 60) + "m" : "");
+  if (window.setLiveMapModeVisibility) window.setLiveMapModeVisibility(modeKey);
 }
 
 async function init() {
@@ -336,17 +337,10 @@ async function init() {
       if (finite(p.gpsTime, 0, now + 120000)) lastGps = p.gpsTime;
       const filtered = hasPlanned ? false : filteredTrack(p.track, now);
       if (finite(p.lat, -85, 85) && finite(p.lon, -180, 180) && finite(p.fixTime, 0, now + 120000) && p.fixTime > lastFix) {
-        if (!hasPlanned && !filtered && lastFix && p.fixTime - lastFix > 300000) points.push([]);
         lastFix = p.fixTime;
         const ll = [p.lat, p.lon];
         if (!marker) marker = L.circleMarker(ll, { radius: 9, color: "white", weight: 3, fillColor: "#1780df", fillOpacity: 1 }).addTo(map);
         else marker.setLatLng(ll);
-        if (!hasPlanned && !filtered && !Array.isArray(p.track)) {
-          if (!points.length) points.push([]);
-          points[points.length - 1].push(ll);
-          if (points.reduce((s, a) => s + a.length, 0) > 10000) { points[0].shift(); if (!points[0].length) points.shift(); }
-          line.setLatLngs(points);
-        }
         if (following) map.setView(ll, map.getZoom() < 12 ? 16 : map.getZoom());
       }
       if (window.syncLive3d) window.syncLive3d();
