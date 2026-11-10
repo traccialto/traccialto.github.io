@@ -22,8 +22,8 @@ const I18N = {
     altitude: "Quota",
     distance: "Distanza",
     elapsed: "Tempo attivo",
-    battery: "Batteria",
     ascent: "Salita D+",
+    movingTimeShort: "In movimento",
     movingTime: "Tempo in movimento:",
     lastGps: "Ultimo GPS affidabile: {s} secondi fa",
     noPosition: "Nessuna posizione ricevuta.",
@@ -58,8 +58,8 @@ const I18N = {
     altitude: "Altitude",
     distance: "Distance",
     elapsed: "Active time",
-    battery: "Battery",
     ascent: "Ascent D+",
+    movingTimeShort: "Moving time",
     movingTime: "Moving time:",
     lastGps: "Last reliable GPS: {s}s ago",
     noPosition: "No position received yet.",
@@ -94,8 +94,8 @@ const I18N = {
     altitude: "Altitude",
     distance: "Distance",
     elapsed: "Temps actif",
-    battery: "Batterie",
     ascent: "Dénivelé D+",
+    movingTimeShort: "En mouvement",
     movingTime: "Temps en mouvement :",
     lastGps: "Dernier GPS fiable : il y a {s}s",
     noPosition: "Aucune position reçue.",
@@ -130,8 +130,8 @@ const I18N = {
     altitude: "Altitud",
     distance: "Distancia",
     elapsed: "Tiempo activo",
-    battery: "Batería",
     ascent: "Desnivel D+",
+    movingTimeShort: "En movimiento",
     movingTime: "Tiempo en movimiento:",
     lastGps: "Último GPS fiable: hace {s}s",
     noPosition: "Ninguna posición recibida.",
@@ -179,6 +179,7 @@ function applyLang(lang) {
     if (k) { el.title = t(k); el.setAttribute("aria-label", t(k)); }
   });
   if (latestPosition) updateTelemetryDisplay(latestPosition);
+  else updateTelemetryDisplay({ mode: "trekking" });
   updateFreshness();
 }
 
@@ -217,19 +218,66 @@ function filteredTrack(tail, now) {
 }
 
 function updateTelemetryDisplay(p) {
+  if (!p) p = {};
   const modes = (I18N[currentLang] && I18N[currentLang].modes) || I18N.en.modes;
-  text("mode", modes[p.mode] || p.mode || "Live");
-  const run = p.mode === "running";
-  text("speedLabel", run ? t("speedRun") : t("speed"));
-  text("averageLabel", run ? t("avgRun") : t("average"));
-  text("speed", finite(p.speed, 0, 100) ? (run ? pace(p.speed) : (p.speed * 3.6).toFixed(1) + " km/h") : "—");
-  text("average", finite(p.average, 0, 100) ? (run ? pace(p.average) : (p.average * 3.6).toFixed(1) + " km/h") : "—");
-  text("altitude", finite(p.altitude, -500, 10000) ? Math.round(p.altitude) + " m" : "—");
-  text("distance", finite(p.distance, 0, 1e7) ? (p.distance / 1000).toFixed(2) + " km" : "—");
-  text("elapsed", finite(p.elapsed, 0, 1e9) ? Math.floor(p.elapsed / 3600000) + "h " + (Math.floor(p.elapsed / 60000) % 60) + "m" : "—");
+  const modeKey = p.mode || "trekking";
+  text("mode", modes[modeKey] || modeKey || "Live");
+
+  const distStr = finite(p.distance, 0, 1e7) ? (p.distance / 1000).toFixed(2) + " km" : "—";
+  const elapsedStr = finite(p.elapsed, 0, 1e9) ? Math.floor(p.elapsed / 3600000) + "h " + (Math.floor(p.elapsed / 60000) % 60) + "m" : "—";
+  const movingStr = finite(p.moving, 0, 1e9) ? Math.floor(p.moving / 3600000) + "h " + (Math.floor(p.moving / 60000) % 60) + "m" : "—";
+  const speedKmhStr = finite(p.speed, 0, 100) ? (p.speed * 3.6).toFixed(1) + " km/h" : "—";
+  const avgKmhStr = finite(p.average, 0, 100) ? (p.average * 3.6).toFixed(1) + " km/h" : "—";
+  const paceStr = finite(p.speed, 0, 100) ? pace(p.speed) : "—";
+  const avgPaceStr = finite(p.average, 0, 100) ? pace(p.average) : "—";
+  const altStr = finite(p.altitude, -500, 10000) ? Math.round(p.altitude) + " m" : "—";
+  const ascentStr = finite(p.ascent, 0, 50000) ? Math.round(p.ascent) + " m" : "—";
+
+  let cards;
+  if (modeKey === "running") {
+    cards = [
+      [t("speedRun"), paceStr],
+      [t("averageRun"), avgPaceStr],
+      [t("distance"), distStr],
+      [t("elapsed"), elapsedStr],
+      [t("ascent"), ascentStr],
+      [t("movingTimeShort"), movingStr]
+    ];
+  } else if (modeKey === "bicycle") {
+    cards = [
+      [t("speed"), speedKmhStr],
+      [t("average"), avgKmhStr],
+      [t("distance"), distStr],
+      [t("ascent"), ascentStr],
+      [t("elapsed"), elapsedStr],
+      [t("altitude"), altStr]
+    ];
+  } else if (modeKey === "walking") {
+    cards = [
+      [t("distance"), distStr],
+      [t("elapsed"), elapsedStr],
+      [t("speed"), speedKmhStr],
+      [t("average"), avgKmhStr],
+      [t("ascent"), ascentStr],
+      [t("altitude"), altStr]
+    ];
+  } else {
+    // Default: trekking
+    cards = [
+      [t("ascent"), ascentStr],
+      [t("altitude"), altStr],
+      [t("distance"), distStr],
+      [t("elapsed"), elapsedStr],
+      [t("speed"), speedKmhStr],
+      [t("average"), avgKmhStr]
+    ];
+  }
+
+  for (let i = 0; i < 6; i++) {
+    text(`c${i + 1}Label`, cards[i][0]);
+    text(`c${i + 1}Val`, cards[i][1]);
+  }
   text("movingTime", finite(p.moving, 0, 1e9) ? t("movingTime") + " " + Math.floor(p.moving / 3600000) + "h " + (Math.floor(p.moving / 60000) % 60) + "m" : "");
-  text("battery", finite(p.battery, 0, 100) ? Math.round(p.battery) + "%" : "—");
-  text("terrainMetric", finite(p.ascent, 0, 50000) ? t("ascent") + " " + Math.round(p.ascent) + " m" : "");
 }
 
 async function init() {
