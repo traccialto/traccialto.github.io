@@ -7,8 +7,8 @@
       navFeatures: "Funzioni",
       navPrivacy: "Privacy",
       navFaq: "Domande",
-      btnAvailability: "Disponibilità Android",
-      btnAvailabilityShort: "Disponibilità",
+      btnAvailability: "Scarica su Google Play",
+      btnAvailabilityShort: "Google Play",
 
       heroBadge: "Trekking · Bicicletta · Corsa · Camminata",
       heroTitle: "La tua prossima uscita<br><span class=\"serif-accent\">comincia da qui.</span>",
@@ -162,7 +162,7 @@
       closingTag: "Pronto per la prossima uscita",
       closingTitle: "La natura ti aspetta.<br><span class=\"serif-accent\">Portati solo l'essenziale.</span>",
       closingDesc: "Disponibile su Google Play Store. Scarica l'applicazione gratuita e inizia a esplorare.",
-      closingBtn: "Disponibile su Google Play",
+      closingBtn: "Scarica su Google Play",
       closingFoot: "Android 8+ · Gratis · Senza pubblicità",
 
       footerCopy: "© 2026 Traccialto. Progetto indipendente di cartografia e navigazione per il territorio. Senza strumenti pubblicitari. Consulta l’informativa privacy."
@@ -173,8 +173,8 @@
       navFeatures: "Features",
       navPrivacy: "Privacy",
       navFaq: "FAQ",
-      btnAvailability: "Android Availability",
-      btnAvailabilityShort: "Availability",
+      btnAvailability: "Get it on Google Play",
+      btnAvailabilityShort: "Google Play",
 
       heroBadge: "Hiking · Cycling · Running · Walking",
       heroTitle: "Your next outdoor journey<br><span class=\"serif-accent\">begins right here.</span>",
@@ -339,8 +339,8 @@
       navFeatures: "Fonctions",
       navPrivacy: "Confidentialité",
       navFaq: "FAQ",
-      btnAvailability: "Disponibilité Android",
-      btnAvailabilityShort: "Disponibilité",
+      btnAvailability: "Télécharger sur Google Play",
+      btnAvailabilityShort: "Google Play",
 
       heroBadge: "Randonnée · Vélo · Course · Marche",
       heroTitle: "Votre prochaine sortie<br><span class=\"serif-accent\">commence ici.</span>",
@@ -494,7 +494,7 @@
       closingTag: "Prêt pour la prochaine sortie",
       closingTitle: "La nature vous attend.<br><span class=\"serif-accent\">Emportez juste l'essentiel.</span>",
       closingDesc: "Disponible sur Google Play Store. Téléchargez l'application gratuite et partez à l'aventure.",
-      closingBtn: "Disponible sur Google Play",
+      closingBtn: "Télécharger sur Google Play",
       closingFoot: "Android 8+ · Gratuit · Sans publicité",
 
       footerCopy: "© 2026 Traccialto. Projet indépendant de cartographie et de navigation outdoor. Zéro publicité. Consultez la politique de confidentialité."
@@ -505,8 +505,8 @@
       navFeatures: "Funciones",
       navPrivacy: "Privacidad",
       navFaq: "Preguntas",
-      btnAvailability: "Disponibilidad Android",
-      btnAvailabilityShort: "Disponibilidad",
+      btnAvailability: "Descargar en Google Play",
+      btnAvailabilityShort: "Google Play",
 
       heroBadge: "Senderismo · Bicicleta · Carrera · Caminata",
       heroTitle: "Tu próxima aventura<br><span class=\"serif-accent\">comienza aquí.</span>",
@@ -660,7 +660,7 @@
       closingTag: "Listo para la próxima salida",
       closingTitle: "La naturaleza te espera.<br><span class=\"serif-accent\">Lleva solo lo imprescindible.</span>",
       closingDesc: "Disponible en Google Play Store. Descarga la aplicación gratuita y empieza a explorar.",
-      closingBtn: "Disponible en Google Play",
+      closingBtn: "Descargar en Google Play",
       closingFoot: "Android 8+ · Gratis · Sin publicidad",
 
       footerCopy: "© 2026 Traccialto. Proyecto independiente de cartografía y navegación para el territorio. Sin publicidad. Consulta la política de privacidad."
