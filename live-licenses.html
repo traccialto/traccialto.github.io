@@ -1,1 +1,113 @@
-<!doctype html><html lang="it"><meta charset="utf-8"><title>Licenze · Traccialto Live</title><body><h1>Componenti della pagina live</h1><p>Leaflet 1.9.4: <a href="assets/live/leaflet-LICENSE.txt">licenza BSD-2-Clause e copyright</a>.</p><p>Cartografia © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>.</p><p>Condivisione tramite le API HTTPS di Google Firebase. <a href="https://firebase.google.com/terms">Condizioni Firebase</a>.</p><p><a href="privacy.html">Informativa privacy</a></p><p>MapLibre GL JS 6.14.0: <a href="assets/live/maplibre-LICENSE.txt">BSD-3-Clause</a>. Satellite: <a href="https://maps.eox.at/">EOX Sentinel-2 cloudless 2024</a>, <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Rilievi: <a href="https://mapterhorn.com/attribution/">Mapterhorn e relative fonti</a>.</p></body></html>
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Licenze · Traccialto Live</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.svg" width="38" height="38" alt="">
+        <span>Traccialto</span>
+      </a>
+      <nav>
+        <a href="index.html" data-l-ui="navHome">Home</a>
+        <a href="privacy.html" data-l-ui="navPrivacy">Informativa Privacy</a>
+        <div class="site-lang-pill" role="group" aria-label="Lingua">
+          <button type="button" data-l="it" class="active">IT</button>
+          <button type="button" data-l="en">EN</button>
+          <button type="button" data-l="fr">FR</button>
+          <button type="button" data-l="es">ES</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="legal-content">
+      <h1>Componenti della pagina live</h1>
+      <p>Leaflet 1.9.4: <a href="assets/live/leaflet-LICENSE.txt">licenza BSD-2-Clause e copyright</a>.</p>
+      <p>Cartografia © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>.</p>
+      <p>Condivisione tramite le API HTTPS di Google Firebase. <a href="https://firebase.google.com/terms" target="_blank" rel="noopener">Condizioni Firebase</a>.</p>
+      <p><a href="privacy.html">Informativa privacy</a></p>
+      <p>MapLibre GL JS 6.14.0: <a href="assets/live/maplibre-LICENSE.txt">BSD-3-Clause</a>. Satellite: <a href="https://maps.eox.at/" target="_blank" rel="noopener">EOX Sentinel-2 cloudless 2024</a>, <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>. Rilievi: <a href="https://mapterhorn.com/attribution/" target="_blank" rel="noopener">Mapterhorn e relative fonti</a>.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p data-l-ui="footerCopy">&copy; 2026 Traccialto.</p>
+    </div>
+  </footer>
+
+  <script>
+  (function () {
+    "use strict";
+    let originalIt = null;
+    const UI = {
+      it: { title: "Licenze · Traccialto Live", navHome: "Home", navPrivacy: "Informativa Privacy", footerCopy: "© 2026 Traccialto." },
+      en: { title: "Licenses · Traccialto Live", navHome: "Home", navPrivacy: "Privacy Notice", footerCopy: "© 2026 Traccialto." },
+      fr: { title: "Licences · Traccialto Live", navHome: "Accueil", navPrivacy: "Confidentialité", footerCopy: "© 2026 Traccialto." },
+      es: { title: "Licencias · Traccialto Live", navHome: "Inicio", navPrivacy: "Privacidad", footerCopy: "© 2026 Traccialto." }
+    };
+    const BODY = {
+      en: `<h1>Live page components</h1>
+        <p>Leaflet 1.9.4: <a href="assets/live/leaflet-LICENSE.txt">BSD-2-Clause license and copyright</a>.</p>
+        <p>Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>.</p>
+        <p>Sharing via Google Firebase HTTPS APIs. <a href="https://firebase.google.com/terms" target="_blank" rel="noopener">Firebase Terms</a>.</p>
+        <p><a href="privacy.html">Privacy notice</a></p>
+        <p>MapLibre GL JS 6.14.0: <a href="assets/live/maplibre-LICENSE.txt">BSD-3-Clause</a>. Satellite: <a href="https://maps.eox.at/" target="_blank" rel="noopener">EOX Sentinel-2 cloudless 2024</a>, <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>. Terrain: <a href="https://mapterhorn.com/attribution/" target="_blank" rel="noopener">Mapterhorn and sources</a>.</p>`,
+      fr: `<h1>Composants de la page live</h1>
+        <p>Leaflet 1.9.4 : <a href="assets/live/leaflet-LICENSE.txt">licence BSD-2-Clause et copyright</a>.</p>
+        <p>Cartographie © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>.</p>
+        <p>Partage via les API HTTPS de Google Firebase. <a href="https://firebase.google.com/terms" target="_blank" rel="noopener">Conditions Firebase</a>.</p>
+        <p><a href="privacy.html">Politique de confidentialité</a></p>
+        <p>MapLibre GL JS 6.14.0 : <a href="assets/live/maplibre-LICENSE.txt">BSD-3-Clause</a>. Satellite : <a href="https://maps.eox.at/" target="_blank" rel="noopener">EOX Sentinel-2 cloudless 2024</a>, <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>. Relief : <a href="https://mapterhorn.com/attribution/" target="_blank" rel="noopener">Mapterhorn et sources</a>.</p>`,
+      es: `<h1>Componentes de la página en directo</h1>
+        <p>Leaflet 1.9.4: <a href="assets/live/leaflet-LICENSE.txt">licencia BSD-2-Clause y copyright</a>.</p>
+        <p>Cartografía © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>.</p>
+        <p>Compartir mediante APIs HTTPS de Google Firebase. <a href="https://firebase.google.com/terms" target="_blank" rel="noopener">Condiciones Firebase</a>.</p>
+        <p><a href="privacy.html">Política de privacidad</a></p>
+        <p>MapLibre GL JS 6.14.0: <a href="assets/live/maplibre-LICENSE.txt">BSD-3-Clause</a>. Satélite: <a href="https://maps.eox.at/" target="_blank" rel="noopener">EOX Sentinel-2 cloudless 2024</a>, <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>. Relieve: <a href="https://mapterhorn.com/attribution/" target="_blank" rel="noopener">Mapterhorn y fuentes</a>.</p>`
+    };
+    function detect() {
+      const s = localStorage.getItem("traccialto_lang");
+      if (s && UI[s]) return s;
+      const n = (navigator.language || "en").toLowerCase();
+      if (n.startsWith("it")) return "it";
+      if (n.startsWith("fr")) return "fr";
+      if (n.startsWith("es")) return "es";
+      return "en";
+    }
+    function apply(lang) {
+      if (!UI[lang]) lang = "en";
+      localStorage.setItem("traccialto_lang", lang);
+      document.documentElement.lang = lang;
+      document.title = UI[lang].title;
+      document.querySelectorAll("[data-l-ui]").forEach(el => {
+        const k = el.getAttribute("data-l-ui");
+        if (UI[lang][k]) el.textContent = UI[lang][k];
+      });
+      const box = document.querySelector(".legal-content");
+      if (box) {
+        if (lang === "it" && originalIt !== null) box.innerHTML = originalIt;
+        else if (BODY[lang]) box.innerHTML = BODY[lang];
+      }
+      document.querySelectorAll(".site-lang-pill button").forEach(b => b.classList.toggle("active", b.getAttribute("data-l") === lang));
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+      const box = document.querySelector(".legal-content");
+      if (box) originalIt = box.innerHTML;
+      apply(detect());
+      document.querySelectorAll(".site-lang-pill button").forEach(b => {
+        b.addEventListener("click", () => apply(b.getAttribute("data-l")));
+      });
+    });
+  })();
+  </script>
+</body>
+</html>

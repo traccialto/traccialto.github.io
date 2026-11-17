@@ -3,6 +3,19 @@
 
   const I18N = {
     it: {
+      pageTitle: "Traccialto — Navigazione e Cartografia Outdoor Offline",
+      pageDesc: "Cartografia 3D offline senza abbonamenti: trekking con vie ferrate, bici, corsa e camminata. Zone scaricabili 1–50 km, GPX/KML liberi, tramonto offline, Replay 3D e Storie. Gratis, senza account e senza pubblicità.",
+      skipToContent: "Vai al contenuto",
+      brandAria: "Traccialto inizio",
+      navAria: "Menu principale",
+      langAria: "Lingua",
+      heroImgAlt: "Paesaggio alpino con lago d'alta quota e vette innevate",
+      certezzeAria: "Punti di forza di Traccialto",
+      feat1TopoAria: "Illustrazione vettoriale del rilievo topografico",
+      feat3BoxAria: "Anteprima modalità AMOLED e calcolo tramonto offline",
+      qrAlt: "QR Code per aprire Traccialto su Google Play",
+      footerPrivacyLink: "Informativa Privacy",
+
       navActivities: "Attività",
       navFeatures: "Funzioni",
       navPrivacy: "Privacy",
@@ -15,7 +28,6 @@
       heroLead: "Scarica intere zone fino a 50 km, importa tracce GPX e KML, pianifica anelli o vie ferrate, consulta l’orario del tramonto senza segnale e registra ogni uscita in privato. Gratis, senza account obbligatorio e senza pubblicità.",
       btnHeroDownload: "Scarica gratis su Google Play",
       btnHeroExplore: "Esplora le funzioni",
-      btnHeroDisciplines: "Le 4 modalità",
       trustFree: "Gratis (0 €)",
       trustNoAccount: "Nessun account obbligatorio",
       trustNoAds: "Zero pubblicità",
@@ -210,6 +222,19 @@
     },
 
     en: {
+      pageTitle: "Traccialto — Offline Outdoor Navigation & Topo Maps",
+      pageDesc: "Offline 3D maps with zero subscriptions: hiking with via ferratas, cycling, running, and walking. Downloadable 1–50 km zones, open GPX/KML, offline sunset, 3D Replay & Stories. Free, no account, zero ads.",
+      skipToContent: "Skip to content",
+      brandAria: "Traccialto home",
+      navAria: "Main menu",
+      langAria: "Language",
+      heroImgAlt: "Alpine landscape with high-altitude lake and snow-capped peaks",
+      certezzeAria: "Traccialto key strengths",
+      feat1TopoAria: "Vector illustration of topographic terrain relief",
+      feat3BoxAria: "Preview of AMOLED mode and offline sunset calculation",
+      qrAlt: "QR code to open Traccialto on Google Play",
+      footerPrivacyLink: "Privacy Policy",
+
       navActivities: "Activities",
       navFeatures: "Features",
       navPrivacy: "Privacy",
@@ -222,7 +247,6 @@
       heroLead: "Download entire areas up to 50 km, import GPX & KML tracks, plan loops or via ferratas, check offline sunset times, and store every outing privately. Free, no mandatory account, zero ads.",
       btnHeroDownload: "Get it free on Google Play",
       btnHeroExplore: "Explore features",
-      btnHeroDisciplines: "The 4 modes",
       trustFree: "Free (€0)",
       trustNoAccount: "No account required",
       trustNoAds: "Zero ads",
@@ -333,7 +357,7 @@
 
       feat2Tag: "Circular Routes",
       feat2Title: "A loop route, just how you want it",
-      feat2Desc: "Choose distance or duration and, if desired, a limit on total climb. Compare alternatives on your chosen network. Calculations require an internet connection.",
+      feat2Desc: "Choose distance or duration and, if desired, a limit on total climb. Compare alternatives on the network available for your mode. Distance and time are estimates; some segments may repeat. Calculation requires an internet connection.",
       feat2Dist: "Distance",
       feat2Gain: "Elevation",
       feat2Est: "Estimate",
@@ -395,13 +419,13 @@
       q1: "Is Traccialto truly completely free?",
       a1: "Yes. There are no monthly subscriptions, no paid 'pro' tiers, and no advertising banners. Traccialto was created as an independent, crafted tool for outdoor enthusiasts who appreciate a clean and honest experience.",
       q2: "Does it work at high altitude without cellular coverage?",
-      a2: "You can record GPS tracks and follow saved routes completely offline. Download available maps before departure. Place search and initial routing require an internet connection.",
+      a2: "You can record GPS tracks and follow saved routes completely offline. Download available maps for your route beforehand and verify they are present. Place search, new routes, and undownloaded map data require an internet connection. GPS accuracy depends on conditions.",
       q3: "Can I import my existing GPX / KML tracks?",
-      a3: "Yes, you can import compatible GPX and KML files, view them, and navigate along them.",
+      a3: "Yes, you can import compatible GPX and KML files, view them, and navigate along them. Elevation availability depends on the file and map data. Use tracks you have the right to use.",
       q4: "How does track backup work?",
       a4: "You can optionally connect your Google account to incrementally back up and sync routes, recorded walks, diary notes, and photos into the private app folder (appDataFolder) of your Google Drive, with background restore when switching phones.",
       q5: "Which Android versions are supported?",
-      a5: "The app requires Android 8 or newer. 3D performance and background GPS tracking depend on your device.",
+      a5: "The app requires Android 8 or newer. 3D performance, GPS reception, and background recording depend on your device. Some features require newer Android versions.",
       q6: "How does the Friends feature work, and is it required?",
       a6: "It is completely optional: every core mapping, planning, and GPS recording feature works with no account. If you opt in to Friends, you sign in with Google, register a unique @username, and share selected routes through a dedicated archive file in your own Google Drive (limited drive.file permission), with configurable notifications, single or bulk route removal, and full profile deletion anytime.",
 
@@ -417,6 +441,19 @@
     },
 
     fr: {
+      pageTitle: "Traccialto — Navigation et Cartographie Outdoor Hors-Ligne",
+      pageDesc: "Cartographie 3D hors-ligne sans abonnement : randonnée avec via ferrata, vélo, course et marche. Zones 1–50 km, GPX/KML ouverts, coucher du soleil hors-ligne, Replay 3D et Stories. Gratuit, sans compte et sans publicité.",
+      skipToContent: "Aller au contenu",
+      brandAria: "Traccialto accueil",
+      navAria: "Menu principal",
+      langAria: "Langue",
+      heroImgAlt: "Paysage alpin avec lac d'altitude et sommets enneigés",
+      certezzeAria: "Atouts principaux de Traccialto",
+      feat1TopoAria: "Illustration vectorielle du relief topographique",
+      feat3BoxAria: "Aperçu du mode AMOLED et calcul hors-ligne du coucher du soleil",
+      qrAlt: "Code QR pour ouvrir Traccialto sur Google Play",
+      footerPrivacyLink: "Politique de confidentialité",
+
       navActivities: "Activités",
       navFeatures: "Fonctions",
       navPrivacy: "Confidentialité",
@@ -429,7 +466,6 @@
       heroLead: "Téléchargez des zones entières jusqu'à 50 km, importez vos traces GPX et KML, planifiez boucles ou via ferrata, vérifiez l'heure du coucher du soleil hors réseau et enregistrez vos sorties en privé. Gratuit, sans compte et sans pub.",
       btnHeroDownload: "Télécharger gratuit sur Google Play",
       btnHeroExplore: "Explorer les fonctions",
-      btnHeroDisciplines: "Les 4 modes",
       trustFree: "Gratuit (0 €)",
       trustNoAccount: "Aucun compte requis",
       trustNoAds: "Zéro publicité",
@@ -540,7 +576,7 @@
 
       feat2Tag: "Itinéraires Circulaires",
       feat2Title: "Une boucle selon vos envies",
-      feat2Desc: "Définissez une distance ou une durée, avec une limite optionnelle de dénivelé. Comparez les variantes. Le calcul initial requiert internet.",
+      feat2Desc: "Définissez une distance ou une durée, avec une limite optionnelle de dénivelé. Comparez les variantes sur le réseau disponible pour votre activité. Distance et durée sont des estimations ; certains tronçons peuvent se répéter. Le calcul requiert internet.",
       feat2Dist: "Distance",
       feat2Gain: "Dénivelé",
       feat2Est: "Estimation",
@@ -602,13 +638,13 @@
       q1: "Traccialto est-elle vraiment entièrement gratuite ?",
       a1: "Oui. Il n'y a aucun abonnement mensuel, aucune fonction 'pro' payante et aucune bannière publicitaire. Traccialto est un projet indépendant dédié aux amoureux de nature.",
       q2: "L'application fonctionne-t-elle en altitude sans réseau mobile ?",
-      a2: "Vous pouvez enregistrer vos traces GPS et suivre un parcours sauvegardé sans aucune connexion. Téléchargez simplement la carte de la zone au préalable.",
+      a2: "Vous pouvez enregistrer vos traces GPS et suivre un parcours sauvegardé sans connexion. Téléchargez au préalable les cartes disponibles pour votre itinéraire et vérifiez leur présence. La recherche de lieux, les nouveaux itinéraires et les contenus non téléchargés requièrent internet. La précision GPS dépend des conditions.",
       q3: "Puis-je importer mes propres fichiers GPX et KML ?",
-      a3: "Oui, vous pouvez importer des fichiers GPX et KML compatibles, les afficher et les suivre.",
+      a3: "Oui, vous pouvez importer des fichiers GPX et KML compatibles, les afficher et les suivre. La disponibilité des altitudes dépend du fichier et des données cartographiques. Utilisez des traces dont vous disposez des droits.",
       q4: "Comment fonctionne la sauvegarde de mes parcours ?",
       a4: "Vous pouvez connecter facultativement votre compte Google pour sauvegarder et synchroniser vos parcours, sorties, journal et photos dans le dossier privé (appDataFolder) de votre Google Drive, avec restauration en arrière-plan.",
       q5: "Quelles versions d'Android sont supportées ?",
-      a5: "L'application nécessite Android 8 ou version ultérieure.",
+      a5: "L'application nécessite Android 8 ou version ultérieure. Les performances 3D, la réception GPS et l'enregistrement en arrière-plan dépendent de l'appareil. Certaines fonctions requièrent une version d'Android plus récente.",
       q6: "Comment fonctionne l'espace Amis et est-il obligatoire ?",
       a6: "Il est entièrement facultatif : toute la cartographie et l'enregistrement GPS fonctionnent sans compte. Si vous activez Amis, connectez-vous avec Google, choisissez un @username unique et partagez les itinéraires voulus via un fichier dédié sur votre Google Drive (portée limitée drive.file), avec notifications réglables, suppression unitaire ou globale et suppression du profil à tout moment.",
 
@@ -624,6 +660,19 @@
     },
 
     es: {
+      pageTitle: "Traccialto — Navegación y Cartografía Outdoor Offline",
+      pageDesc: "Cartografía 3D offline sin suscripciones: senderismo con vías ferratas, bici, carrera y caminata. Zonas 1–50 km, GPX/KML libres, ocaso offline, Replay 3D e Historias. Gratis, sin cuenta y sin anuncios.",
+      skipToContent: "Ir al contenido",
+      brandAria: "Traccialto inicio",
+      navAria: "Menú principal",
+      langAria: "Idioma",
+      heroImgAlt: "Paisaje alpino con lago de alta montaña y cumbres nevadas",
+      certezzeAria: "Puntos fuertes de Traccialto",
+      feat1TopoAria: "Ilustración vectorial del relieve topográfico",
+      feat3BoxAria: "Vista previa del modo AMOLED y cálculo de ocaso offline",
+      qrAlt: "Código QR para abrir Traccialto en Google Play",
+      footerPrivacyLink: "Política de privacidad",
+
       navActivities: "Actividades",
       navFeatures: "Funciones",
       navPrivacy: "Privacidad",
@@ -636,7 +685,6 @@
       heroLead: "Descarga zonas completas de hasta 50 km, importa rutas GPX y KML, planifica circuitos o vías ferratas, consulta el ocaso sin cobertura y guarda cada salida en privado. Gratis, sin cuenta y sin anuncios.",
       btnHeroDownload: "Descargar gratis en Google Play",
       btnHeroExplore: "Explorar funciones",
-      btnHeroDisciplines: "Los 4 modos",
       trustFree: "Gratis (0 €)",
       trustNoAccount: "Sin cuenta requerida",
       trustNoAds: "Cero anuncios",
@@ -664,7 +712,7 @@
       trekTitle: "Senderismo & Montaña",
       trekQuote: "«Un paso a la vez.»",
       trekDesc: "Planifica excursiones y rutas circulares priorizando senderos e incluyendo bajo petición vías ferratas cartografiadas (con aviso de equipo y condiciones). Compara altitudes, ascensos y tiempos antes de salir.",
-      trekF1: "<strong>Dificultad de senderos T1–T6 en Italia</strong> indicada donde esté disponible en los datos",
+      trekF1: "<strong>Dificultad de senderos T1–T6 en Italia</strong> donde conste en los datos; los tramos sin clasificar siguen indicados",
       trekF2: "<strong>Tiempos según tu ritmo real</strong> ajustados a pendiente DEM, T1–T6 e historial",
       trekF3: "<strong>Voz en giros, alerta fuera de ruta y +500 m D+</strong> más ocaso calculado offline",
       trekF4: "<strong>Brújula orientada</strong> en cartografía topográfica con curvas de nivel",
@@ -706,7 +754,7 @@
       s1Desc: "Senderismo, bicicleta, carrera o caminata: métricas, puntos en el mapa y rutas adaptadas a ti.",
       s2Title: "Prepara tu salida",
       s2Desc: "Añade paradas, importa un track o genera una ruta circular. Descarga los mapas disponibles.",
-      s3Title: "Ponte en marcha",
+      s3Title: "Ponte en marcha y sigue tu progreso",
       s3Desc: "Sigue la ruta o graba con libertad. Al regresar encontrarás mapa, tiempos y perfil en tu historial.",
 
       showBadge: "Dentro de la app (versión Google Play)",
@@ -747,7 +795,7 @@
 
       feat2Tag: "Rutas Circulares",
       feat2Title: "Una ruta circular a tu medida",
-      feat2Desc: "Elige distancia o duración y añade si quieres un límite de desnivel. Compara alternativas. El cálculo inicial requiere internet.",
+      feat2Desc: "Elige distancia o duración y añade si quieres un límite de desnivel. Compara alternativas sobre la red disponible para tu actividad. Distancia y tiempo son estimaciones; algunos tramos pueden repetirse. El cálculo requiere internet.",
       feat2Dist: "Distancia",
       feat2Gain: "Desnivel",
       feat2Est: "Estimación",
@@ -809,13 +857,13 @@
       q1: "¿Traccialto es realmente gratuita?",
       a1: "Sí. No hay cuotas mensuales, no existen opciones de pago 'pro' ni anuncios publicitarios. Traccialto es un proyecto independiente y artesanal para los amantes del deporte y la naturaleza.",
       q2: "¿Funciona en alta montaña sin cobertura móvil?",
-      a2: "Puedes registrar con GPS y seguir una ruta guardada sin conexión alguna. Descarga los mapas disponibles de la zona antes de salir.",
+      a2: "Puedes registrar con GPS y seguir una ruta guardada sin conexión. Descarga antes los mapas disponibles para el recorrido y verifica que estén presentes. La búsqueda de lugares, nuevas rutas y contenidos no descargados requieren internet. La precisión GPS depende de las condiciones.",
       q3: "¿Puedo importar mis rutas GPX y KML existentes?",
-      a3: "Sí, puedes importar archivos GPX y KML compatibles, visualizarlos y seguir el camino.",
+      a3: "Sí, puedes importar archivos GPX y KML compatibles, visualizarlos y seguir el camino. La disponibilidad de altitudes depende del archivo y de los datos cartográficos. Usa rutas sobre las que tengas derecho de uso.",
       q4: "¿Cómo funciona la copia de seguridad?",
       a4: "Puedes conectar opcionalmente tu cuenta de Google para guardar y sincronizar de forma incremental tus rutas, caminatas, diario y fotos en la carpeta privada (appDataFolder) de tu Google Drive, con restauración en segundo plano.",
       q5: "¿Qué versiones de Android son compatibles?",
-      a5: "La aplicación requiere Android 8 o superior.",
+      a5: "La aplicación requiere Android 8 o superior. El rendimiento 3D, la recepción GPS y la grabación en segundo plano dependen del dispositivo. Algunas funciones requieren versiones más recientes de Android.",
       q6: "¿Cómo funciona la sección Amigos y es obligatoria?",
       a6: "Es totalmente opcional: toda la cartografía, planificación y grabación GPS funcionan sin cuenta. Si activas Amigos, inicias sesión con Google, eliges un @username único y compartes las rutas que quieras en un archivo dedicado de tu Google Drive (alcance limitado drive.file), con notificaciones configurables, borrado individual o total y eliminación de perfil en cualquier momento.",
 
@@ -847,6 +895,10 @@
     document.documentElement.lang = lang;
 
     const dict = I18N[lang];
+    if (dict.pageTitle) document.title = dict.pageTitle;
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc && dict.pageDesc) metaDesc.setAttribute("content", dict.pageDesc);
+
     document.querySelectorAll("[data-i18n]").forEach(function (el) {
       const key = el.getAttribute("data-i18n");
       if (dict[key] !== undefined) el.textContent = dict[key];
@@ -855,6 +907,16 @@
     document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
       const key = el.getAttribute("data-i18n-html");
       if (dict[key] !== undefined) el.innerHTML = dict[key];
+    });
+
+    document.querySelectorAll("[data-i18n-aria]").forEach(function (el) {
+      const key = el.getAttribute("data-i18n-aria");
+      if (dict[key] !== undefined) el.setAttribute("aria-label", dict[key]);
+    });
+
+    document.querySelectorAll("[data-i18n-alt]").forEach(function (el) {
+      const key = el.getAttribute("data-i18n-alt");
+      if (dict[key] !== undefined) el.setAttribute("alt", dict[key]);
     });
 
     document.querySelectorAll(".site-lang-pill button").forEach(function (btn) {

@@ -35,6 +35,19 @@ const I18N = {
     mapStreets: "Mappa",
     mapSatellite: "Satellite",
     map3D: "3D",
+    statsCompactLabel: "Statistiche",
+    licenses: "Licenze",
+    privacy: "Privacy",
+    mapTypesAria: "Tipo di mappa",
+    langPickerAria: "Selettore lingua",
+    progressLabel: "Avanzamento · {p}%",
+    plannedWaiting: "Percorso previsto · in attesa di una posizione affidabile",
+    satelliteNotice: "Satellite globale: il dettaglio varia per zona.",
+    loading3d: "Caricamento satellite e rilievi 3D…",
+    terrainAttrib: "Terreno © Mapterhorn e fonti",
+    error3d: "Alcuni dati 3D non sono disponibili. Puoi tornare alla mappa.",
+    controls3dHint: "Trascina per esplorare · due dita per ruotare e inclinare. Satellite: dettaglio variabile.",
+    unsupported3d: "Il 3D non è supportato da questo browser.",
     modes: { trekking: "Trekking", bicycle: "Bicicletta", running: "Corsa", walking: "Camminata" }
   },
   en: {
@@ -71,6 +84,19 @@ const I18N = {
     mapStreets: "Map",
     mapSatellite: "Satellite",
     map3D: "3D",
+    statsCompactLabel: "Stats",
+    licenses: "Licenses",
+    privacy: "Privacy",
+    mapTypesAria: "Map type",
+    langPickerAria: "Language selector",
+    progressLabel: "Progress · {p}%",
+    plannedWaiting: "Planned route · waiting for reliable GPS",
+    satelliteNotice: "Global satellite: detail varies by area.",
+    loading3d: "Loading satellite and 3D terrain…",
+    terrainAttrib: "Terrain © Mapterhorn and sources",
+    error3d: "Some 3D data is unavailable. You can switch back to the map.",
+    controls3dHint: "Drag to explore · two fingers to rotate and tilt. Satellite: detail varies.",
+    unsupported3d: "3D is not supported by this browser.",
     modes: { trekking: "Hiking", bicycle: "Cycling", running: "Running", walking: "Walking" }
   },
   fr: {
@@ -107,6 +133,19 @@ const I18N = {
     mapStreets: "Carte",
     mapSatellite: "Satellite",
     map3D: "3D",
+    statsCompactLabel: "Statistiques",
+    licenses: "Licences",
+    privacy: "Confidentialité",
+    mapTypesAria: "Type de carte",
+    langPickerAria: "Sélecteur de langue",
+    progressLabel: "Progression · {p}%",
+    plannedWaiting: "Itinéraire prévu · en attente d'un GPS fiable",
+    satelliteNotice: "Satellite mondial : le niveau de détail varie selon la zone.",
+    loading3d: "Chargement satellite et relief 3D…",
+    terrainAttrib: "Relief © Mapterhorn et sources",
+    error3d: "Certaines données 3D sont indisponibles. Vous pouvez revenir à la carte.",
+    controls3dHint: "Glissez pour explorer · deux doigts pour pivoter et incliner. Satellite : détail variable.",
+    unsupported3d: "La 3D n'est pas prise en charge par ce navigateur.",
     modes: { trekking: "Randonnée", bicycle: "Vélo", running: "Course", walking: "Marche" }
   },
   es: {
@@ -143,6 +182,19 @@ const I18N = {
     mapStreets: "Mapa",
     mapSatellite: "Satélite",
     map3D: "3D",
+    statsCompactLabel: "Estadísticas",
+    licenses: "Licencias",
+    privacy: "Privacidad",
+    mapTypesAria: "Tipo de mapa",
+    langPickerAria: "Selector de idioma",
+    progressLabel: "Progreso · {p}%",
+    plannedWaiting: "Ruta prevista · esperando GPS fiable",
+    satelliteNotice: "Satélite global: el detalle varía según la zona.",
+    loading3d: "Cargando satélite y relieve 3D…",
+    terrainAttrib: "Relieve © Mapterhorn y fuentes",
+    error3d: "Algunos datos 3D no están disponibles. Puedes volver al mapa.",
+    controls3dHint: "Arrastra para explorar · dos dedos para girar e inclinar. Satélite: detalle variable.",
+    unsupported3d: "Este navegador no admite la vista 3D.",
     modes: { trekking: "Senderismo", bicycle: "Bicicleta", running: "Carrera", walking: "Caminata" }
   }
 };
@@ -162,6 +214,7 @@ function t(k, vars) {
   if (vars) Object.keys(vars).forEach(v => str = str.replace(`{${v}}`, vars[v]));
   return str;
 }
+window.liveT = t;
 
 function applyLang(lang) {
   if (I18N[lang]) currentLang = lang;
@@ -178,6 +231,19 @@ function applyLang(lang) {
     const k = el.getAttribute("data-i18n-title");
     if (k) { el.title = t(k); el.setAttribute("aria-label", t(k)); }
   });
+  document.querySelectorAll("[data-i18n-aria]").forEach(el => {
+    const k = el.getAttribute("data-i18n-aria");
+    if (k) el.setAttribute("aria-label", t(k));
+  });
+  const panel = document.querySelector(".panel");
+  if (panel) panel.setAttribute("data-compact-label", t("statsCompactLabel"));
+  const collapseBtn = document.getElementById("collapseStats");
+  if (collapseBtn && panel) {
+    const compact = panel.classList.contains("compact");
+    collapseBtn.setAttribute("aria-label", compact ? t("expand") : t("collapse"));
+    collapseBtn.title = compact ? t("expand") : t("collapse");
+  }
+  if (window.refreshLiveMapStrings) window.refreshLiveMapStrings();
   if (latestPosition) updateTelemetryDisplay(latestPosition);
   else updateTelemetryDisplay({ mode: "trekking" });
   updateFreshness();
