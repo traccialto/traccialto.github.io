@@ -1148,3 +1148,203 @@ body.landing * {
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
 
 .footer-links{flex-wrap:wrap;gap:12px 20px}.footer-row>*{min-width:0}.brand-name{font-size:clamp(18px,5vw,24px)}
+
+/* Preview Additions: App Showcase + Offline Sunset Pill + Closing QR Box */
+.certezze-section {
+  padding: 6px 0 72px;
+}
+.certezza-icon svg {
+  width: 22px;
+  height: 22px;
+}
+.amoled-sunset-pill {
+  margin-top: 14px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: rgba(255, 196, 86, 0.1);
+  border: 1px solid rgba(255, 196, 86, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 12.5px;
+  color: #f8d48b;
+  font-weight: 600;
+}
+.app-showcase-section {
+  padding: 10px 0 90px;
+}
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.phone-mock-card {
+  background: white;
+  border: 1px solid rgba(22, 40, 29, 0.08);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.phone-screen-frame {
+  border-radius: 22px;
+  background: #14221a;
+  color: #f4f7f4;
+  padding: 16px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #22382c;
+}
+.phone-screen-frame.topo {
+  background: linear-gradient(160deg, #173023 0%, #214030 55%, #16261d 100%);
+}
+.phone-screen-frame.planner {
+  background: linear-gradient(165deg, #f8f5ed 0%, #edf2ec 100%);
+  color: var(--pine-900);
+  border-color: var(--sage-200);
+}
+.phone-screen-frame.story {
+  background: linear-gradient(180deg, rgba(16, 28, 21, 0.18) 0%, rgba(16, 28, 21, 0.88) 72%), url('assets/alpine-lake.webp') center/cover no-repeat;
+}
+.screen-pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+.screen-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.14);
+  color: #eef5f0;
+  backdrop-filter: blur(8px);
+}
+.screen-chip.green {
+  background: rgba(85, 230, 136, 0.18);
+  color: #7df2a4;
+}
+.screen-chip.amber {
+  background: rgba(246, 189, 80, 0.2);
+  color: #ffdc96;
+}
+.phone-screen-frame.planner .screen-chip {
+  background: white;
+  color: var(--pine-800);
+  border: 1px solid var(--sage-200);
+}
+.phone-screen-frame.planner .screen-chip.warn {
+  background: #fff4e5;
+  color: #8f4e0c;
+  border-color: #f3ce9b;
+}
+.screen-metric-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 10px;
+}
+.screen-metric-box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 8px 10px;
+}
+.phone-screen-frame.planner .screen-metric-box {
+  background: white;
+  border: 1px solid rgba(28, 56, 41, 0.08);
+}
+.screen-metric-box strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 800;
+}
+.screen-metric-box span {
+  font-size: 10.5px;
+  opacity: 0.78;
+}
+.phone-mock-caption strong {
+  display: block;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--pine-900);
+  margin-bottom: 4px;
+}
+.phone-mock-caption p {
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--ink-light);
+  line-height: 1.5;
+}
+.closing-cta-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.qr-desktop-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  background: white;
+  border: 1px solid var(--sage-200);
+  border-radius: var(--radius-md);
+  padding: 10px 16px 10px 10px;
+  box-shadow: var(--shadow-subtle);
+  text-align: left;
+}
+.qr-desktop-card img {
+  width: 76px;
+  height: 76px;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid var(--stone-200);
+}
+.qr-desktop-card strong {
+  display: block;
+  font-size: 13px;
+  color: var(--pine-900);
+}
+.qr-desktop-card span {
+  display: block;
+  font-size: 11.5px;
+  color: var(--ink-muted);
+  max-width: 17ch;
+  line-height: 1.35;
+}
+@media (max-width: 1024px) {
+  .showcase-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 640px) {
+  .qr-desktop-card {
+    display: none;
+  }
+  .btn-header-cta {
+    white-space: nowrap;
+    padding: 8px 12px !important;
+    min-height: 38px !important;
+  }
+  .site-lang-pill button {
+    padding: 3px 5px;
+    font-size: 10px;
+  }
+  .brand-name {
+    font-size: 18px !important;
+  }
+  .brand-link {
+    gap: 8px;
+  }
+}

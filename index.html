@@ -5,13 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="BfbeYNDp83NUWxOzFHLvJebqmk2m0J8CgKDSDbuyk70" />
   <title>Traccialto — Navigazione e Cartografia Outdoor Offline</title>
-  <meta name="description" content="Trekking, bicicletta, corsa e camminata in natura. Cartografia topografica offline, rilievi 3D, anelli automatici, modalità AMOLED e sezione Amici facoltativa. Gratis, senza account obbligatorio e senza pubblicità.">
+  <meta name="description" content="Cartografia 3D offline senza abbonamenti: trekking con vie ferrate, bici, corsa e camminata. Zone scaricabili 1–50 km, GPX/KML liberi, tramonto offline, Replay 3D e Storie. Gratis, senza account e senza pubblicità.">
   <meta name="theme-color" content="#1c3829">
+  <link rel="canonical" href="https://traccialto.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://traccialto.github.io/">
   <meta property="og:title" content="Traccialto — Navigazione Outdoor Offline">
-  <meta property="og:description" content="Cartografia offline, rilievi 3D, anelli automatici e condivisione facoltativa per trekking, bici, corsa e camminata. Senza pubblicità.">
+  <meta property="og:description" content="Cartografia offline gratuita, rilievi 3D DEM, vie ferrate, tramonto offline e condivisione facoltativa per trekking, bici, corsa e camminata. Senza pubblicità.">
   <meta property="og:image" content="https://traccialto.github.io/assets/feature_graphic_1024x500.png">
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="landing.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Traccialto",
+    "operatingSystem": "Android 8.0+",
+    "applicationCategory": "NavigationApplication",
+    "url": "https://traccialto.github.io/",
+    "downloadUrl": "https://play.google.com/store/apps/details?id=it.lanzonavigator.app",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR"
+    }
+  }
+  </script>
 </head>
 <body class="landing">
 
@@ -54,38 +73,41 @@
       <div class="hero-copy">
         <div class="badge-pill">
           <span class="dot"></span>
-          <span data-i18n="heroBadge">Trekking · Bicicletta · Corsa · Camminata</span>
+          <span data-i18n="heroBadge">Trekking · Vie Ferrate · Bici · Corsa · Camminata</span>
         </div>
 
         <h1 data-i18n-html="heroTitle">
-          La tua prossima uscita<br>
-          <span class="serif-accent">comincia da qui.</span>
+          Cartografia 3D offline<br>
+          <span class="serif-accent">senza abbonamenti.</span>
         </h1>
 
         <p class="hero-lead" data-i18n="heroLead">
-          Scegli come vuoi muoverti. Prepara un percorso, guarda i rilievi in 3D, condividi itinerari con gli amici se lo desideri e ritrova ogni uscita nel tuo archivio personale. Gratis, senza account obbligatorio e senza pubblicità.
+          Scarica intere zone fino a 50 km, importa tracce GPX e KML, pianifica anelli o vie ferrate, consulta l’orario del tramonto senza segnale e registra ogni uscita in privato. Gratis, senza account obbligatorio e senza pubblicità.
         </p>
 
         <div class="hero-buttons">
-          <a class="btn-pill-primary" href="#funzioni">
+          <a class="btn-pill-primary" href="https://play.google.com/store/apps/details?id=it.lanzonavigator.app" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M4.5 3.3c-.3.3-.5.8-.5 1.4v14.6c0 .6.2 1.1.5 1.4l.1.1 8.2-8.2v-.2L4.6 3.2l-.1.1zm11 10.9l-2.7-2.7v-.2l2.7-2.7.1.1 3.2 1.8c.9.5.9 1.4 0 1.9l-3.2 1.8-.1 0zM15.6 14.3L12.8 11.5 4.5 19.8c.3.3.8.3 1.4 0l9.7-5.5zm0-4.6L5.9 4.2c-.6-.3-1.1-.3-1.4 0l8.3 8.3 2.8-2.8z"/>
+            </svg>
+            <span data-i18n="btnHeroDownload">Scarica gratis su Google Play</span>
+          </a>
+          <a class="btn-pill-secondary" href="#funzioni">
             <span data-i18n="btnHeroExplore">Esplora le funzioni</span>
             <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M4 10h12M11 5l5 5-5 5"/>
             </svg>
           </a>
-          <a class="btn-pill-secondary" href="#attivita" data-i18n="btnHeroDisciplines">
-            Le 4 modalità
-          </a>
         </div>
 
         <div class="hero-trust-bar">
-          <div data-i18n="trustFree">Gratis</div>
+          <div data-i18n="trustFree">Gratis (0 €)</div>
           <span>•</span>
           <div data-i18n="trustNoAccount">Nessun account obbligatorio</div>
           <span>•</span>
           <div data-i18n="trustNoAds">Zero pubblicità</div>
           <span>•</span>
-          <div data-i18n="trustOfflineMaps">Mappe scaricabili</div>
+          <div data-i18n="trustOfflineMaps">Zone offline &amp; GPX/KML</div>
         </div>
       </div>
 
@@ -104,8 +126,8 @@
             </svg>
           </div>
           <div class="glass-card-info">
-            <strong data-i18n="cardElevationValue">+833 m D+</strong>
-            <span data-i18n="cardElevationDesc">Dislivello reale su modello DEM</span>
+            <strong data-i18n="cardElevationValue">+833 m D+ · Tramonto 18:14</strong>
+            <span data-i18n="cardElevationDesc">DEM 3D e luce residua calcolata offline</span>
           </div>
         </div>
 
@@ -119,9 +141,51 @@
             </svg>
           </div>
           <div class="glass-card-info">
-            <strong data-i18n="cardLoopTitle">Esempio di anello · 12,4 km</strong>
-            <span data-i18n="cardLoopDesc">Imposta un obiettivo. Confronta le alternative.</span>
+            <strong data-i18n="cardLoopTitle">Anello 12,4 km · Passo reale &amp; ferrata opt-in</strong>
+            <span data-i18n="cardLoopDesc">Tempi calibrati sul tuo storico e su T1–T6.</span>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fascia 4 Certezze (Conversione Anti-Abbonamento) -->
+  <section class="certezze-section wrap" aria-label="Punti di forza di Traccialto">
+    <div class="certezze-grid">
+      <div class="certezza-item">
+        <div class="certezza-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <div class="certezza-text">
+          <strong data-i18n="cert1Title">Zero abbonamenti PRO</strong>
+          <span data-i18n="cert1Desc">Mappe offline e 3D senza paywall</span>
+        </div>
+      </div>
+      <div class="certezza-item">
+        <div class="certezza-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div class="certezza-text">
+          <strong data-i18n="cert2Title">Zone offline 1–50 km</strong>
+          <span data-i18n="cert2Desc">Scarichi un’intera valle con un tocco</span>
+        </div>
+      </div>
+      <div class="certezza-item">
+        <div class="certezza-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        </div>
+        <div class="certezza-text">
+          <strong data-i18n="cert3Title">Tramonto &amp; luce offline</strong>
+          <span data-i18n="cert3Desc">Avviso se l’arrivo supera il buio</span>
+        </div>
+      </div>
+      <div class="certezza-item">
+        <div class="certezza-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <div class="certezza-text">
+          <strong data-i18n="cert4Title">Senza account, GPX liberi</strong>
+          <span data-i18n="cert4Desc">Importi GPX/KML ed esporti Storie 3D</span>
         </div>
       </div>
     </div>
@@ -158,13 +222,13 @@
         <h3 data-i18n="trekTitle">Trekking &amp; Montagna</h3>
         <div class="discipline-quote" data-i18n="trekQuote">«Un passo alla volta.»</div>
         <p class="discipline-desc" data-i18n="trekDesc">
-          Prepara escursioni e cammini con una pianificazione che privilegia i sentieri. Confronta quote, salita e durata stimata prima di partire.
+          Prepara escursioni e anelli privilegiando i sentieri, includendo su richiesta le vie ferrate mappate (con avviso su attrezzatura e condizioni). Confronta quote, salita e durata stimata prima di partire.
         </p>
 
         <ul class="discipline-features">
           <li data-i18n-html="trekF1"><strong>Difficoltà T1–T6 in Italia</strong> dove presenti nei dati; i tratti non classificati restano indicati</li>
-          <li data-i18n-html="trekF2"><strong>Profilo altimetrico</strong> e salita stimati dalla cartografia</li>
-          <li data-i18n-html="trekF3"><strong>Avvisi vocali di quota</strong> ogni 500 m D+ per gestire le energie</li>
+          <li data-i18n-html="trekF2"><strong>Tempi sul tuo passo reale</strong> calibrati su pendenza DEM, T1–T6 e storico</li>
+          <li data-i18n-html="trekF3"><strong>Voce svolta, fuori rotta e +500 m D+</strong> più orario del tramonto calcolato offline</li>
           <li data-i18n-html="trekF4"><strong>Bussola orientata</strong> sulla cartografia topografica con curve di livello</li>
         </ul>
 
@@ -196,9 +260,9 @@
 
         <ul class="discipline-features">
           <li data-i18n-html="bikeF1"><strong>Routing ciclistico dedicato</strong> con priorità a piste ciclabili e sterrati compatti</li>
-          <li data-i18n-html="bikeF2"><strong>Display ad alto contrasto</strong> con dati essenziali in evidenza</li>
-          <li data-i18n-html="bikeF3"><strong>Distanza, velocità e quota</strong> a vista durante la pedalata</li>
-          <li data-i18n-html="bikeF4"><strong>Registrazione continua</strong> della traccia senza consumo eccessivo di batteria</li>
+          <li data-i18n-html="bikeF2"><strong>Guida vocale svolte &amp; fuori rotta</strong> e orario del tramonto visibile dal vivo</li>
+          <li data-i18n-html="bikeF3"><strong>Distanza, velocità e quota</strong> ad alto contrasto sul supporto da manubrio</li>
+          <li data-i18n-html="bikeF4"><strong>Registrazione continua</strong> e zone scaricabili offline fino a 50 km</li>
         </ul>
 
         <div class="discipline-pill-footer">
@@ -229,9 +293,9 @@
 
         <ul class="discipline-features">
           <li data-i18n-html="runF1"><strong>Anelli personalizzabili</strong> per distanza o durata, con limite D+ facoltativo</li>
-          <li data-i18n-html="runF2"><strong>Passo medio, distanza e tempo</strong> in movimento aggiornati ogni secondo</li>
+          <li data-i18n-html="runF2"><strong>Istruzioni vocali essenziali</strong> solo sulle svolte effettive, passo al km e pausa auto</li>
           <li data-i18n-html="runF3"><strong>Fontane e punti preferiti</strong> selezionabili sulla mappa di corsa</li>
-          <li data-i18n-html="runF4"><strong>Registrazione GPS offline:</strong> scarica prima la cartografia che ti serve</li>
+          <li data-i18n-html="runF4"><strong>Zone offline fino a 50 km:</strong> scarica prima l’area che ti serve</li>
         </ul>
 
         <div class="discipline-pill-footer">
@@ -279,6 +343,91 @@
 <div class="section-intro"><span class="feature-tag-mini" data-i18n="startTag">Dall’idea al sentiero</span><h2 id="start-title" data-i18n-html="startTitle">Meno preparativi.<br><span class="serif-accent">Più tempo fuori.</span></h2></div>
 <ol class="steps-grid"><li><span class="step-number">01</span><h3 data-i18n="s1Title">Scegli l’attività</h3><p data-i18n="s1Desc">Trekking, bicicletta, corsa o camminata: metriche, punti sulla mappa e pianificazione seguono la tua scelta.</p></li><li><span class="step-number">02</span><h3 data-i18n="s2Title">Prepara la tua uscita</h3><p data-i18n="s2Desc">Crea tappe, importa una traccia o cerca un anello. Controlla il percorso e scarica le mappe disponibili.</p></li><li><span class="step-number">03</span><h3 data-i18n="s3Title">Parti e ritrova i tuoi progressi</h3><p data-i18n="s3Desc">Segui il percorso o registra liberamente. Al ritorno trovi mappa, tempi e profilo nel tuo storico.</p></li></ol>
 </section>
+
+  <!-- Preview Visiva Dentro l'App (Mockup / Slot Screenshot Prod) -->
+  <section class="app-showcase-section wrap" aria-labelledby="showcase-title">
+    <div class="section-intro">
+      <div class="badge-pill">
+        <span class="dot"></span>
+        <span data-i18n="showBadge">Dentro l’app (versione Google Play)</span>
+      </div>
+      <h2 id="showcase-title" data-i18n-html="showTitle">Progettata per leggersi bene<br><span class="serif-accent">sul sentiero vero.</span></h2>
+      <p data-i18n="showDesc">
+        Esempio delle schermate principali incluse gratuitamente su Android: cartografia topografica con tramonto offline, anelli e vie ferrate, Replay 3D e Storie fotografiche.
+      </p>
+    </div>
+
+    <div class="showcase-grid">
+      <article class="phone-mock-card">
+        <div class="phone-screen-frame topo" aria-hidden="true">
+          <div class="screen-pill-row">
+            <span class="screen-chip green" data-i18n="ui1Chip1">T3 · Sentiero alpino</span>
+            <span class="screen-chip amber" data-i18n="ui1Chip2">☀ Tramonto 18:14 · 3h 20m luce</span>
+          </div>
+          <svg viewBox="0 0 260 95" fill="none" style="width:100%;height:95px;">
+            <path d="M8 78 Q70 58 128 65 T252 38" stroke="rgba(255,255,255,0.22)" stroke-width="1.5"/>
+            <path d="M8 54 Q76 28 135 42 T252 16" stroke="rgba(255,255,255,0.22)" stroke-width="1.5"/>
+            <path d="M26 76 C68 68, 98 44, 144 38 C178 33, 206 24, 234 18" stroke="#55e688" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="26" cy="76" r="5" fill="#fff" stroke="#14221a" stroke-width="2"/>
+            <circle cx="234" cy="18" r="6" fill="#c46849" stroke="#fff" stroke-width="2"/>
+          </svg>
+          <div class="screen-metric-grid">
+            <div class="screen-metric-box"><strong>1.842 m</strong><span data-i18n="ui1M1">Quota</span></div>
+            <div class="screen-metric-box"><strong>+640 m</strong><span>D+</span></div>
+            <div class="screen-metric-box"><strong>3h 15m</strong><span data-i18n="ui1M3">Passo reale</span></div>
+          </div>
+        </div>
+        <div class="phone-mock-caption">
+          <strong data-i18n="show1Title">Mappa topografica, T1–T6 &amp; tramonto offline</strong>
+          <p data-i18n="show1Desc">Indicazioni vocali alle svolte, avviso fuori rotta e calcolo solare senza campo telefonico.</p>
+        </div>
+      </article>
+
+      <article class="phone-mock-card">
+        <div class="phone-screen-frame planner" aria-hidden="true">
+          <div class="screen-pill-row">
+            <span class="screen-chip" data-i18n="ui2Chip1">Anello Trekking</span>
+            <span class="screen-chip warn" data-i18n="ui2Chip2">⚠ Via ferrata opt-in</span>
+          </div>
+          <div style="background:white;border:1px solid #d2e0d4;border-radius:14px;padding:12px;">
+            <div style="font-size:12px;font-weight:800;color:#14281d;margin-bottom:4px;" data-i18n="ui2CardTitle">Anello cresta &amp; ferrata</div>
+            <div style="font-size:11px;color:#415347;line-height:1.4;" data-i18n="ui2CardDesc">Tratto attrezzato preservato senza ricalcolo automatico; verifica attrezzatura e condizioni.</div>
+          </div>
+          <div class="screen-metric-grid">
+            <div class="screen-metric-box"><strong>12,4 km</strong><span data-i18n="ui2M1">Distanza</span></div>
+            <div class="screen-metric-box"><strong>+790 m</strong><span data-i18n="ui2M2">D+ Max</span></div>
+            <div class="screen-metric-box"><strong>50 km</strong><span data-i18n="ui2M3">Zona offline</span></div>
+          </div>
+        </div>
+        <div class="phone-mock-caption">
+          <strong data-i18n="show2Title">Anelli intelligenti, vie ferrate &amp; zone 1–50 km</strong>
+          <p data-i18n="show2Desc">Genera itinerari circolari per durata o km, oppure scarica un’intera vallata offline prima di partire.</p>
+        </div>
+      </article>
+
+      <article class="phone-mock-card">
+        <div class="phone-screen-frame story" aria-hidden="true">
+          <div class="screen-pill-row">
+            <span class="screen-chip green" data-i18n="ui3Chip1">Replay 3D pronto</span>
+            <span class="screen-chip" data-i18n="ui3Chip2">HTML interattivo</span>
+          </div>
+          <div style="margin-top:auto;">
+            <div style="font-size:15px;font-weight:800;margin-bottom:4px;" data-i18n="ui3CardTitle">Cresta del Lago · Storia</div>
+            <div class="screen-metric-grid">
+              <div class="screen-metric-box"><strong>11,8 km</strong><span data-i18n="ui3M1">Percorso</span></div>
+              <div class="screen-metric-box"><strong>+833 m</strong><span data-i18n="ui3M2">Salita</span></div>
+              <div class="screen-metric-box"><strong>GPX · HTML</strong><span data-i18n="ui3M3">Esporta</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="phone-mock-caption">
+          <strong data-i18n="show3Title">Replay 3D, Storie foto &amp; export HTML</strong>
+          <p data-i18n="show3Desc">Rivivi la traccia in 3D, crea una Storia con i dati dell’uscita o esporta una pagina web autonoma.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
   <!-- Sezione 02: Strumenti di Precisione (Bento Grid Morbida) -->
   <section class="features-section wrap" id="funzioni">
     <div class="section-intro">
@@ -293,12 +442,12 @@
     </div>
 
     <div class="features-grid">
-      <!-- Feature 1: Rilievi 3D & Curve di Livello (Col 7) -->
+      <!-- Feature 1: Rilievi 3D & Zone Offline (Col 7) -->
       <div class="feature-card col-7">
-        <div class="feature-tag-mini" data-i18n="feat1Tag">Morfologia del Territorio</div>
-        <h3 data-i18n="feat1Title">Rilievi 3D DEM e cartografia topografica</h3>
+        <div class="feature-tag-mini" data-i18n="feat1Tag">Morfologia &amp; Mappe Offline</div>
+        <h3 data-i18n="feat1Title">Rilievi 3D DEM, zone offline 1–50 km &amp; Replay 3D</h3>
         <p data-i18n="feat1Desc">
-          Il modello digitale del terreno ad alta risoluzione trasforma la mappa in una vista tridimensionale naturale. Osserva versanti, creste e canaloni prima di imboccarli per valutare l'esposizione al sole e la ripidezza del percorso.
+          Il modello digitale del terreno DEM mostra versanti, creste e ripidezza in 3D, e a fine uscita rivedi il percorso in Replay 3D. Puoi scaricare intere aree cercando una località (1–50 km) anche senza una traccia già pronta.
         </p>
 
         <div class="vector-topo-box" aria-label="Illustrazione vettoriale del rilievo topografico">
@@ -360,12 +509,12 @@
         </div>
       </div>
 
-      <!-- Feature 3: Cockpit AMOLED ad Alto Contrasto (Col 6) -->
+      <!-- Feature 3: Cockpit AMOLED & Tramonto Offline (Col 6) -->
       <div class="feature-card col-6">
-        <div class="feature-tag-mini" data-i18n="feat3Tag">Efficienza Energetica</div>
-        <h3 data-i18n="feat3Title">Display AMOLED ad alto contrasto</h3>
+        <div class="feature-tag-mini" data-i18n="feat3Tag">Efficienza &amp; Luce Naturale</div>
+        <h3 data-i18n="feat3Title">Display AMOLED &amp; orario tramonto offline</h3>
         <p data-i18n="feat3Desc">
-          Una vista nera con le metriche essenziali, per consultare l’attività con meno elementi sullo schermo. La registrazione continua anche a schermo spento; autonomia e leggibilità dipendono dal telefono e dalle impostazioni.
+          Vista nera essenziale con registrazione a schermo spento, più calcolo solare offline dell’orario di tramonto e luce residua con avviso se l’arrivo stimato supera il buio (Trekking e Bici).
         </p>
 
         <div class="amoled-soft-box" aria-label="Simulatore del cockpit AMOLED">
@@ -391,15 +540,19 @@
               <span class="amoled-soft-val">01:45:00</span>
             </div>
           </div>
+          <div class="amoled-sunset-pill">
+            <span data-i18n="feat3SunsetLeft">☀ Tramonto oggi 18:14</span>
+            <span data-i18n="feat3SunsetRight">3h 20m luce · calcolo offline</span>
+          </div>
         </div>
       </div>
 
-      <!-- Feature 4: Condivisione Autonoma & Sicurezza (Col 6) -->
+      <!-- Feature 4: Storie, Replay 3D & Sicurezza (Col 6) -->
       <div class="feature-card col-6">
-        <div class="feature-tag-mini" data-i18n="feat4Tag">Ricordi da portare con te</div>
-        <h3 data-i18n="feat4Title">Il tuo percorso, da condividere</h3>
+        <div class="feature-tag-mini" data-i18n="feat4Tag">Ricordi &amp; Sicurezza</div>
+        <h3 data-i18n="feat4Title">Replay 3D, Storie e SOS in quota</h3>
         <p data-i18n="feat4Desc">
-          Crea una storia con foto, traccia e dati, oppure esporta una pagina HTML. Nei browser compatibili la mappa è interattiva; nelle anteprime iPhone rimangono visibili la vista salvata e il profilo altimetrico.
+          Rivedi la traccia con Replay 3D, crea una Storia con foto e dati oppure esporta una pagina HTML (interattiva nei browser compatibili; vista salvata e profilo altimetrico su iPhone).
         </p>
 
         <div class="feature-spec-pills">
@@ -450,18 +603,18 @@
         </div>
       </div>
 
-      <!-- Feature 6: Live Tracking Cifrato, Punti Utili & Tema Scuro (Col 6) -->
+      <!-- Feature 6: Guida Vocale, Fuori Rotta, Punti Utili & Live Cifrato (Col 6) -->
       <div class="feature-card col-6">
-        <div class="feature-tag-mini" data-i18n="feat6Tag">Sicurezza &amp; Mappa Intelligente</div>
-        <h3 data-i18n="feat6Title">Live tracking cifrato e punti filtrati</h3>
+        <div class="feature-tag-mini" data-i18n="feat6Tag">Guida Vocale &amp; Live Tracking</div>
+        <h3 data-i18n="feat6Title">Voce alle svolte, fuori rotta e Live cifrato</h3>
         <p data-i18n="feat6Desc">
-          Avvia una sessione live cifrata sul telefono (AES-GCM, fino a 8 ore) con chiave nel link condiviso, osserva i punti utili adatti alla modalità attiva, personalizza le metriche in navigazione e scegli tra tema chiaro e tema scuro leggibile.
+          Indicazioni vocali alle svolte effettive con allarme fuori rotta, sessione live cifrata sul telefono (AES-GCM fino a 8 ore), punti utili filtrati per sport e tema scuro leggibile.
         </p>
 
         <div class="feature-spec-pills">
           <div class="spec-pill-item">
             <span class="check-icon">✓</span>
-            <span data-i18n="feat6P1">Condivisione live opt-in cifrata AES-GCM sul dispositivo (massimo 8 ore)</span>
+            <span data-i18n="feat6P1">Guida vocale mirata alle svolte, avvisi ogni 500 m D+ e fuori rotta</span>
           </div>
           <div class="spec-pill-item">
             <span class="check-icon">✓</span>
@@ -469,11 +622,11 @@
           </div>
           <div class="spec-pill-item">
             <span class="check-icon">✓</span>
-            <span data-i18n="feat6P3">Metriche in navigazione personalizzabili e pausa automatica alle soste</span>
+            <span data-i18n="feat6P3">Live tracking opt-in AES-GCM sul dispositivo (massimo 8 ore)</span>
           </div>
           <div class="spec-pill-item">
             <span class="check-icon">✓</span>
-            <span data-i18n="feat6P4">Tema scuro ad alto contrasto e pannello Notifiche dedicato</span>
+            <span data-i18n="feat6P4">Tema scuro ad alto contrasto, pausa auto e pannello Notifiche</span>
           </div>
         </div>
       </div>
@@ -645,15 +798,20 @@
         Disponibile su Google Play Store. Scarica l'applicazione gratuita e inizia a esplorare.
       </p>
 
-      <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+      <div class="closing-cta-row">
         <a class="btn-pill-primary" href="https://play.google.com/store/apps/details?id=it.lanzonavigator.app" target="_blank" rel="noopener noreferrer">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-            <polyline points="7 10 12 15 17 10"/>
-            <line x1="12" y1="15" x2="12" y2="3"/>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M4.5 3.3c-.3.3-.5.8-.5 1.4v14.6c0 .6.2 1.1.5 1.4l.1.1 8.2-8.2v-.2L4.6 3.2l-.1.1zm11 10.9l-2.7-2.7v-.2l2.7-2.7.1.1 3.2 1.8c.9.5.9 1.4 0 1.9l-3.2 1.8-.1 0zM15.6 14.3L12.8 11.5 4.5 19.8c.3.3.8.3 1.4 0l9.7-5.5zm0-4.6L5.9 4.2c-.6-.3-1.1-.3-1.4 0l8.3 8.3 2.8-2.8z"/>
           </svg>
-          <span data-i18n="closingBtn">Scarica su Google Play</span>
+          <span data-i18n="closingBtn">Scarica gratis su Google Play</span>
         </a>
+        <div class="qr-desktop-card">
+          <img src="assets/play_qr.svg" width="76" height="76" alt="QR Code per aprire Traccialto su Google Play">
+          <div>
+            <strong data-i18n="qrTitle">Sei al computer?</strong>
+            <span data-i18n="qrDesc">Inquadra il QR col telefono per installare</span>
+          </div>
+        </div>
       </div>
 
       <div style="margin-top: 24px; font-size: 13px; color: var(--ink-muted);" data-i18n="closingFoot">
