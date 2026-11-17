@@ -55,7 +55,7 @@
       runDesc: "Per uscite nei parchi, lungo i fiumi e sulle vie pedonali: passo recente e medio al chilometro, pausa automatica e anelli su distanza o durata.",
       runF1: "<strong>Anelli personalizzabili</strong> per distanza o durata, con limite D+ facoltativo",
       runF2: "<strong>Passo medio, distanza e tempo</strong> in movimento aggiornati ogni secondo",
-      runF3: "<strong>Fontane e punti panoramici</strong> in evidenza sulla mappa di corsa",
+      runF3: "<strong>Fontane e punti preferiti</strong> selezionabili sulla mappa di corsa",
       runF4: "<strong>Registrazione GPS offline:</strong> scarica prima la cartografia che ti serve",
       runPill: "Passo mirato intorno a 6:00 /km, zero distrazioni",
 
@@ -63,7 +63,7 @@
       walkTitle: "Camminata",
       walkQuote: "«Al tuo passo, ogni giorno.»",
       walkDesc: "Pensata per passeggiate urbane, parchi e sentieri dolci senza la complessità dell’alta quota: ritmo stimato intorno ai 5 km/h e mappa ripulita dagli elementi non pertinenti.",
-      walkF1: "<strong>Mappa essenziale per passeggiare:</strong> mostra punti acqua, belvedere e parcheggi",
+      walkF1: "<strong>Mappa essenziale per passeggiare:</strong> mostra punti acqua e i tuoi punti preferiti",
       walkF2: "<strong>Anelli flessibili</strong> per distanza o tempo disponibile fuori porta",
       walkF3: "<strong>Funzione Trip Trim</strong> per ripulire code o soste accidentali a fine uscita",
       walkF4: "<strong>Diario con foto e statistiche</strong> sempre nel tuo archivio locale",
@@ -83,7 +83,7 @@
       featIntroDesc: "Prepara l’itinerario, osserva il terreno e scegli quali dati tenere a vista durante l’uscita.",
 
       feat1Tag: "Morfologia del Territorio",
-      feat1Title: "Rilievi 3D e curve di livello DEM",
+      feat1Title: "Rilievi 3D DEM e cartografia topografica",
       feat1Desc: "Il modello digitale del terreno ad alta risoluzione trasforma la mappa in una vista tridimensionale naturale. Osserva versanti, creste e canaloni prima di imboccarli per valutare l'esposizione al sole e la ripidezza del percorso.",
       feat1Badge: "Vetta • 2.814 m",
 
@@ -102,13 +102,13 @@
       feat3Altitude: "Quota Attuale",
       feat3Gain: "Dislivello D+",
       feat3Dist: "Distanza",
-      feat3Battery: "Autonomia",
+      feat3Battery: "Tempo attivo",
 
       feat4Tag: "Ricordi da portare con te",
       feat4Title: "Il tuo percorso, da condividere",
       feat4Desc: "Crea una storia con foto, traccia e dati, oppure esporta una pagina HTML. Nei browser compatibili la mappa è interattiva; nelle anteprime iPhone rimangono visibili la vista salvata e il profilo altimetrico.",
       feat4P1: "File HTML standalone con mappa interattiva e profilo dislivello",
-      feat4P2: "Torcia ottica e avvisatore acustico con segnale SOS in codice Morse",
+      feat4P2: "Schermata SOS con coordinate rapide per il 112 e torcia ottica in codice Morse",
       feat4P3: "Strumento Trip Trim per rimuovere tempi morti all'inizio e alla fine",
       feat4P4: "Disponibile in italiano, inglese, francese e spagnolo",
 
@@ -124,7 +124,7 @@
       feat6Title: "Live tracking cifrato e punti filtrati",
       feat6Desc: "Avvia una sessione live cifrata sul telefono (AES-GCM, fino a 8 ore) con chiave nel link condiviso, osserva i punti utili adatti alla modalità attiva, personalizza le metriche in navigazione e scegli tra tema chiaro e tema scuro leggibile.",
       feat6P1: "Condivisione live opt-in cifrata AES-GCM sul dispositivo (massimo 8 ore)",
-      feat6P2: "Fontane, belvedere e parcheggi sempre attivi; rifugi e bivacchi alpini nel Trekking",
+      feat6P2: "Fontane e preferiti attivabili su mappa; rifugi e bivacchi alpini nel Trekking",
       feat6P3: "Metriche in navigazione personalizzabili e pausa automatica alle soste",
       feat6P4: "Tema scuro ad alto contrasto e pannello Notifiche dedicato",
 
@@ -221,7 +221,7 @@
       runDesc: "For park runs, riverside paths, and pedestrian routes: recent and average pace per kilometer, auto-pause, and distance or time-based loops.",
       runF1: "<strong>Customizable loops</strong> by distance or duration, with optional D+ limits",
       runF2: "<strong>Average pace, distance, and moving time</strong> updated every second",
-      runF3: "<strong>Water fountains and viewpoints</strong> highlighted on your running map",
+      runF3: "<strong>Water fountains and favorite points</strong> selectable on your running map",
       runF4: "<strong>Offline GPS recording:</strong> download the maps you need ahead of time",
       runPill: "Reference pace around 6:00 /km, zero distractions",
 
@@ -229,7 +229,7 @@
       walkTitle: "Walking",
       walkQuote: "«At your own pace, every day.»",
       walkDesc: "Designed for city walks, parks, and gentle trails without high-mountain clutter: estimated speed around 5 km/h and clean maps focused on essentials.",
-      walkF1: "<strong>Essential walking map:</strong> shows water points, viewpoints, and parking",
+      walkF1: "<strong>Essential walking map:</strong> shows water points and your saved favorites",
       walkF2: "<strong>Flexible loops</strong> tailored to available distance or time",
       walkF3: "<strong>Trip Trim tool</strong> to clean up accidental waiting tails after saving",
       walkF4: "<strong>Photo diary and stats</strong> stored in your private on-device archive",
@@ -249,7 +249,7 @@
       featIntroDesc: "Plan your route, inspect the terrain, and choose which metrics stay visible on screen.",
 
       feat1Tag: "Terrain Morphology",
-      feat1Title: "3D terrain relief and DEM contour lines",
+      feat1Title: "3D DEM terrain relief and topographic maps",
       feat1Desc: "High-resolution digital elevation models transform the map into a natural 3D view. Inspect slopes, ridges, and valleys before taking them on to evaluate sun exposure and trail steepness.",
       feat1Badge: "Summit • 2,814 m",
 
@@ -268,13 +268,13 @@
       feat3Altitude: "Current Alt.",
       feat3Gain: "Elevation D+",
       feat3Dist: "Distance",
-      feat3Battery: "Battery time",
+      feat3Battery: "Active time",
 
       feat4Tag: "Memories to carry with you",
       feat4Title: "Your journey, ready to share",
       feat4Desc: "Create a story with photos, track, and stats, or export a standalone HTML page. Maps remain interactive in compatible browsers, showing your route and elevation profile.",
       feat4P1: "Standalone HTML file with interactive map and elevation profile",
-      feat4P2: "Visual flashlight and audio buzzer with SOS Morse code signal",
+      feat4P2: "SOS screen with 112 shortcut, GPS coordinates, and Morse-code optical flashlight",
       feat4P3: "Trip Trim tool to remove waiting times at start and finish",
       feat4P4: "Available in Italian, English, French, and Spanish",
 
@@ -290,7 +290,7 @@
       feat6Title: "Encrypted live share and smart POIs",
       feat6Desc: "Start an optional live session encrypted on your phone (AES-GCM, up to 8 hours) with the key kept in the link, inspect points of interest filtered by activity mode, customize live metrics on screen, and switch to high-contrast Dark Mode.",
       feat6P1: "Opt-in on-device AES-GCM encrypted live sharing (8 hours maximum per session)",
-      feat6P2: "Water, viewpoints, and parking always shown; mountain huts & bivouacs in Trekking",
+      feat6P2: "Fountains and favorites toggled on map; alpine huts & bivouacs in Trekking",
       feat6P3: "Customizable live metrics per activity and automatic pause when stopped",
       feat6P4: "High-contrast Dark Mode and dedicated Notifications settings panel",
 
@@ -365,7 +365,7 @@
       trekTitle: "Randonnée & Montagne",
       trekQuote: "« Un pas après l'autre. »",
       trekDesc: "Préparez vos randonnées avec un calcul privilégiant les sentiers pédestres. Comparez altitudes, montées et durées estimées avant de partir.",
-      trekF1: "<strong>Difficulté T1–T6</strong> répertoriée là où présente dans les données topographiques",
+      trekF1: "<strong>Difficulté T1–T6 en Italie</strong> répertoriée là où présente dans les données ; les segments non classés restent indiqués",
       trekF2: "<strong>Profil altimétrique</strong> et montées estimés d'après la cartographie",
       trekF3: "<strong>Alertes vocales d'altitude</strong> tous les 500 m D+ pour doser votre effort",
       trekF4: "<strong>Boussole orientée</strong> sur cartographie topographique avec courbes de niveau",
@@ -387,7 +387,7 @@
       runDesc: "Pour vos sorties en parc, bord de rivière ou voie piétonne : allure récente et moyenne au kilomètre, pause automatique et boucles sur distance ou durée.",
       runF1: "<strong>Boucles personnalisables</strong> selon distance ou durée, avec limite D+ optionnelle",
       runF2: "<strong>Allure moyenne, distance et temps</strong> actualisés chaque seconde",
-      runF3: "<strong>Fontaines et belvédères</strong> mis en avant sur votre carte de course",
+      runF3: "<strong>Fontaines et points favoris</strong> affichables sur votre carte de course",
       runF4: "<strong>Enregistrement GPS hors-ligne :</strong> téléchargez la carte à l'avance",
       runPill: "Allure cible autour de 6:00 /km, sans distraction",
 
@@ -395,7 +395,7 @@
       walkTitle: "Marche",
       walkQuote: "« À votre rythme, chaque jour. »",
       walkDesc: "Conçue pour les balades en ville, les parcs et les sentiers doux sans encombrement alpin : vitesse estimée d'environ 5 km/h et carte épurée.",
-      walkF1: "<strong>Carte dédiée à la balade :</strong> affiche points d'eau, panoramas et parkings",
+      walkF1: "<strong>Carte dédiée à la balade :</strong> affiche points d'eau et vos points favoris",
       walkF2: "<strong>Boucles flexibles</strong> selon la distance ou le temps disponible",
       walkF3: "<strong>Fonction Trip Trim</strong> pour nettoyer les arrêts prolongés au départ ou à l'arrivée",
       walkF4: "<strong>Journal avec photos et statistiques</strong> conservés dans vos archives locales",
@@ -415,7 +415,7 @@
       featIntroDesc: "Préparez l'itinéraire, observez le relief et choisissez les données à garder sous les yeux.",
 
       feat1Tag: "Morphologie du Relief",
-      feat1Title: "Relief 3D et courbes de niveau DEM",
+      feat1Title: "Relief 3D DEM et cartographie topographique",
       feat1Desc: "Le modèle numérique de terrain haute résolution transforme la carte en vue 3D naturelle. Observez versants, crêtes et combes pour évaluer l'ensoleillement et la pente.",
       feat1Badge: "Sommet • 2 814 m",
 
@@ -434,13 +434,13 @@
       feat3Altitude: "Altitude actuelle",
       feat3Gain: "Dénivelé D+",
       feat3Dist: "Distance",
-      feat3Battery: "Autonomie",
+      feat3Battery: "Temps actif",
 
       feat4Tag: "Souvenirs à partager",
       feat4Title: "Votre parcours, facile à partager",
       feat4Desc: "Créez une story avec photos et données, ou exportez une page web HTML autonome. La carte reste interactive dans les navigateurs compatibles.",
       feat4P1: "Fichier HTML autonome avec carte interactive et profil de dénivelé",
-      feat4P2: "Lampe torche et avertisseur sonore avec signal SOS en code Morse",
+      feat4P2: "Écran SOS avec raccourci 112, coordonnées GPS et lampe torche en code Morse",
       feat4P3: "Outil Trip Trim pour nettoyer les temps morts au début et à la fin",
       feat4P4: "Disponible en italien, anglais, français et espagnol",
 
@@ -456,7 +456,7 @@
       feat6Title: "Suivi live chiffré et points filtrés",
       feat6Desc: "Démarrez un suivi live opt-in chiffré sur le téléphone (AES-GCM, 8 h max) avec clé incluse dans le lien, affichez les points utiles adaptés au mode choisi, personnalisez vos métriques en navigation et profitez du thème sombre contrasté.",
       feat6P1: "Partage live facultatif chiffré AES-GCM sur l'appareil (durée maximale de 8 h)",
-      feat6P2: "Points d'eau, panoramas et parkings toujours visibles ; refuges et bivouacs en Randonnée",
+      feat6P2: "Points d'eau et favoris activables sur carte ; refuges et bivouacs en Randonnée",
       feat6P3: "Métriques de navigation personnalisables et pause automatique à l'arrêt",
       feat6P4: "Thème sombre haute lisibilité et menu Notifications dédié",
 
@@ -531,7 +531,7 @@
       trekTitle: "Senderismo & Montaña",
       trekQuote: "«Un paso a la vez.»",
       trekDesc: "Planifica excursiones con un trazado que prioriza los senderos. Compara altitudes, ascensos y tiempos estimados antes de salir.",
-      trekF1: "<strong>Dificultad de senderos T1–T6</strong> indicada donde esté disponible en los datos",
+      trekF1: "<strong>Dificultad de senderos T1–T6 en Italia</strong> indicada donde esté disponible en los datos",
       trekF2: "<strong>Perfil de elevación</strong> y desniveles calculados a partir de la topografía",
       trekF3: "<strong>Avisos de voz de altitud</strong> cada 500 m D+ para gestionar tu energía",
       trekF4: "<strong>Brújula orientada</strong> en cartografía topográfica con curvas de nivel",
@@ -553,7 +553,7 @@
       runDesc: "Para salidas en parques y vías peatonales: ritmo reciente y medio por kilómetro, pausa automática y rutas circulares por distancia o tiempo.",
       runF1: "<strong>Rutas circulares a medida</strong> por distancia o tiempo, con límite D+ opcional",
       runF2: "<strong>Ritmo medio, distancia y tiempo</strong> en movimiento actualizados al segundo",
-      runF3: "<strong>Fuentes de agua y miradores</strong> visibles en tu mapa de carrera",
+      runF3: "<strong>Fuentes de agua y puntos favoritos</strong> seleccionables en tu mapa de carrera",
       runF4: "<strong>Grabación GPS offline:</strong> descarga los mapas con antelación",
       runPill: "Ritmo de referencia ~6:00 /km, sin distracciones",
 
@@ -561,7 +561,7 @@
       walkTitle: "Caminata",
       walkQuote: "«A tu paso, cada día.»",
       walkDesc: "Pensada para paseos urbanos, parques y senderos suaves sin elementos de alta montaña: ritmo estimado de unos 5 km/h y mapa centrado en lo esencial.",
-      walkF1: "<strong>Mapa esencial para caminar:</strong> muestra puntos de agua, miradores y aparcamientos",
+      walkF1: "<strong>Mapa esencial para caminar:</strong> muestra puntos de agua y tus lugares favoritos",
       walkF2: "<strong>Rutas circulares flexibles</strong> según la distancia o el tiempo libre",
       walkF3: "<strong>Función Trip Trim</strong> para limpiar esperas accidentales al inicio y final",
       walkF4: "<strong>Diario con fotos y estadísticas</strong> guardado en tu archivo local",
@@ -581,7 +581,7 @@
       featIntroDesc: "Prepara el itinerario, estudia el terreno y elige qué métricas mantener a la vista.",
 
       feat1Tag: "Morfología del Terreno",
-      feat1Title: "Relieve 3D y curvas de nivel DEM",
+      feat1Title: "Relieve 3D DEM y cartografía topográfica",
       feat1Desc: "El modelo digital de elevación de alta resolución transforma el mapa en una vista tridimensional natural. Observa laderas, crestas y vaguadas para evaluar la inclinación.",
       feat1Badge: "Cima • 2.814 m",
 
@@ -600,13 +600,13 @@
       feat3Altitude: "Altitud actual",
       feat3Gain: "Desnivel D+",
       feat3Dist: "Distancia",
-      feat3Battery: "Autonomía",
+      feat3Battery: "Tiempo activo",
 
       feat4Tag: "Recuerdos para llevar contigo",
       feat4Title: "Tu ruta, lista para compartir",
       feat4Desc: "Crea una historia con fotos y estadísticas, o exporta una página web HTML independiente. El mapa sigue siendo interactivo en navegadores compatibles.",
       feat4P1: "Archivo HTML independiente con mapa interactivo y perfil de elevación",
-      feat4P2: "Linterna óptica y avisador acústico con señal SOS en código Morse",
+      feat4P2: "Pantalla SOS con acceso al 112, coordenadas GPS y linterna óptica en código Morse",
       feat4P3: "Herramienta Trip Trim para recortar esperas al inicio y final",
       feat4P4: "Disponible en italiano, inglés, francés y español",
 
@@ -622,7 +622,7 @@
       feat6Title: "Directo cifrado y puntos filtrados",
       feat6Desc: "Activa el seguimiento en vivo cifrado en tu móvil (AES-GCM, hasta 8 horas) con la clave en el enlace, visualiza puntos útiles adaptados a cada modo, personaliza tus métricas en ruta y disfruta del tema oscuro de alto contraste.",
       feat6P1: "Seguimiento en vivo opcional cifrado AES-GCM en el teléfono (máximo 8 horas)",
-      feat6P2: "Fuentes, miradores y aparcamientos en todos los modos; refugios y vivacs en Senderismo",
+      feat6P2: "Fuentes y favoritos activables en el mapa; refugios y vivacs en Senderismo",
       feat6P3: "Métricas en navegación personalizables y pausa automática en paradas",
       feat6P4: "Tema oscuro legible de alto contraste y sección dedicada de Notificaciones",
 
