@@ -71,7 +71,7 @@
       <div class="hero-copy">
         <div class="kicker" data-i18n="heroBadge">Trekking · Bicicletta · Corsa · Camminata</div>
 
-        <h1 data-i18n-html="heroTitle">Un’app sola per camminare, correre,<br>pedalare e andare in montagna.</h1>
+        <h1 data-i18n-html="heroTitle">Un’unica app,<br>quattro discipline.</h1>
 
         <p class="hero-lead" data-i18n="heroLead">
           Scegli come ti muovi e Traccialto adatta mappa, routing, punti utili e metriche: sentieri T1–T6 e ferrate in quota, ciclovie in bici, passo al km di corsa o passeggiate essenziali. Zone offline 1–50 km e GPX/KML liberi, senza account né pubblicità.
@@ -109,63 +109,44 @@
         </div>
       </div>
 
-      <!-- Galleria interattiva delle 4 modalità -->
+      <!-- Galleria fotografica delle 4 modalità -->
       <div class="modes-gallery-box">
-        <div class="modes-strips" role="tablist" aria-label="Esplora le 4 attività outdoor" data-i18n-aria="modesGalleryAria">
-          <button type="button" class="mode-strip is-active" data-mode="trek" role="tab" aria-selected="true">
+        <div class="modes-strips" aria-label="Esplora le 4 attività outdoor" data-i18n-aria="modesGalleryAria">
+          <a class="mode-strip" href="#disc-trek">
             <img src="assets/alpine-lake.webp" alt="Trekking in montagna presso un lago alpino" data-i18n-alt="trekImgAlt" loading="eager">
             <div class="mode-strip-label">
               <span class="mode-strip-num">01</span>
               <span class="mode-strip-name" data-i18n="mTrekShort">Trekking</span>
               <span class="mode-strip-sub" data-i18n="mTrekHint">Sentieri, T1–T6 e ferrate</span>
             </div>
-          </button>
+          </a>
 
-          <button type="button" class="mode-strip" data-mode="bike" role="tab" aria-selected="false">
+          <a class="mode-strip" href="#disc-bike">
             <img src="assets/bike.webp" alt="Bicicletta gravel lungo un passo montano" data-i18n-alt="bikeImgAlt" loading="eager">
             <div class="mode-strip-label">
               <span class="mode-strip-num">02</span>
               <span class="mode-strip-name" data-i18n="mBikeShort">Bicicletta</span>
               <span class="mode-strip-sub" data-i18n="mBikeHint">Ciclovie e manubrio</span>
             </div>
-          </button>
+          </a>
 
-          <button type="button" class="mode-strip" data-mode="run" role="tab" aria-selected="false">
+          <a class="mode-strip" href="#disc-run">
             <img src="assets/run.webp" alt="Corsa lungo pista pedonale e fiume" data-i18n-alt="runImgAlt" loading="eager">
             <div class="mode-strip-label">
               <span class="mode-strip-num">03</span>
               <span class="mode-strip-name" data-i18n="mRunShort">Corsa</span>
               <span class="mode-strip-sub" data-i18n="mRunHint">Passo al km e anelli</span>
             </div>
-          </button>
+          </a>
 
-          <button type="button" class="mode-strip" data-mode="walk" role="tab" aria-selected="false">
+          <a class="mode-strip" href="#disc-walk">
             <img src="assets/walk.webp" alt="Camminata su viale alberato lungo il lago" data-i18n-alt="walkImgAlt" loading="eager">
             <div class="mode-strip-label">
               <span class="mode-strip-num">04</span>
               <span class="mode-strip-name" data-i18n="mWalkShort">Camminata</span>
               <span class="mode-strip-sub" data-i18n="mWalkHint">Parchi e mappa pulita</span>
             </div>
-          </button>
-        </div>
-
-        <div class="mode-inspector">
-          <div class="mode-tabs-row">
-            <button type="button" class="mode-pill-tab is-active" data-mode="trek" data-i18n="tabTrek">01 · Trekking</button>
-            <button type="button" class="mode-pill-tab" data-mode="bike" data-i18n="tabBike">02 · Bicicletta</button>
-            <button type="button" class="mode-pill-tab" data-mode="run" data-i18n="tabRun">03 · Corsa</button>
-            <button type="button" class="mode-pill-tab" data-mode="walk" data-i18n="tabWalk">04 · Camminata</button>
-          </div>
-          <div class="mode-inspector-body">
-            <span class="mode-inspector-title" id="insTitle">Trekking &amp; Montagna</span>
-            <span class="mode-inspector-desc" id="insDesc">Escursioni su sentieri con difficoltà T1–T6 in Italia, vie ferrate attivabili su scelta, passo calibrato e rifugi.</span>
-          </div>
-          <div class="mode-inspector-tags" id="insTags">
-            <span class="spec-chip">T1–T6 Italia</span>
-            <span class="spec-chip">Vie ferrate opt-in</span>
-            <span class="spec-chip">Rifugi &amp; bivacchi</span>
-            <span class="spec-chip">Tramonto offline</span>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -186,7 +167,7 @@
 
       <div class="disc-matrix">
         <!-- 1. Trekking -->
-        <article class="disc-cell">
+        <article class="disc-cell" id="disc-trek">
           <div class="disc-thumb">
             <img src="assets/alpine-lake.webp" alt="Trekking in montagna presso un lago alpino" data-i18n-alt="trekImgAlt" loading="lazy">
           </div>
@@ -207,7 +188,7 @@
         </article>
 
         <!-- 2. Bicicletta -->
-        <article class="disc-cell">
+        <article class="disc-cell" id="disc-bike">
           <div class="disc-thumb">
             <img src="assets/bike.webp" alt="Bicicletta gravel lungo un passo montano" data-i18n-alt="bikeImgAlt" loading="lazy">
           </div>
@@ -228,7 +209,7 @@
         </article>
 
         <!-- 3. Corsa -->
-        <article class="disc-cell">
+        <article class="disc-cell" id="disc-run">
           <div class="disc-thumb">
             <img src="assets/run.webp" alt="Corsa lungo pista pedonale e fiume" data-i18n-alt="runImgAlt" loading="lazy">
           </div>
@@ -249,7 +230,7 @@
         </article>
 
         <!-- 4. Camminata -->
-        <article class="disc-cell">
+        <article class="disc-cell" id="disc-walk">
           <div class="disc-thumb">
             <img src="assets/walk.webp" alt="Camminata su viale alberato lungo il lago" data-i18n-alt="walkImgAlt" loading="lazy">
           </div>

@@ -27,7 +27,7 @@
       btnAvailabilityShort: "Google Play",
 
       heroBadge: "Trekking · Bicicletta · Corsa · Camminata",
-      heroTitle: "Un’app sola per camminare, correre,<br>pedalare e andare in montagna.",
+      heroTitle: "Un’unica app,<br>quattro discipline.",
       heroLead: "Scegli come ti muovi e Traccialto adatta mappa, routing, punti utili e metriche: sentieri T1–T6 e ferrate in quota, ciclovie in bici, passo al km di corsa o passeggiate essenziali. Zone offline 1–50 km e GPX/KML liberi, senza account né pubblicità.",
       btnHeroDownload: "Scarica gratis su Google Play",
       btnHeroExplore: "Confronta le 4 modalità",
@@ -49,10 +49,6 @@
       mRunHint: "Passo al km e anelli",
       mWalkShort: "Camminata",
       mWalkHint: "Parchi e mappa pulita",
-      tabTrek: "01 · Trekking",
-      tabBike: "02 · Bicicletta",
-      tabRun: "03 · Corsa",
-      tabWalk: "04 · Camminata",
 
       discIntroNum: "01 / MODALITÀ DEDICATE",
       discIntroTitle: "Quattro attività reali, non un profilo unico adattato.",
@@ -247,7 +243,7 @@
       btnAvailabilityShort: "Google Play",
 
       heroBadge: "Hiking · Cycling · Running · Walking",
-      heroTitle: "One app built for walking, running,<br>cycling, and mountain trails.",
+      heroTitle: "One app,<br>four disciplines.",
       heroLead: "Pick how you move and Traccialto adapts maps, routing, map points, and metrics: T1–T6 trails and opt-in ferratas, bike cycleways, km running pace, or clutter-free walks. 1–50 km offline zones & open GPX/KML, no account, zero ads.",
       btnHeroDownload: "Get it free on Google Play",
       btnHeroExplore: "Compare all 4 modes",
@@ -269,10 +265,6 @@
       mRunHint: "Km pace & loops",
       mWalkShort: "Walking",
       mWalkHint: "Parks & clean map",
-      tabTrek: "01 · Hiking",
-      tabBike: "02 · Cycling",
-      tabRun: "03 · Running",
-      tabWalk: "04 · Walking",
 
       discIntroNum: "01 / DEDICATED MODES",
       discIntroTitle: "Four real outdoor activities, not one generic profile.",
@@ -467,7 +459,7 @@
       btnAvailabilityShort: "Google Play",
 
       heroBadge: "Randonnée · Vélo · Course · Marche",
-      heroTitle: "Une seule app pour marcher, courir,<br>pédaler et partir en montagne.",
+      heroTitle: "Une seule app,<br>quatre disciplines.",
       heroLead: "Choisissez votre activité et Traccialto adapte carte, routage, points utiles et métriques : sentiers T1–T6 et via ferrata en option, pistes cyclables, allure au km en course ou marche épurée. Zones hors-ligne 1–50 km et GPX/KML ouverts.",
       btnHeroDownload: "Télécharger gratuit sur Google Play",
       btnHeroExplore: "Comparer les 4 modes",
@@ -489,10 +481,6 @@
       mRunHint: "Allure /km & boucles",
       mWalkShort: "Marche",
       mWalkHint: "Parcs & carte épurée",
-      tabTrek: "01 · Randonnée",
-      tabBike: "02 · Vélo",
-      tabRun: "03 · Course",
-      tabWalk: "04 · Marche",
 
       discIntroNum: "01 / MODES DÉDIÉS",
       discIntroTitle: "Quatre vraies disciplines, pas un profil générique.",
@@ -687,7 +675,7 @@
       btnAvailabilityShort: "Google Play",
 
       heroBadge: "Senderismo · Bicicleta · Carrera · Caminata",
-      heroTitle: "Una sola app para caminar, correr,<br>pedalear y salir a la montaña.",
+      heroTitle: "Una sola app,<br>cuatro disciplinas.",
       heroLead: "Elige cómo te mueves y Traccialto adapta mapa, cálculo de rutas, puntos útiles y métricas: senderos T1–T6 y ferratas opcionales, ciclovías, ritmo por km al correr o paseos esenciales. Zonas 1–50 km offline y GPX/KML libres.",
       btnHeroDownload: "Descargar gratis en Google Play",
       btnHeroExplore: "Comparar los 4 modos",
@@ -709,10 +697,6 @@
       mRunHint: "Ritmo /km y circulares",
       mWalkShort: "Caminata",
       mWalkHint: "Parques y mapa limpio",
-      tabTrek: "01 · Senderismo",
-      tabBike: "02 · Bicicleta",
-      tabRun: "03 · Carrera",
-      tabWalk: "04 · Caminata",
 
       discIntroNum: "01 / MODOS DEDICADOS",
       discIntroTitle: "Cuatro actividades reales, no un perfil genérico adaptado.",
@@ -883,36 +867,6 @@
     }
   };
 
-  const MODE_INSPECTOR = {
-    trek: {
-      it: { title: "Trekking & Montagna", desc: "Escursioni su sentieri con difficoltà T1–T6 in Italia, vie ferrate attivabili su scelta, passo calibrato e rifugi.", tags: ["T1–T6 Italia", "Vie ferrate opt-in", "Rifugi & bivacchi", "Tramonto offline"] },
-      en: { title: "Trekking & Mountains", desc: "Trail routes with Italian T1–T6 grades, opt-in via ferratas, calibrated pace, and alpine huts.", tags: ["T1–T6 trails", "Opt-in via ferrata", "Huts & bivouacs", "Offline sunset"] },
-      fr: { title: "Randonnée & Montagne", desc: "Sentiers classés T1–T6 en Italie, via ferrata sur choix explicite, allure calibrée et refuges.", tags: ["Sentiers T1–T6", "Via ferrata option", "Refuges & bivouacs", "Coucher hors-ligne"] },
-      es: { title: "Senderismo & Montaña", desc: "Senderos T1–T6 en Italia, vías ferratas opcionales, ritmo calibrado y refugios alpinos.", tags: ["Grados T1–T6", "Ferrata opcional", "Refugios y vivacs", "Ocaso offline"] }
-    },
-    bike: {
-      it: { title: "Bicicletta", desc: "Routing per ciclovie e strade bianche, schermata ad alto contrasto per manubrio con velocità, quota e tramonto dal vivo.", tags: ["Ciclovie & sterrati", "Vista manubrio", "Voce svolte", "Zone 1–50 km"] },
-      en: { title: "Cycling", desc: "Routing calibrated for cycleways and compact gravel, high-contrast handlebar view with speed, altitude, and live sunset.", tags: ["Cycleways & gravel", "Handlebar UI", "Turn voice prompts", "1–50 km zones"] },
-      fr: { title: "Vélo & Cyclisme", desc: "Routage pour pistes cyclables et chemins stables, vue guidon haute lisibilité avec vitesse, altitude et heure du coucher.", tags: ["Pistes cyclables", "Vue guidon", "Guidage vocal", "Zones 1–50 km"] },
-      es: { title: "Bicicleta", desc: "Rutas para ciclovías y pistas firmes, pantalla de alto contraste en el manillar con velocidad, altitud y ocaso en vivo.", tags: ["Ciclovías y pistas", "Vista manillar", "Guía de voz", "Zonas 1–50 km"] }
-    },
-    run: {
-      it: { title: "Corsa", desc: "Per parchi, argini e percorsi pedonali: passo recente e medio al km, pausa automatica e anelli su distanza o durata.", tags: ["Passo recente & medio /km", "Pausa automatica", "Anelli km o durata", "Fontane & preferiti"] },
-      en: { title: "Running", desc: "For parks, riversides, and pedestrian paths: recent & average km pace, auto-pause, and loops by distance or time.", tags: ["Recent & avg pace /km", "Auto-pause", "Time/km loops", "Water fountains"] },
-      fr: { title: "Course à pied", desc: "Parcs, berges et voies piétonnes : allure récente et moyenne au km, pause auto et boucles sur distance ou durée.", tags: ["Allure récente & moy. /km", "Pause auto", "Boucles km/durée", "Fontaines & favoris"] },
-      es: { title: "Carrera", desc: "Parques y paseos peatonales: ritmo reciente y medio por km, pausa automática y circulares por distancia o tiempo.", tags: ["Ritmo reciente y medio /km", "Pausa auto", "Circulares km/tiempo", "Fuentes y favoritos"] }
-    },
-    walk: {
-      it: { title: "Camminata", desc: "Passeggiate urbane, parchi e sentieri dolci su mappa ripulita dagli elementi superflui, con Trip Trim e diario fotografico.", tags: ["Mappa essenziale", "Punti acqua", "Trip Trim", "Diario foto locale"] },
-      en: { title: "Walking", desc: "City walks, parks, and gentle paths on an uncluttered map, with Trip Trim and private photo diary.", tags: ["Clean map", "Water points", "Trip Trim", "Local photo diary"] },
-      fr: { title: "Marche", desc: "Balades en ville, parcs et sentiers doux sur carte épurée, avec Trip Trim et journal photo local.", tags: ["Carte épurée", "Points d'eau", "Trip Trim", "Journal photo local"] },
-      es: { title: "Caminata", desc: "Paseos urbanos, parques y caminos suaves en mapa esencial, con Trip Trim y diario de fotos local.", tags: ["Mapa esencial", "Puntos de agua", "Trip Trim", "Diario local"] }
-    }
-  };
-
-  let activeLang = "it";
-  let activeMode = "trek";
-
   function detectLang() {
     const s = localStorage.getItem("traccialto_lang");
     if (s && I18N[s]) return s;
@@ -923,35 +877,8 @@
     return "en";
   }
 
-  function renderInspector() {
-    const pack = MODE_INSPECTOR[activeMode] && MODE_INSPECTOR[activeMode][activeLang];
-    if (!pack) return;
-    const titleEl = document.getElementById("insTitle");
-    const descEl = document.getElementById("insDesc");
-    const tagsEl = document.getElementById("insTags");
-    if (titleEl) titleEl.textContent = pack.title;
-    if (descEl) descEl.textContent = pack.desc;
-    if (tagsEl) {
-      tagsEl.textContent = "";
-      pack.tags.forEach(function (tag) {
-        const span = document.createElement("span");
-        span.className = "spec-chip";
-        span.textContent = tag;
-        tagsEl.appendChild(span);
-      });
-    }
-    document.querySelectorAll(".mode-strip, .mode-pill-tab").forEach(function (el) {
-      const on = el.getAttribute("data-mode") === activeMode;
-      el.classList.toggle("is-active", on);
-      if (el.hasAttribute("aria-selected")) {
-        el.setAttribute("aria-selected", on ? "true" : "false");
-      }
-    });
-  }
-
   function setLanguage(lang) {
     if (!I18N[lang]) lang = "en";
-    activeLang = lang;
     localStorage.setItem("traccialto_lang", lang);
     document.documentElement.lang = lang;
 
@@ -983,8 +910,6 @@
     document.querySelectorAll(".site-lang-pill button").forEach(function (btn) {
       btn.classList.toggle("active", btn.getAttribute("data-l") === lang);
     });
-
-    renderInspector();
   }
 
   window.setSiteLanguage = setLanguage;
@@ -996,16 +921,6 @@
       btn.addEventListener("click", function () {
         const l = this.getAttribute("data-l");
         if (l) setLanguage(l);
-      });
-    });
-
-    document.querySelectorAll(".mode-strip, .mode-pill-tab").forEach(function (el) {
-      el.addEventListener("click", function () {
-        const m = this.getAttribute("data-mode");
-        if (m && MODE_INSPECTOR[m]) {
-          activeMode = m;
-          renderInspector();
-        }
       });
     });
   });
