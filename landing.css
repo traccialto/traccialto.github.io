@@ -575,17 +575,18 @@ section[id] {
   border-radius: var(--r-md);
   background: #14221a;
   color: #f4f7f4;
-  padding: 16px;
-  min-height: 236px;
+  padding: 14px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 10px;
+  flex: 1;
   position: relative;
   overflow: hidden;
   border: 1px solid #22382c;
 }
 .phone-screen-frame.topo {
-  background: linear-gradient(160deg, #173023 0%, #214030 55%, #16261d 100%);
+  background: linear-gradient(160deg, #173023 0%, #16261d 100%);
 }
 .phone-screen-frame.planner {
   background: #f5f3ec;
@@ -593,7 +594,50 @@ section[id] {
   border-color: var(--line);
 }
 .phone-screen-frame.story {
-  background: linear-gradient(180deg, rgba(16, 28, 21, 0.16) 0%, rgba(16, 28, 21, 0.9) 72%), url("assets/alpine-lake.webp") center/cover no-repeat;
+  background: #122119;
+}
+.screen-map-wrap {
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.screen-map-slot {
+  border-radius: var(--r-sm);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: #182b20;
+}
+.map-credit {
+  margin: 0;
+  font-size: 10.5px;
+  line-height: 1.35;
+  color: var(--ink-muted);
+}
+.map-credit a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.phone-screen-frame:not(.planner) .map-credit {
+  color: rgba(238, 245, 240, 0.8);
+}
+.feature-media-box .map-credit {
+  margin-top: 7px;
+  padding: 0 2px;
+}
+.phone-screen-frame.planner .screen-map-slot {
+  border-color: var(--line);
+  background: #eae7dd;
+}
+.screen-map-slot img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.screen-map-slot.is-3d img {
+  aspect-ratio: 905 / 620;
+  object-fit: cover;
 }
 .screen-pill-row {
   display: flex;
@@ -624,17 +668,10 @@ section[id] {
   color: var(--pine);
   border: 1px solid var(--line);
 }
-.screen-card-inner {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--r-sm);
-  padding: 11px 12px;
-}
 .screen-metric-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 8px;
-  margin-top: 10px;
 }
 .screen-metric-box {
   background: rgba(255, 255, 255, 0.1);
@@ -711,26 +748,36 @@ section[id] {
   max-width: 62ch;
 }
 
-.vector-topo-box {
+.feature-media-box {
   background: var(--paper);
   border-radius: var(--r-sm);
   border: 1px solid var(--line);
-  padding: 16px;
+  padding: 10px;
   margin-top: auto;
 }
-.vector-topo-box svg {
+.feature-media-box > img {
   width: 100%;
   height: auto;
   display: block;
-}
-
-.loop-compass-box {
-  background: var(--paper);
-  border-radius: var(--r-sm);
+  border-radius: 4px;
   border: 1px solid var(--line);
-  padding: 18px;
-  margin-top: auto;
-  text-align: center;
+}
+.feature-loop-img {
+  max-width: 390px;
+  margin: 0 auto;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+.feature-media-box .map-credit.loop-credit {
+  max-width: 390px;
+  margin: 6px auto 0;
+}
+.feature-loop-img img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 .loop-metrics-row {
   display: flex;
@@ -739,7 +786,7 @@ section[id] {
   border-radius: var(--r-sm);
   padding: 10px 12px;
   border: 1px solid var(--line);
-  margin-top: 14px;
+  margin-top: 10px;
 }
 .loop-metric-col strong {
   display: block;
