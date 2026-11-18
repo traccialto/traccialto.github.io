@@ -3,96 +3,99 @@
 
   const I18N = {
     it: {
-      pageTitle: "Traccialto — Navigazione e Cartografia Outdoor Offline",
-      pageDesc: "Cartografia 3D offline senza abbonamenti per trekking, bici, corsa e camminata (con vie ferrate opt-in). Zone 1–50 km, GPX/KML liberi, tramonto offline, Replay 3D e Storie. Gratis, senza account né pubblicità.",
+      pageTitle: "Traccialto — Trekking, Bicicletta, Corsa e Camminata Offline",
+      pageDesc: "Un’app sola per camminare, correre, pedalare e andare in montagna offline: mappe e metriche per ogni attività, vie ferrate opt-in, zone 1–50 km, GPX/KML, tramonto offline e Replay 3D. Gratis e senza pubblicità.",
       skipToContent: "Vai al contenuto",
       brandAria: "Traccialto inizio",
       navAria: "Menu principale",
       langAria: "Lingua",
-      heroImgAlt: "Paesaggio alpino con lago d'alta quota e vette innevate",
-      certezzeAria: "Punti di forza di Traccialto",
+      modesGalleryAria: "Esplora le 4 attività outdoor",
+      trekImgAlt: "Trekking in montagna presso un lago alpino",
+      bikeImgAlt: "Bicicletta gravel lungo un passo montano",
+      runImgAlt: "Corsa lungo pista pedonale e fiume",
+      walkImgAlt: "Camminata su viale alberato lungo il lago",
       feat1TopoAria: "Illustrazione vettoriale del rilievo topografico",
       feat3BoxAria: "Anteprima modalità AMOLED e calcolo tramonto offline",
       qrAlt: "QR Code per aprire Traccialto su Google Play",
       footerPrivacyLink: "Informativa Privacy",
 
-      navActivities: "Attività",
+      navActivities: "Modalità",
       navFeatures: "Funzioni",
       navPrivacy: "Privacy",
       navFaq: "Domande",
       btnAvailability: "Scarica su Google Play",
       btnAvailabilityShort: "Google Play",
 
-      heroBadge: "4 modalità · Trekking · Bici · Corsa · Camminata",
-      heroTitle: "Cartografia 3D offline<br><span class=\"serif-accent\">senza abbonamenti.</span>",
-      heroLead: "Mappe, routing e metriche dedicate per trekking (anche vie ferrate), bicicletta, corsa e camminata. Scarica zone 1–50 km offline, importa GPX/KML, pianifica anelli e consulta il tramonto senza segnale. Gratis, senza account né pubblicità.",
+      heroBadge: "Trekking · Bicicletta · Corsa · Camminata",
+      heroTitle: "Un’app sola per camminare, correre,<br>pedalare e andare in montagna.",
+      heroLead: "Scegli come ti muovi e Traccialto adatta mappa, routing, punti utili e metriche: sentieri T1–T6 e ferrate in quota, ciclovie in bici, passo al km di corsa o passeggiate essenziali. Zone offline 1–50 km e GPX/KML liberi, senza account né pubblicità.",
       btnHeroDownload: "Scarica gratis su Google Play",
-      btnHeroExplore: "Esplora le funzioni",
-      trustFree: "Gratis (0 €)",
-      trustNoAccount: "Nessun account obbligatorio",
-      trustNoAds: "Zero pubblicità",
-      trustOfflineMaps: "Zone offline & GPX/KML",
+      btnHeroExplore: "Confronta le 4 modalità",
 
-      cardElevationValue: "+833 m D+ · Tramonto 18:14",
-      cardElevationDesc: "DEM 3D offline · T1–T6 e vie ferrate opt-in",
-      cardLoopTitle: "4 modalità: Trekking, Bici, Corsa, Camminata",
-      cardLoopDesc: "Anelli su km o durata, ciclovie, passo al km e zone 1–50 km.",
+      spec1Val: "4 attività",
+      spec1Lbl: "Motori e POI dedicati",
+      spec2Val: "1–50 km",
+      spec2Lbl: "Zone offline con un tocco",
+      spec3Val: "GPX · KML",
+      spec3Lbl: "Import ed export HTML 3D",
+      spec4Val: "0 € · No ads",
+      spec4Lbl: "Senza account obbligatorio",
 
-      cert1Title: "Zero abbonamenti PRO",
-      cert1Desc: "Mappe offline e 3D senza paywall",
-      cert2Title: "Zone offline 1–50 km",
-      cert2Desc: "Scarichi un’intera zona con un tocco",
-      cert3Title: "Tramonto & luce offline",
-      cert3Desc: "Avviso se l’arrivo supera il buio",
-      cert4Title: "Senza account, GPX liberi",
-      cert4Desc: "Importi GPX/KML ed esporti Storie 3D",
+      mTrekShort: "Trekking",
+      mTrekHint: "Sentieri, T1–T6 e ferrate",
+      mBikeShort: "Bicicletta",
+      mBikeHint: "Ciclovie e manubrio",
+      mRunShort: "Corsa",
+      mRunHint: "Passo al km e anelli",
+      mWalkShort: "Camminata",
+      mWalkHint: "Parchi e mappa pulita",
+      tabTrek: "01 · Trekking",
+      tabBike: "02 · Bicicletta",
+      tabRun: "03 · Corsa",
+      tabWalk: "04 · Camminata",
 
-      discIntroBadge: "Attività & Discipline Outdoor",
-      discIntroTitle: "Quattro modi di vivere la natura<br><span class=\"serif-accent\">con strumenti dedicati.</span>",
+      discIntroNum: "01 / MODALITÀ DEDICATE",
+      discIntroTitle: "Quattro attività reali, non un profilo unico adattato.",
       discIntroDesc: "Traccialto non applica una formula generica a tutti gli sport. Ogni modalità adotta motori di calcolo, punti utili sulla mappa, velocità stimate e metriche pensate per chi fa trekking, pedala, corre o cammina.",
 
-      trekTag: "Montagna",
+      trekTag: "01 · Montagna",
       trekTitle: "Trekking & Montagna",
-      trekQuote: "«Un passo alla volta.»",
       trekDesc: "Prepara escursioni e anelli privilegiando i sentieri, includendo su richiesta le vie ferrate mappate (con avviso su attrezzatura e condizioni). Confronta quote, salita e durata stimata prima di partire.",
       trekF1: "<strong>Difficoltà T1–T6 in Italia</strong> dove presenti nei dati; i tratti non classificati restano indicati",
       trekF2: "<strong>Tempi sul tuo passo reale</strong> calibrati su pendenza DEM, T1–T6 e storico",
       trekF3: "<strong>Voce svolta, fuori rotta e +500 m D+</strong> più orario del tramonto calcolato offline",
-      trekF4: "<strong>Bussola orientata</strong> sulla cartografia topografica con curve di livello",
+      trekF4: "<strong>Bussola orientata</strong> sulla cartografia topografica con rifugi e bivacchi",
       trekPill: "Compatibile con tracce GPX ufficiali CAI e regionali",
 
-      bikeTag: "Due Ruote",
+      bikeTag: "02 · Due ruote",
       bikeTitle: "Bicicletta",
-      bikeQuote: "«Una pedalata alla volta.»",
-      bikeDesc: "Algoritmo di routing calibrato per ciclovie, strade bianche e viabilità a basso scorrimento. Schermata ad alto contrasto concepita per essere letta all'istante dal supporto da manubrio.",
+      bikeDesc: "Algoritmo di routing calibrato per ciclovie, strade bianche e viabilità a basso scorrimento. Schermata ad alto contrasto concepita per essere letta all’istante dal supporto da manubrio.",
       bikeF1: "<strong>Routing ciclistico dedicato</strong> con priorità a piste ciclabili e sterrati compatti",
       bikeF2: "<strong>Guida vocale svolte & fuori rotta</strong> e orario del tramonto visibile dal vivo",
       bikeF3: "<strong>Distanza, velocità e quota</strong> ad alto contrasto sul supporto da manubrio",
       bikeF4: "<strong>Registrazione continua</strong> e zone scaricabili offline fino a 50 km",
       bikePill: "Verifica fondo e accessibilità per la tua bicicletta",
 
-      runTag: "Ritmo",
+      runTag: "03 · Ritmo",
       runTitle: "Corsa",
-      runQuote: "«Una falcata alla volta.»",
       runDesc: "Per uscite nei parchi, lungo i fiumi e sulle vie pedonali: passo recente e medio al chilometro, pausa automatica e anelli su distanza o durata.",
       runF1: "<strong>Anelli personalizzabili</strong> per distanza o durata, con limite D+ facoltativo",
       runF2: "<strong>Istruzioni vocali essenziali</strong> solo sulle svolte effettive, passo al km e pausa auto",
       runF3: "<strong>Fontane e punti preferiti</strong> selezionabili sulla mappa di corsa",
       runF4: "<strong>Zone offline fino a 50 km:</strong> scarica prima l’area che ti serve",
-      runPill: "Passo mirato intorno a 6:00 /km, zero distrazioni",
+      runPill: "Passo recente e medio al km in tempo reale, zero distrazioni",
 
-      walkTag: "Quotidiano",
+      walkTag: "04 · Quotidiano",
       walkTitle: "Camminata",
-      walkQuote: "«Al tuo passo, ogni giorno.»",
-      walkDesc: "Pensata per passeggiate urbane, parchi e sentieri dolci senza la complessità dell’alta quota: ritmo stimato intorno ai 5 km/h e mappa ripulita dagli elementi non pertinenti.",
+      walkDesc: "Pensata per passeggiate urbane, parchi e sentieri dolci senza la complessità dell’alta quota: ritmo leggero e mappa ripulita dagli elementi non pertinenti.",
       walkF1: "<strong>Mappa essenziale per passeggiare:</strong> mostra punti acqua e i tuoi punti preferiti",
       walkF2: "<strong>Anelli flessibili</strong> per distanza o tempo disponibile fuori porta",
       walkF3: "<strong>Funzione Trip Trim</strong> per ripulire code o soste accidentali a fine uscita",
       walkF4: "<strong>Diario con foto e statistiche</strong> sempre nel tuo archivio locale",
       walkPill: "Perfetta per passeggiate, parchi e cammini leggeri",
 
-      startTag: "Dall’idea all’uscita",
-      startTitle: "Meno preparativi.<br><span class=\"serif-accent\">Più tempo fuori.</span>",
+      startNum: "02 / DALL’IDEA ALL’USCITA",
+      startTitle: "Meno preparativi. Più tempo fuori.",
       s1Title: "Scegli l’attività",
       s1Desc: "Trekking, bicicletta, corsa o camminata: metriche, punti sulla mappa e pianificazione seguono la tua scelta.",
       s2Title: "Prepara la tua uscita",
@@ -100,8 +103,8 @@
       s3Title: "Parti e ritrova i tuoi progressi",
       s3Desc: "Segui il percorso o registra liberamente. Al ritorno trovi mappa, tempi e profilo nel tuo storico.",
 
-      showBadge: "Dentro l’app (versione Google Play)",
-      showTitle: "Progettata per leggersi bene<br><span class=\"serif-accent\">in ogni uscita all'aperto.</span>",
+      showNum: "03 / DENTRO L’APP (GOOGLE PLAY)",
+      showTitle: "Progettata per leggersi bene in ogni uscita all’aperto.",
       showDesc: "Esempio delle schermate incluse gratis su Android: navigazione dedicata per tutte e 4 le attività, anelli su misura con zone 1–50 km, Replay 3D e Storie fotografiche.",
       show1Title: "Mappa topografica, T1–T6 & tramonto offline",
       show1Desc: "Indicazioni vocali alle svolte, avviso fuori rotta e calcolo solare senza campo telefonico.",
@@ -127,8 +130,8 @@
       ui3M2: "Salita",
       ui3M3: "Esporta",
 
-      featIntroBadge: "Tecnologia Cartografica",
-      featIntroTitle: "Strumenti costruiti<br><span class=\"serif-accent\">per il terreno reale.</span>",
+      featNum: "04 / STRUMENTI PER IL TERRENO",
+      featIntroTitle: "Strumenti costruiti per il terreno reale.",
       featIntroDesc: "Prepara l’itinerario, osserva il terreno e scegli quali dati tenere a vista durante l’uscita.",
 
       feat1Tag: "Morfologia & Mappe Offline",
@@ -160,7 +163,7 @@
       feat4Desc: "Rivedi la traccia con Replay 3D, crea una Storia con foto e dati oppure esporta una pagina HTML (interattiva nei browser compatibili; vista salvata e profilo altimetrico su iPhone).",
       feat4P1: "File HTML standalone con mappa interattiva e profilo dislivello",
       feat4P2: "Schermata SOS con coordinate rapide per il 112 e torcia ottica in codice Morse",
-      feat4P3: "Strumento Trip Trim per rimuovere tempi morti all'inizio e alla fine",
+      feat4P3: "Strumento Trip Trim per rimuovere tempi morti all’inizio e alla fine",
       feat4P4: "Disponibile in italiano, inglese, francese e spagnolo",
 
       feat5Tag: "Sezione Amici Facoltativa",
@@ -179,8 +182,8 @@
       feat6P3: "Live tracking opt-in AES-GCM sul dispositivo (massimo 8 ore)",
       feat6P4: "Tema scuro ad alto contrasto, pausa auto e pannello Notifiche",
 
-      privTag: "Privacy, con chiarezza",
-      privTitle: "I tuoi percorsi<br><span style=\"color: #9fe8b4; font-family: var(--font-serif); font-style: italic; font-weight: 400;\">appartengono solo a te.</span>",
+      privNum: "05 / PRIVACY E CONTROLLO",
+      privTitle: "I tuoi percorsi appartengono solo a te.",
       privDesc: "Lo storico rimane sul telefono, senza alcun account obbligatorio. Servizi cartografici online, backup Drive, Amici e condivisione live sono gestibili nelle impostazioni e inviano solo i dati necessari alla funzione richiesta.",
       privB1Title: "Il tuo storico sul dispositivo",
       privB1Desc: "Conserva attività e impostazioni sul telefono. Scegli tu quando esportarle o condividerle.",
@@ -189,47 +192,48 @@
       privB4Title: "Amici e condivisione live facoltativi",
       privB4Desc: "In Amici usi uno @username pubblico senza mostrare email o nome agli altri e salvi i percorsi condivisi sul tuo Drive (drive.file); la sessione Live cifra la posizione con AES-GCM sul telefono.",
       privB3Title: "Zero cookie e zero tracciamento",
-      privB3Desc: "Né questo sito né l'app includono Google Analytics, Facebook Pixel o reti pubblicitarie di monetizzazione.",
-      privBtn: "Leggi l'informativa completa sulla privacy",
-      privSideTitle: "Il tuo cloud, solo tuo",
-      privSideDesc: "Puoi attivare il backup incrementale automatico nello spazio privato del tuo Google Drive: Traccialto non vede gli altri tuoi file e non usa server propri.",
+      privB3Desc: "Né questo sito né l’app includono Google Analytics, Facebook Pixel o reti pubblicitarie di monetizzazione.",
+      privBtn: "Leggi l’informativa completa sulla privacy",
 
-      faqTag: "FAQ & Chiarezza",
-      faqTitle: "Tutto quello che<br><span class=\"serif-accent\">c'è da sapere.</span>",
+      faqNum: "06 / DOMANDE FREQUENTI",
+      faqTitle: "Tutto quello che c’è da sapere.",
       faqDesc: "Risposte semplici e trasparenti su licenza, funzionamento offline, privacy e compatibilità con i tuoi dispositivi Android.",
       q1: "Traccialto è davvero completamente gratuita?",
       a1: "Sì. Non ci sono canoni mensili, non esistono funzioni 'pro' a pagamento e non ci sono banner pubblicitari. Traccialto nasce come progetto indipendente e artigianale dedicato a chi ama camminare, correre, pedalare e vivere la montagna con uno strumento pulito e trasparente.",
-      q2: "Funziona anche offline dove non c'è campo telefonico?",
+      q2: "Funziona anche offline dove non c’è campo telefonico?",
       a2: "Puoi registrare con il GPS e seguire una traccia salvata senza connessione. Scarica prima le mappe disponibili per il percorso e verifica che siano presenti. Ricerca dei luoghi, nuovi itinerari e contenuti non scaricati richiedono internet. La precisione GPS dipende dalle condizioni.",
       q3: "Posso importare i miei percorsi e tracce GPX esistenti?",
       a3: "Puoi importare file GPX e KML compatibili, visualizzarli e seguirli. La disponibilità delle quote dipende dal file e dai dati cartografici. Usa tracce di cui hai il diritto di disporre.",
       q4: "Come funziona il backup dei miei percorsi?",
-      a4: "Puoi collegare facoltativamente il tuo account Google per salvare e sincronizzare in modo incrementale percorsi, camminate, diario e foto nella cartella privata dell'app (appDataFolder) sul tuo Google Drive, con ripristino anche in background quando cambi telefono.",
+      a4: "Puoi collegare facoltativamente il tuo account Google per salvare e sincronizzare in modo incrementale percorsi, camminate, diario e foto nella cartella privata dell’app (appDataFolder) sul tuo Google Drive, con ripristino anche in background quando cambi telefono.",
       q5: "Quali versioni di Android sono supportate?",
       a5: "L’app richiede Android 8 o successivo. Prestazioni del 3D, ricezione GPS e registrazione in background dipendono dal dispositivo. Alcune funzioni richiedono versioni Android più recenti.",
       q6: "Come funziona la sezione Amici ed è obbligatoria?",
       a6: "È completamente facoltativa: puoi usare tutte le funzioni di cartografia e registrazione senza alcun account. Se attivi Amici, accedi con Google, scegli un @username univoco e condividi solo i percorsi selezionati tramite un file archivio dedicato sul tuo Google Drive (permesso limitato drive.file), con notifiche configurabili nelle impostazioni, rimozione singola o totale e disconnessione o eliminazione profilo in ogni momento.",
 
       closingTag: "Pronto per la prossima uscita",
-      closingTitle: "La natura ti aspetta.<br><span class=\"serif-accent\">Portati solo l'essenziale.</span>",
-      closingDesc: "Disponibile su Google Play Store. Scarica l'applicazione gratuita e inizia a esplorare.",
+      closingTitle: "Portati solo l’essenziale.",
+      closingDesc: "Disponibile su Google Play Store. Scarica l’applicazione gratuita e inizia a esplorare in tutte e 4 le modalità.",
       closingBtn: "Scarica gratis su Google Play",
       qrTitle: "Sei al computer?",
       qrDesc: "Inquadra il QR col telefono per installare",
       closingFoot: "Android 8+ · Gratis · Senza pubblicità",
 
-      footerCopy: "© 2026 Traccialto. Progetto indipendente di cartografia e navigazione per il territorio. Senza strumenti pubblicitari. Consulta l’informativa privacy."
+      footerCopy: "© 2026 Traccialto. Progetto indipendente per trekking, bicicletta, corsa e camminata. Senza strumenti pubblicitari. Consulta l’informativa privacy."
     },
 
     en: {
-      pageTitle: "Traccialto — Offline Outdoor Navigation & Topo Maps",
-      pageDesc: "Offline 3D maps with zero subscriptions for hiking, cycling, running, and walking (plus opt-in via ferratas). 1–50 km offline zones, open GPX/KML, offline sunset, 3D Replay & Stories. Free, no account, zero ads.",
+      pageTitle: "Traccialto — Offline Hiking, Cycling, Running & Walking",
+      pageDesc: "One app built for walking, running, cycling, and mountain trails offline: tailored routing & metrics, opt-in via ferratas, 1–50 km areas, GPX/KML, offline sunset & 3D Replay. Free, zero ads.",
       skipToContent: "Skip to content",
       brandAria: "Traccialto home",
       navAria: "Main menu",
       langAria: "Language",
-      heroImgAlt: "Alpine landscape with high-altitude lake and snow-capped peaks",
-      certezzeAria: "Traccialto key strengths",
+      modesGalleryAria: "Explore all 4 outdoor activities",
+      trekImgAlt: "Hiking in the mountains by an alpine lake",
+      bikeImgAlt: "Gravel bicycle along a mountain pass",
+      runImgAlt: "Running along a riverside pedestrian track",
+      walkImgAlt: "Walking on a tree-lined lakeside path",
       feat1TopoAria: "Vector illustration of topographic terrain relief",
       feat3BoxAria: "Preview of AMOLED mode and offline sunset calculation",
       qrAlt: "QR code to open Traccialto on Google Play",
@@ -242,47 +246,49 @@
       btnAvailability: "Get it on Google Play",
       btnAvailabilityShort: "Google Play",
 
-      heroBadge: "4 modes · Hiking · Cycling · Running · Walking",
-      heroTitle: "Offline 3D topo maps<br><span class=\"serif-accent\">with zero subscriptions.</span>",
-      heroLead: "Dedicated maps, routing, and metrics for hiking (plus opt-in via ferratas), cycling, running, and walking. Download 1–50 km offline areas, import GPX/KML tracks, build loops, and check offline sunset times. Free, no account, zero ads.",
+      heroBadge: "Hiking · Cycling · Running · Walking",
+      heroTitle: "One app built for walking, running,<br>cycling, and mountain trails.",
+      heroLead: "Pick how you move and Traccialto adapts maps, routing, map points, and metrics: T1–T6 trails and opt-in ferratas, bike cycleways, km running pace, or clutter-free walks. 1–50 km offline zones & open GPX/KML, no account, zero ads.",
       btnHeroDownload: "Get it free on Google Play",
-      btnHeroExplore: "Explore features",
-      trustFree: "Free (€0)",
-      trustNoAccount: "No account required",
-      trustNoAds: "Zero ads",
-      trustOfflineMaps: "Offline areas & GPX/KML",
+      btnHeroExplore: "Compare all 4 modes",
 
-      cardElevationValue: "+833 m D+ · Sunset 18:14",
-      cardElevationDesc: "Offline 3D DEM · T1–T6 & opt-in via ferratas",
-      cardLoopTitle: "4 modes: Hiking, Cycling, Running, Walking",
-      cardLoopDesc: "Time/km loops, cycleways, running pace & 1–50 km offline areas.",
+      spec1Val: "4 activities",
+      spec1Lbl: "Dedicated routing & POIs",
+      spec2Val: "1–50 km",
+      spec2Lbl: "One-tap offline zones",
+      spec3Val: "GPX · KML",
+      spec3Lbl: "Import & 3D HTML export",
+      spec4Val: "€0 · No ads",
+      spec4Lbl: "No account required",
 
-      cert1Title: "No PRO subscriptions",
-      cert1Desc: "Offline maps and 3D with zero paywalls",
-      cert2Title: "1–50 km offline areas",
-      cert2Desc: "Download an entire area in one tap",
-      cert3Title: "Offline sunset & daylight",
-      cert3Desc: "Warns if ETA passes nightfall",
-      cert4Title: "No account, open GPX",
-      cert4Desc: "Import GPX/KML and export 3D Stories",
+      mTrekShort: "Hiking",
+      mTrekHint: "Trails, T1–T6 & ferratas",
+      mBikeShort: "Cycling",
+      mBikeHint: "Cycleways & handlebar",
+      mRunShort: "Running",
+      mRunHint: "Km pace & loops",
+      mWalkShort: "Walking",
+      mWalkHint: "Parks & clean map",
+      tabTrek: "01 · Hiking",
+      tabBike: "02 · Cycling",
+      tabRun: "03 · Running",
+      tabWalk: "04 · Walking",
 
-      discIntroBadge: "Outdoor Activities & Disciplines",
-      discIntroTitle: "Four ways to experience nature<br><span class=\"serif-accent\">with dedicated tools.</span>",
+      discIntroNum: "01 / DEDICATED MODES",
+      discIntroTitle: "Four real outdoor activities, not one generic profile.",
       discIntroDesc: "Traccialto doesn't apply a generic formula to all sports. Each mode uses routing algorithms, mode-aware map points, speed estimates, and metrics tailored for hiking, cycling, running, or walking.",
 
-      trekTag: "Mountains",
+      trekTag: "01 · Mountains",
       trekTitle: "Trekking & Hiking",
-      trekQuote: "«One step at a time.»",
       trekDesc: "Plan hikes and loops prioritizing footpaths, and optionally include mapped via ferrata routes (with gear and condition alerts). Compare altitudes, climbs, and estimated times before heading out.",
       trekF1: "<strong>Trail difficulty T1–T6 in Italy</strong> where present; unclassified segments remain clearly marked",
       trekF2: "<strong>Personal pace timing</strong> calibrated on DEM slope, T1–T6, and your track history",
       trekF3: "<strong>Turn voice prompts, off-route alert & +500 m D+</strong> plus offline sunset time",
-      trekF4: "<strong>Oriented compass</strong> on topographic maps with contour lines",
+      trekF4: "<strong>Oriented compass</strong> on topographic maps with alpine huts and bivouacs",
       trekPill: "Compatible with official regional and CAI GPX tracks",
 
-      bikeTag: "Two Wheels",
+      bikeTag: "02 · Two wheels",
       bikeTitle: "Cycling",
-      bikeQuote: "«One pedal stroke at a time.»",
       bikeDesc: "Routing algorithm calibrated for cycle paths, gravel roads, and low-traffic routes. High-contrast screen designed for instant reading from your handlebar mount.",
       bikeF1: "<strong>Dedicated bicycle routing</strong> prioritizing bike lanes and packed gravel",
       bikeF2: "<strong>Turn-by-turn voice & off-route alerts</strong> plus live offline sunset timing",
@@ -290,28 +296,26 @@
       bikeF4: "<strong>Continuous tracking</strong> and downloadable offline areas up to 50 km",
       bikePill: "Check surface conditions and accessibility for your bike",
 
-      runTag: "Pace",
+      runTag: "03 · Pace",
       runTitle: "Running",
-      runQuote: "«One stride at a time.»",
       runDesc: "For park runs, riverside paths, and pedestrian routes: recent and average pace per kilometer, auto-pause, and distance or time-based loops.",
       runF1: "<strong>Customizable loops</strong> by distance or duration, with optional D+ limits",
       runF2: "<strong>Essential turn voice prompts</strong> focused only on real street turns, pace & auto-pause",
       runF3: "<strong>Water fountains and favorite points</strong> selectable on your running map",
       runF4: "<strong>Offline zones up to 50 km:</strong> download your running area ahead of time",
-      runPill: "Reference pace around 6:00 /km, zero distractions",
+      runPill: "Live recent and average pace per km, zero distractions",
 
-      walkTag: "Everyday",
+      walkTag: "04 · Everyday",
       walkTitle: "Walking",
-      walkQuote: "«At your own pace, every day.»",
-      walkDesc: "Designed for city walks, parks, and gentle trails without high-mountain clutter: estimated speed around 5 km/h and clean maps focused on essentials.",
+      walkDesc: "Designed for city walks, parks, and gentle trails without high-mountain clutter: relaxed rhythm and clean maps focused on essentials.",
       walkF1: "<strong>Essential walking map:</strong> shows water points and your saved favorites",
       walkF2: "<strong>Flexible loops</strong> tailored to available distance or time",
       walkF3: "<strong>Trip Trim tool</strong> to clean up accidental waiting tails after saving",
       walkF4: "<strong>Photo diary and stats</strong> stored in your private on-device archive",
       walkPill: "Ideal for city walks, parks, and gentle paths",
 
-      startTag: "From plan to outing",
-      startTitle: "Less preparation.<br><span class=\"serif-accent\">More time outdoors.</span>",
+      startNum: "02 / FROM PLAN TO OUTING",
+      startTitle: "Less preparation. More time outdoors.",
       s1Title: "Choose your activity",
       s1Desc: "Hiking, cycling, running, or walking: metrics, map points, and planning adapt to your choice.",
       s2Title: "Prepare your outing",
@@ -319,8 +323,8 @@
       s3Title: "Head out and track your progress",
       s3Desc: "Follow the track or record freely. Find map, times, and elevation profile in your history upon return.",
 
-      showBadge: "Inside the app (Google Play release)",
-      showTitle: "Designed to stay readable<br><span class=\"serif-accent\">on every outdoor route.</span>",
+      showNum: "03 / INSIDE THE APP (GOOGLE PLAY)",
+      showTitle: "Designed to stay readable on every outdoor route.",
       showDesc: "Preview of key screens included free on Android: dedicated navigation across all 4 activities, custom loops with 1–50 km offline areas, 3D Replay, and photo Stories.",
       show1Title: "Topo maps, T1–T6 & offline sunset",
       show1Desc: "Turn-by-turn voice prompts, off-route alert, and zero-signal daylight timing.",
@@ -346,8 +350,8 @@
       ui3M2: "Climb",
       ui3M3: "Export",
 
-      featIntroBadge: "Mapping Technology",
-      featIntroTitle: "Tools built<br><span class=\"serif-accent\">for real terrain.</span>",
+      featNum: "04 / REAL TERRAIN TOOLS",
+      featIntroTitle: "Tools built for real terrain.",
       featIntroDesc: "Plan your route, inspect the terrain, and choose which metrics stay visible on screen.",
 
       feat1Tag: "Terrain Morphology & Offline Areas",
@@ -398,8 +402,8 @@
       feat6P3: "Opt-in on-device AES-GCM encrypted live sharing (8 hours maximum)",
       feat6P4: "High-contrast Dark Mode, auto-pause & Notifications settings panel",
 
-      privTag: "Privacy, with clarity",
-      privTitle: "Your routes<br><span style=\"color: #9fe8b4; font-family: var(--font-serif); font-style: italic; font-weight: 400;\">belong only to you.</span>",
+      privNum: "05 / PRIVACY & CONTROL",
+      privTitle: "Your routes belong only to you.",
       privDesc: "Your history stays on your device with no mandatory account. Online map services, Drive backup, Friends, and live sharing can be managed in Settings and send only what is required for the requested feature.",
       privB1Title: "History stored on device",
       privB1Desc: "Keep your activities and settings on your phone. You choose when to export or share them.",
@@ -410,11 +414,9 @@
       privB3Title: "Zero cookies, zero trackers",
       privB3Desc: "Neither this website nor the app include Google Analytics, Facebook Pixel, or monetization ad networks.",
       privBtn: "Read full privacy policy",
-      privSideTitle: "Your cloud, only yours",
-      privSideDesc: "Enable automatic incremental backup in your private Google Drive app space: Traccialto cannot see your other Drive files and uses no proprietary servers.",
 
-      faqTag: "FAQ & Clarity",
-      faqTitle: "Everything<br><span class=\"serif-accent\">you need to know.</span>",
+      faqNum: "06 / FAQ & CLARITY",
+      faqTitle: "Everything you need to know.",
       faqDesc: "Clear and honest answers regarding licenses, offline functionality, privacy, and Android compatibility.",
       q1: "Is Traccialto truly completely free?",
       a1: "Yes. There are no monthly subscriptions, no paid 'pro' tiers, and no advertising banners. Traccialto was created as an independent, crafted tool for walking, running, cycling, and mountain outings with a clean and honest experience.",
@@ -430,25 +432,28 @@
       a6: "It is completely optional: every core mapping, planning, and GPS recording feature works with no account. If you opt in to Friends, you sign in with Google, register a unique @username, and share selected routes through a dedicated archive file in your own Google Drive (limited drive.file permission), with configurable notifications, single or bulk route removal, and full profile deletion anytime.",
 
       closingTag: "Ready for your next trip",
-      closingTitle: "Nature is waiting.<br><span class=\"serif-accent\">Bring only what matters.</span>",
-      closingDesc: "Available on Google Play Store. Download the free app and start exploring.",
+      closingTitle: "Bring only what matters.",
+      closingDesc: "Available on Google Play Store. Download the free app and explore across all 4 activities.",
       closingBtn: "Get it free on Google Play",
       qrTitle: "On a computer?",
       qrDesc: "Scan the QR code with your phone to install",
       closingFoot: "Android 8+ · Free · Zero Ads",
 
-      footerCopy: "© 2026 Traccialto. Independent outdoor cartography and navigation project. Zero ads. See privacy policy."
+      footerCopy: "© 2026 Traccialto. Independent project for hiking, cycling, running, and walking. Zero ads. See privacy policy."
     },
 
     fr: {
-      pageTitle: "Traccialto — Navigation et Cartographie Outdoor Hors-Ligne",
-      pageDesc: "Cartographie 3D hors-ligne sans abonnement pour randonnée, vélo, course et marche (avec via ferrata en option). Zones 1–50 km, GPX/KML ouverts, coucher du soleil hors-ligne, Replay 3D et Stories. Gratuit, sans pub.",
+      pageTitle: "Traccialto — Randonnée, Vélo, Course et Marche Hors-Ligne",
+      pageDesc: "Une seule app pour marcher, courir, pédaler et randonner hors-ligne : cartes et métriques dédiées, via ferrata en option, zones 1–50 km, GPX/KML, coucher du soleil et Replay 3D. Gratuit, sans pub.",
       skipToContent: "Aller au contenu",
       brandAria: "Traccialto accueil",
       navAria: "Menu principal",
       langAria: "Langue",
-      heroImgAlt: "Paysage alpin avec lac d'altitude et sommets enneigés",
-      certezzeAria: "Atouts principaux de Traccialto",
+      modesGalleryAria: "Explorer les 4 activités outdoor",
+      trekImgAlt: "Randonnée en montagne près d'un lac alpin",
+      bikeImgAlt: "Vélo gravel le long d'un col de montagne",
+      runImgAlt: "Course le long d'une voie piétonne en bord de rivière",
+      walkImgAlt: "Marche sur un chemin arboré au bord du lac",
       feat1TopoAria: "Illustration vectorielle du relief topographique",
       feat3BoxAria: "Aperçu du mode AMOLED et calcul hors-ligne du coucher du soleil",
       qrAlt: "Code QR pour ouvrir Traccialto sur Google Play",
@@ -461,47 +466,49 @@
       btnAvailability: "Télécharger sur Google Play",
       btnAvailabilityShort: "Google Play",
 
-      heroBadge: "4 modes · Randonnée · Vélo · Course · Marche",
-      heroTitle: "Cartographie 3D hors-ligne<br><span class=\"serif-accent\">sans abonnement.</span>",
-      heroLead: "Cartes, calculs et métriques dédiés à la randonnée (avec via ferrata en option), au vélo, à la course et à la marche. Téléchargez des zones 1–50 km hors-ligne, importez GPX/KML, créez des boucles et vérifiez le coucher du soleil. Gratuit, sans pub.",
+      heroBadge: "Randonnée · Vélo · Course · Marche",
+      heroTitle: "Une seule app pour marcher, courir,<br>pédaler et partir en montagne.",
+      heroLead: "Choisissez votre activité et Traccialto adapte carte, routage, points utiles et métriques : sentiers T1–T6 et via ferrata en option, pistes cyclables, allure au km en course ou marche épurée. Zones hors-ligne 1–50 km et GPX/KML ouverts.",
       btnHeroDownload: "Télécharger gratuit sur Google Play",
-      btnHeroExplore: "Explorer les fonctions",
-      trustFree: "Gratuit (0 €)",
-      trustNoAccount: "Aucun compte requis",
-      trustNoAds: "Zéro publicité",
-      trustOfflineMaps: "Zones hors-ligne & GPX/KML",
+      btnHeroExplore: "Comparer les 4 modes",
 
-      cardElevationValue: "+833 m D+ · Coucher 18:14",
-      cardElevationDesc: "DEM 3D hors-ligne · T1–T6 & via ferrata",
-      cardLoopTitle: "4 modes : Rando, Vélo, Course, Marche",
-      cardLoopDesc: "Boucles sur km ou durée, pistes cyclables, allure et zones 1–50 km.",
+      spec1Val: "4 activités",
+      spec1Lbl: "Routage et POI dédiés",
+      spec2Val: "1–50 km",
+      spec2Lbl: "Zones hors-ligne en 1 clic",
+      spec3Val: "GPX · KML",
+      spec3Lbl: "Import & export HTML 3D",
+      spec4Val: "0 € · Sans pub",
+      spec4Lbl: "Sans compte obligatoire",
 
-      cert1Title: "Zéro abonnement PRO",
-      cert1Desc: "Cartes hors-ligne et 3D sans paywall",
-      cert2Title: "Zones hors-ligne 1–50 km",
-      cert2Desc: "Téléchargez tout un secteur en un geste",
-      cert3Title: "Coucher du soleil hors-ligne",
-      cert3Desc: "Alerte si l'arrivée dépasse la nuit",
-      cert4Title: "Sans compte, GPX ouverts",
-      cert4Desc: "Import GPX/KML et export Stories 3D",
+      mTrekShort: "Randonnée",
+      mTrekHint: "Sentiers, T1–T6 & ferrata",
+      mBikeShort: "Vélo",
+      mBikeHint: "Pistes & vue guidon",
+      mRunShort: "Course",
+      mRunHint: "Allure /km & boucles",
+      mWalkShort: "Marche",
+      mWalkHint: "Parcs & carte épurée",
+      tabTrek: "01 · Randonnée",
+      tabBike: "02 · Vélo",
+      tabRun: "03 · Course",
+      tabWalk: "04 · Marche",
 
-      discIntroBadge: "Activités & Disciplines Outdoor",
-      discIntroTitle: "Quatre façons de vivre la nature<br><span class=\"serif-accent\">avec des outils dédiés.</span>",
+      discIntroNum: "01 / MODES DÉDIÉS",
+      discIntroTitle: "Quatre vraies disciplines, pas un profil générique.",
       discIntroDesc: "Traccialto n'applique pas une formule générique à tous les sports. Chaque mode adopte des moteurs de calcul, points utiles adaptés sur la carte, allures estimées et métriques pour la randonnée, le vélo, la course ou la marche.",
 
-      trekTag: "Montagne",
+      trekTag: "01 · Montagne",
       trekTitle: "Randonnée & Montagne",
-      trekQuote: "« Un pas après l'autre. »",
       trekDesc: "Préparez randonnées et boucles sur les sentiers, en incluant sur choix explicite les via ferrata cartographiées (avec rappel d'équipement et de conditions). Comparez altitudes, montées et durées avant de partir.",
       trekF1: "<strong>Difficulté T1–T6 en Italie</strong> répertoriée là où présente dans les données ; les segments non classés restent indiqués",
       trekF2: "<strong>Temps selon votre allure réelle</strong> calibrés sur pente DEM, T1–T6 et historique",
       trekF3: "<strong>Voix aux bifurcations, hors-trace & +500 m D+</strong> avec heure du coucher du soleil hors-ligne",
-      trekF4: "<strong>Boussole orientée</strong> sur cartographie topographique avec courbes de niveau",
+      trekF4: "<strong>Boussole orientée</strong> sur cartographie topographique avec refuges et bivouacs",
       trekPill: "Compatible avec les traces GPX officielles et régionales",
 
-      bikeTag: "Deux Roues",
+      bikeTag: "02 · Deux roues",
       bikeTitle: "Vélo & Cyclisme",
-      bikeQuote: "« Un coup de pédale après l'autre. »",
       bikeDesc: "Algorithme de calcul adapté aux voies vertes, chemins carrossables et routes secondaires. Écran à haut contraste pensé pour être lu instantanément sur guidon.",
       bikeF1: "<strong>Routage vélo spécifique</strong> priorisant pistes cyclables et pistes en terre battue",
       bikeF2: "<strong>Guidage vocal & alerte hors-trace</strong> avec heure du coucher du soleil en direct",
@@ -509,28 +516,26 @@
       bikeF4: "<strong>Enregistrement continu</strong> et zones téléchargeables hors-ligne jusqu'à 50 km",
       bikePill: "Vérifiez le revêtement et l'accessibilité selon votre vélo",
 
-      runTag: "Allure",
+      runTag: "03 · Allure",
       runTitle: "Course à pied",
-      runQuote: "« Une foulée à la fois. »",
       runDesc: "Pour vos sorties en parc, bord de rivière ou voie piétonne : allure récente et moyenne au kilomètre, pause automatique et boucles sur distance ou durée.",
       runF1: "<strong>Boucles personnalisables</strong> selon distance ou durée, avec limite D+ optionnelle",
       runF2: "<strong>Instructions vocales essentielles</strong> aux vrais changements de direction, allure & pause auto",
       runF3: "<strong>Fontaines et points favoris</strong> affichables sur votre carte de course",
       runF4: "<strong>Zones hors-ligne jusqu'à 50 km :</strong> téléchargez votre secteur à l'avance",
-      runPill: "Allure cible autour de 6:00 /km, sans distraction",
+      runPill: "Allure récente et moyenne au km en direct, sans distraction",
 
-      walkTag: "Quotidien",
+      walkTag: "04 · Quotidien",
       walkTitle: "Marche",
-      walkQuote: "« À votre rythme, chaque jour. »",
-      walkDesc: "Conçue pour les balades en ville, les parcs et les sentiers doux sans encombrement alpin : vitesse estimée d'environ 5 km/h et carte épurée.",
+      walkDesc: "Conçue pour les balades en ville, les parcs et les sentiers doux sans encombrement alpin : rythme calme et carte épurée.",
       walkF1: "<strong>Carte dédiée à la balade :</strong> affiche points d'eau et vos points favoris",
       walkF2: "<strong>Boucles flexibles</strong> selon la distance ou le temps disponible",
       walkF3: "<strong>Fonction Trip Trim</strong> pour nettoyer les arrêts prolongés au départ ou à l'arrivée",
       walkF4: "<strong>Journal avec photos et statistiques</strong> conservés dans vos archives locales",
       walkPill: "Parfaite pour balades, parcs et promenades légères",
 
-      startTag: "De l'idée à la sortie",
-      startTitle: "Moins de préparatifs.<br><span class=\"serif-accent\">Plus de temps dehors.</span>",
+      startNum: "02 / DE L'IDÉE À LA SORTIE",
+      startTitle: "Moins de préparatifs. Plus de temps dehors.",
       s1Title: "Choisissez l'activité",
       s1Desc: "Randonnée, vélo, course ou marche : métriques, points sur carte et calculs s'adaptent à votre choix.",
       s2Title: "Préparez votre sortie",
@@ -538,8 +543,8 @@
       s3Title: "Partez et suivez vos progrès",
       s3Desc: "Suivez la trace ou enregistrez librement. Retrouvez carte, temps et profil dans votre historique.",
 
-      showBadge: "Dans l'application (version Google Play)",
-      showTitle: "Conçue pour rester lisible<br><span class=\"serif-accent\">sur chaque sortie outdoor.</span>",
+      showNum: "03 / DANS L'APP (GOOGLE PLAY)",
+      showTitle: "Conçue pour rester lisible sur chaque sortie outdoor.",
       showDesc: "Aperçu des écrans inclus gratuitement sur Android : navigation dédiée aux 4 activités, boucles sur mesure et zones 1–50 km, Replay 3D et Stories photo.",
       show1Title: "Carte topo, T1–T6 & coucher du soleil",
       show1Desc: "Guidage vocal aux bifurcations, alerte hors-trace et heure solaire sans réseau.",
@@ -565,8 +570,8 @@
       ui3M2: "Montée",
       ui3M3: "Exporter",
 
-      featIntroBadge: "Technologie Cartographique",
-      featIntroTitle: "Des outils conçus<br><span class=\"serif-accent\">pour le terrain réel.</span>",
+      featNum: "04 / OUTILS DE TERRAIN",
+      featIntroTitle: "Des outils conçus pour le terrain réel.",
       featIntroDesc: "Préparez l'itinéraire, observez le relief et choisissez les données à garder sous les yeux.",
 
       feat1Tag: "Morphologie & Cartes Hors-Ligne",
@@ -617,8 +622,8 @@
       feat6P3: "Partage live facultatif chiffré AES-GCM sur l'appareil (maximum 8 h)",
       feat6P4: "Thème sombre contrasté, pause auto & menu Notifications dédié",
 
-      privTag: "Confidentialité & Clarté",
-      privTitle: "Vos parcours<br><span style=\"color: #9fe8b4; font-family: var(--font-serif); font-style: italic; font-weight: 400;\">n'appartiennent qu'à vous.</span>",
+      privNum: "05 / CONFIDENTIALITÉ & CONTRÔLE",
+      privTitle: "Vos parcours n'appartiennent qu'à vous.",
       privDesc: "L'historique reste sur votre appareil sans compte obligatoire. Cartes en ligne, sauvegarde Drive, Amis et suivi live sont réglables dans les paramètres et n'envoient que le strict nécessaire.",
       privB1Title: "Historique stocké sur l'appareil",
       privB1Desc: "Conservez vos sorties et réglages sur votre téléphone. Vous seul décidez quand les exporter ou les partager.",
@@ -629,11 +634,9 @@
       privB3Title: "Zéro cookie, zéro pistage",
       privB3Desc: "Ni ce site ni l'application n'intègrent Google Analytics, pixel Facebook ou régies publicitaires.",
       privBtn: "Lire la politique de confidentialité complète",
-      privSideTitle: "Votre cloud, rien qu'à vous",
-      privSideDesc: "Activez la sauvegarde incrémentielle automatique dans l'espace privé de votre Google Drive : Traccialto n'a accès à aucun autre fichier de votre Drive.",
 
-      faqTag: "FAQ & Clarté",
-      faqTitle: "Tout ce que<br><span class=\"serif-accent\">vous devez savoir.</span>",
+      faqNum: "06 / QUESTIONS FRÉQUENTES",
+      faqTitle: "Tout ce que vous devez savoir.",
       faqDesc: "Réponses transparentes sur les licences, le fonctionnement hors-ligne, la confidentialité et la compatibilité Android.",
       q1: "Traccialto est-elle vraiment entièrement gratuite ?",
       a1: "Oui. Il n'y a aucun abonnement mensuel, aucune fonction 'pro' payante et aucune bannière publicitaire. Traccialto est un projet indépendant dédié à la marche, la course, le vélo et la montagne avec un outil clair et transparent.",
@@ -649,78 +652,83 @@
       a6: "Il est entièrement facultatif : toute la cartographie et l'enregistrement GPS fonctionnent sans compte. Si vous activez Amis, connectez-vous avec Google, choisissez un @username unique et partagez les itinéraires voulus via un fichier dédié sur votre Google Drive (portée limitée drive.file), avec notifications réglables, suppression unitaire ou globale et suppression du profil à tout moment.",
 
       closingTag: "Prêt pour la prochaine sortie",
-      closingTitle: "La nature vous attend.<br><span class=\"serif-accent\">Emportez juste l'essentiel.</span>",
-      closingDesc: "Disponible sur Google Play Store. Téléchargez l'application gratuite et partez à l'aventure.",
+      closingTitle: "Emportez juste l'essentiel.",
+      closingDesc: "Disponible sur Google Play Store. Téléchargez l'application gratuite et explorez selon vos 4 activités.",
       closingBtn: "Télécharger gratuit sur Google Play",
       qrTitle: "Sur ordinateur ?",
       qrDesc: "Scannez le QR avec votre téléphone",
       closingFoot: "Android 8+ · Gratuit · Sans publicité",
 
-      footerCopy: "© 2026 Traccialto. Projet indépendant de cartographie et de navigation outdoor. Zéro publicité. Consultez la politique de confidentialité."
+      footerCopy: "© 2026 Traccialto. Projet indépendant pour randonnée, vélo, course et marche. Zéro publicité. Consultez la politique de confidentialité."
     },
 
     es: {
-      pageTitle: "Traccialto — Navegación y Cartografía Outdoor Offline",
-      pageDesc: "Cartografía 3D offline sin suscripciones para senderismo, bicicleta, carrera y caminata (con vías ferratas opcionales). Zonas 1–50 km, GPX/KML libres, ocaso offline, Replay 3D e Historias. Gratis y sin anuncios.",
+      pageTitle: "Traccialto — Senderismo, Bici, Carrera y Caminata Offline",
+      pageDesc: "Una sola app para caminar, correr, pedalear y hacer montaña offline: rutas y métricas propias, ferratas opcionales, zonas 1–50 km, GPX/KML, ocaso offline y Replay 3D. Gratis y sin anuncios.",
       skipToContent: "Ir al contenido",
       brandAria: "Traccialto inicio",
       navAria: "Menú principal",
       langAria: "Idioma",
-      heroImgAlt: "Paisaje alpino con lago de alta montaña y cumbres nevadas",
-      certezzeAria: "Puntos fuertes de Traccialto",
+      modesGalleryAria: "Explora las 4 actividades outdoor",
+      trekImgAlt: "Senderismo en montaña junto a un lago alpino",
+      bikeImgAlt: "Bicicleta gravel en un puerto de montaña",
+      runImgAlt: "Carrera junto a senda peatonal y río",
+      walkImgAlt: "Caminata por paseo arbolado junto al lago",
       feat1TopoAria: "Ilustración vectorial del relieve topográfico",
       feat3BoxAria: "Vista previa del modo AMOLED y cálculo de ocaso offline",
       qrAlt: "Código QR para abrir Traccialto en Google Play",
       footerPrivacyLink: "Política de privacidad",
 
-      navActivities: "Actividades",
+      navActivities: "Modos",
       navFeatures: "Funciones",
       navPrivacy: "Privacidad",
       navFaq: "Preguntas",
       btnAvailability: "Descargar en Google Play",
       btnAvailabilityShort: "Google Play",
 
-      heroBadge: "4 modos · Senderismo · Bici · Carrera · Caminata",
-      heroTitle: "Cartografía 3D offline<br><span class=\"serif-accent\">sin suscripciones.</span>",
-      heroLead: "Mapas, rutas y métricas dedicadas para senderismo (con vías ferratas opcionales), bicicleta, carrera y caminata. Descarga zonas 1–50 km offline, importa GPX/KML, crea circulares y consulta el ocaso sin red. Gratis y sin anuncios.",
+      heroBadge: "Senderismo · Bicicleta · Carrera · Caminata",
+      heroTitle: "Una sola app para caminar, correr,<br>pedalear y salir a la montaña.",
+      heroLead: "Elige cómo te mueves y Traccialto adapta mapa, cálculo de rutas, puntos útiles y métricas: senderos T1–T6 y ferratas opcionales, ciclovías, ritmo por km al correr o paseos esenciales. Zonas 1–50 km offline y GPX/KML libres.",
       btnHeroDownload: "Descargar gratis en Google Play",
-      btnHeroExplore: "Explorar funciones",
-      trustFree: "Gratis (0 €)",
-      trustNoAccount: "Sin cuenta requerida",
-      trustNoAds: "Cero anuncios",
-      trustOfflineMaps: "Zonas offline y GPX/KML",
+      btnHeroExplore: "Comparar los 4 modos",
 
-      cardElevationValue: "+833 m D+ · Ocaso 18:14",
-      cardElevationDesc: "DEM 3D offline · T1–T6 y ferrata opcional",
-      cardLoopTitle: "4 modos: Senderismo, Bici, Carrera, Caminata",
-      cardLoopDesc: "Circulares por km o tiempo, ciclovías, ritmo y zonas 1–50 km.",
+      spec1Val: "4 actividades",
+      spec1Lbl: "Rutas y POI dedicados",
+      spec2Val: "1–50 km",
+      spec2Lbl: "Zonas offline en un toque",
+      spec3Val: "GPX · KML",
+      spec3Lbl: "Import y export HTML 3D",
+      spec4Val: "0 € · Sin ads",
+      spec4Lbl: "Sin cuenta obligatoria",
 
-      cert1Title: "Cero suscripciones PRO",
-      cert1Desc: "Mapas offline y 3D sin muros de pago",
-      cert2Title: "Zonas offline 1–50 km",
-      cert2Desc: "Descarga toda una zona en un toque",
-      cert3Title: "Ocaso y luz sin conexión",
-      cert3Desc: "Aviso si llegas tras la puesta del sol",
-      cert4Title: "Sin cuenta, GPX libres",
-      cert4Desc: "Importa GPX/KML y exporta Historias 3D",
+      mTrekShort: "Senderismo",
+      mTrekHint: "Senderos, T1–T6 y ferrata",
+      mBikeShort: "Bicicleta",
+      mBikeHint: "Ciclovías y manillar",
+      mRunShort: "Carrera",
+      mRunHint: "Ritmo /km y circulares",
+      mWalkShort: "Caminata",
+      mWalkHint: "Parques y mapa limpio",
+      tabTrek: "01 · Senderismo",
+      tabBike: "02 · Bicicleta",
+      tabRun: "03 · Carrera",
+      tabWalk: "04 · Caminata",
 
-      discIntroBadge: "Actividades & Deportes Outdoor",
-      discIntroTitle: "Cuatro formas de vivir la naturaleza<br><span class=\"serif-accent\">con herramientas dedicadas.</span>",
+      discIntroNum: "01 / MODOS DEDICADOS",
+      discIntroTitle: "Cuatro actividades reales, no un perfil genérico adaptado.",
       discIntroDesc: "Traccialto no aplica una fórmula genérica a todos los deportes. Cada modo utiliza motores de cálculo, puntos útiles en el mapa, ritmos estimados y métricas para senderismo, bicicleta, carrera o caminata.",
 
-      trekTag: "Montaña",
+      trekTag: "01 · Montaña",
       trekTitle: "Senderismo & Montaña",
-      trekQuote: "«Un paso a la vez.»",
       trekDesc: "Planifica excursiones y rutas circulares priorizando senderos e incluyendo bajo petición vías ferratas cartografiadas (con aviso de equipo y condiciones). Compara altitudes, ascensos y tiempos antes de salir.",
       trekF1: "<strong>Dificultad de senderos T1–T6 en Italia</strong> donde conste en los datos; los tramos sin clasificar siguen indicados",
       trekF2: "<strong>Tiempos según tu ritmo real</strong> ajustados a pendiente DEM, T1–T6 e historial",
       trekF3: "<strong>Voz en giros, alerta fuera de ruta y +500 m D+</strong> más ocaso calculado offline",
-      trekF4: "<strong>Brújula orientada</strong> en cartografía topográfica con curvas de nivel",
+      trekF4: "<strong>Brújula orientada</strong> en cartografía topográfica con refugios y vivacs",
       trekPill: "Compatible con rutas GPX oficiales y regionales",
 
-      bikeTag: "Dos Ruedas",
+      bikeTag: "02 · Dos ruedas",
       bikeTitle: "Bicicleta",
-      bikeQuote: "«Una pedalada a la vez.»",
       bikeDesc: "Algoritmo de cálculo adaptado a ciclovías, pistas de tierra compacta y vías de poco tráfico. Pantalla de alto contraste diseñada para leerse al instante en el manillar.",
       bikeF1: "<strong>Rutas ciclistas dedicadas</strong> con prioridad a vías ciclistas y pistas firmes",
       bikeF2: "<strong>Guía de voz en giros y fuera de ruta</strong> más hora del ocaso visible en ruta",
@@ -728,28 +736,26 @@
       bikeF4: "<strong>Grabación continua</strong> y zonas descargables offline de hasta 50 km",
       bikePill: "Comprueba el firme y la accesibilidad para tu bicicleta",
 
-      runTag: "Ritmo",
+      runTag: "03 · Ritmo",
       runTitle: "Carrera",
-      runQuote: "«Una zancada cada vez.»",
       runDesc: "Para salidas en parques y vías peatonales: ritmo reciente y medio por kilómetro, pausa automática y rutas circulares por distancia o tiempo.",
       runF1: "<strong>Rutas circulares a medida</strong> por distancia o tiempo, con límite D+ opcional",
       runF2: "<strong>Avisos de voz esenciales</strong> solo en los giros reales, ritmo por km y pausa auto",
       runF3: "<strong>Fuentes de agua y puntos favoritos</strong> seleccionables en tu mapa de carrera",
       runF4: "<strong>Zonas offline de hasta 50 km:</strong> descarga tu zona con antelación",
-      runPill: "Ritmo de referencia ~6:00 /km, sin distracciones",
+      runPill: "Ritmo reciente y medio por km en directo, sin distracciones",
 
-      walkTag: "Cotidiano",
+      walkTag: "04 · Cotidiano",
       walkTitle: "Caminata",
-      walkQuote: "«A tu paso, cada día.»",
-      walkDesc: "Pensada para paseos urbanos, parques y senderos suaves sin elementos de alta montaña: ritmo estimado de unos 5 km/h y mapa centrado en lo esencial.",
+      walkDesc: "Pensada para paseos urbanos, parques y senderos suaves sin elementos de alta montaña: ritmo tranquilo y mapa centrado en lo esencial.",
       walkF1: "<strong>Mapa esencial para caminar:</strong> muestra puntos de agua y tus lugares favoritos",
       walkF2: "<strong>Rutas circulares flexibles</strong> según la distancia o el tiempo libre",
       walkF3: "<strong>Función Trip Trim</strong> para limpiar esperas accidentales al inicio y final",
       walkF4: "<strong>Diario con fotos y estadísticas</strong> guardado en tu archivo local",
       walkPill: "Ideal para paseos, parques y caminatas suaves",
 
-      startTag: "De la idea a la salida",
-      startTitle: "Menos preparativos.<br><span class=\"serif-accent\">Más tiempo al aire libre.</span>",
+      startNum: "02 / DE LA IDEA A LA SALIDA",
+      startTitle: "Menos preparativos. Más tiempo al aire libre.",
       s1Title: "Elige la actividad",
       s1Desc: "Senderismo, bicicleta, carrera o caminata: métricas, puntos en el mapa y rutas adaptadas a ti.",
       s2Title: "Prepara tu salida",
@@ -757,8 +763,8 @@
       s3Title: "Ponte en marcha y sigue tu progreso",
       s3Desc: "Sigue la ruta o graba con libertad. Al regresar encontrarás mapa, tiempos y perfil en tu historial.",
 
-      showBadge: "Dentro de la app (versión Google Play)",
-      showTitle: "Diseñada para leerse bien<br><span class=\"serif-accent\">en cada salida al aire libre.</span>",
+      showNum: "03 / DENTRO DE LA APP (GOOGLE PLAY)",
+      showTitle: "Diseñada para leerse bien en cada salida al aire libre.",
       showDesc: "Vista previa de pantallas incluidas gratis en Android: navegación dedicada para las 4 actividades, circulares a medida y zonas 1–50 km, Replay 3D e Historias con fotos.",
       show1Title: "Mapa topo, T1–T6 y ocaso offline",
       show1Desc: "Indicaciones de voz en giros, alerta fuera de ruta y luz solar sin cobertura.",
@@ -784,8 +790,8 @@
       ui3M2: "Subida",
       ui3M3: "Exportar",
 
-      featIntroBadge: "Tecnología Cartográfica",
-      featIntroTitle: "Herramientas creadas<br><span class=\"serif-accent\">para el terreno real.</span>",
+      featNum: "04 / HERRAMIENTAS DE TERRENO",
+      featIntroTitle: "Herramientas creadas para el terreno real.",
       featIntroDesc: "Prepara el itinerario, estudia el terreno y elige qué métricas mantener a la vista.",
 
       feat1Tag: "Morfología & Mapas Offline",
@@ -836,8 +842,8 @@
       feat6P3: "Seguimiento en vivo opcional cifrado AES-GCM en el teléfono (máximo 8 h)",
       feat6P4: "Tema oscuro de alto contraste, pausa auto y panel de Notificaciones",
 
-      privTag: "Privacidad y Claridad",
-      privTitle: "Tus rutas<br><span style=\"color: #9fe8b4; font-family: var(--font-serif); font-style: italic; font-weight: 400;\">solo te pertenecen a ti.</span>",
+      privNum: "05 / PRIVACIDAD Y CONTROL",
+      privTitle: "Tus rutas solo te pertenecen a ti.",
       privDesc: "El historial se conserva en tu dispositivo sin cuenta obligatoria. Mapas online, copia en Drive, Amigos y directo cifrado pueden gestionarse desde Ajustes y solo envían los datos estrictamente necesarios.",
       privB1Title: "Historial en el dispositivo",
       privB1Desc: "Conserva tus rutas y ajustes en tu teléfono. Solo tú decides cuándo exportarlos o compartirlos.",
@@ -848,11 +854,9 @@
       privB3Title: "Cero cookies y cero rastreadores",
       privB3Desc: "Ni esta web ni la app incluyen Google Analytics, píxel de Facebook ni redes publicitarias.",
       privBtn: "Leer política de privacidad completa",
-      privSideTitle: "Tu nube, solo tuya",
-      privSideDesc: "Activa la copia incremental automática en el espacio privado de tu Google Drive: Traccialto no ve tus demás archivos ni usa servidores propios.",
 
-      faqTag: "FAQ y Claridad",
-      faqTitle: "Todo lo que<br><span class=\"serif-accent\">necesitas saber.</span>",
+      faqNum: "06 / PREGUNTAS FRECUENTES",
+      faqTitle: "Todo lo que necesitas saber.",
       faqDesc: "Respuestas claras sobre licencias, funcionamiento offline, privacidad y compatibilidad con Android.",
       q1: "¿Traccialto es realmente gratuita?",
       a1: "Sí. No hay cuotas mensuales, no existen opciones de pago 'pro' ni anuncios publicitarios. Traccialto es un proyecto independiente para caminar, correr, pedalear y disfrutar de la montaña con una herramienta limpia y transparente.",
@@ -868,16 +872,46 @@
       a6: "Es totalmente opcional: toda la cartografía, planificación y grabación GPS funcionan sin cuenta. Si activas Amigos, inicias sesión con Google, eliges un @username único y compartes las rutas que quieras en un archivo dedicado de tu Google Drive (alcance limitado drive.file), con notificaciones configurables, borrado individual o total y eliminación de perfil en cualquier momento.",
 
       closingTag: "Listo para la próxima salida",
-      closingTitle: "La naturaleza te espera.<br><span class=\"serif-accent\">Lleva solo lo imprescindible.</span>",
-      closingDesc: "Disponible en Google Play Store. Descarga la aplicación gratuita y empieza a explorar.",
+      closingTitle: "Lleva solo lo imprescindible.",
+      closingDesc: "Disponible en Google Play Store. Descarga la aplicación gratuita y explora tus 4 actividades.",
       closingBtn: "Descargar gratis en Google Play",
       qrTitle: "¿En el ordenador?",
       qrDesc: "Escanea el QR con tu móvil para instalar",
       closingFoot: "Android 8+ · Gratis · Sin publicidad",
 
-      footerCopy: "© 2026 Traccialto. Proyecto independiente de cartografía y navegación para el territorio. Sin publicidad. Consulta la política de privacidad."
+      footerCopy: "© 2026 Traccialto. Proyecto independiente para senderismo, bicicleta, carrera y caminata. Sin publicidad. Consulta la política de privacidad."
     }
   };
+
+  const MODE_INSPECTOR = {
+    trek: {
+      it: { title: "Trekking & Montagna", desc: "Escursioni su sentieri con difficoltà T1–T6 in Italia, vie ferrate attivabili su scelta, passo calibrato e rifugi.", tags: ["T1–T6 Italia", "Vie ferrate opt-in", "Rifugi & bivacchi", "Tramonto offline"] },
+      en: { title: "Trekking & Mountains", desc: "Trail routes with Italian T1–T6 grades, opt-in via ferratas, calibrated pace, and alpine huts.", tags: ["T1–T6 trails", "Opt-in via ferrata", "Huts & bivouacs", "Offline sunset"] },
+      fr: { title: "Randonnée & Montagne", desc: "Sentiers classés T1–T6 en Italie, via ferrata sur choix explicite, allure calibrée et refuges.", tags: ["Sentiers T1–T6", "Via ferrata option", "Refuges & bivouacs", "Coucher hors-ligne"] },
+      es: { title: "Senderismo & Montaña", desc: "Senderos T1–T6 en Italia, vías ferratas opcionales, ritmo calibrado y refugios alpinos.", tags: ["Grados T1–T6", "Ferrata opcional", "Refugios y vivacs", "Ocaso offline"] }
+    },
+    bike: {
+      it: { title: "Bicicletta", desc: "Routing per ciclovie e strade bianche, schermata ad alto contrasto per manubrio con velocità, quota e tramonto dal vivo.", tags: ["Ciclovie & sterrati", "Vista manubrio", "Voce svolte", "Zone 1–50 km"] },
+      en: { title: "Cycling", desc: "Routing calibrated for cycleways and compact gravel, high-contrast handlebar view with speed, altitude, and live sunset.", tags: ["Cycleways & gravel", "Handlebar UI", "Turn voice prompts", "1–50 km zones"] },
+      fr: { title: "Vélo & Cyclisme", desc: "Routage pour pistes cyclables et chemins stables, vue guidon haute lisibilité avec vitesse, altitude et heure du coucher.", tags: ["Pistes cyclables", "Vue guidon", "Guidage vocal", "Zones 1–50 km"] },
+      es: { title: "Bicicleta", desc: "Rutas para ciclovías y pistas firmes, pantalla de alto contraste en el manillar con velocidad, altitud y ocaso en vivo.", tags: ["Ciclovías y pistas", "Vista manillar", "Guía de voz", "Zonas 1–50 km"] }
+    },
+    run: {
+      it: { title: "Corsa", desc: "Per parchi, argini e percorsi pedonali: passo recente e medio al km, pausa automatica e anelli su distanza o durata.", tags: ["Passo recente & medio /km", "Pausa automatica", "Anelli km o durata", "Fontane & preferiti"] },
+      en: { title: "Running", desc: "For parks, riversides, and pedestrian paths: recent & average km pace, auto-pause, and loops by distance or time.", tags: ["Recent & avg pace /km", "Auto-pause", "Time/km loops", "Water fountains"] },
+      fr: { title: "Course à pied", desc: "Parcs, berges et voies piétonnes : allure récente et moyenne au km, pause auto et boucles sur distance ou durée.", tags: ["Allure récente & moy. /km", "Pause auto", "Boucles km/durée", "Fontaines & favoris"] },
+      es: { title: "Carrera", desc: "Parques y paseos peatonales: ritmo reciente y medio por km, pausa automática y circulares por distancia o tiempo.", tags: ["Ritmo reciente y medio /km", "Pausa auto", "Circulares km/tiempo", "Fuentes y favoritos"] }
+    },
+    walk: {
+      it: { title: "Camminata", desc: "Passeggiate urbane, parchi e sentieri dolci su mappa ripulita dagli elementi superflui, con Trip Trim e diario fotografico.", tags: ["Mappa essenziale", "Punti acqua", "Trip Trim", "Diario foto locale"] },
+      en: { title: "Walking", desc: "City walks, parks, and gentle paths on an uncluttered map, with Trip Trim and private photo diary.", tags: ["Clean map", "Water points", "Trip Trim", "Local photo diary"] },
+      fr: { title: "Marche", desc: "Balades en ville, parcs et sentiers doux sur carte épurée, avec Trip Trim et journal photo local.", tags: ["Carte épurée", "Points d'eau", "Trip Trim", "Journal photo local"] },
+      es: { title: "Caminata", desc: "Paseos urbanos, parques y caminos suaves en mapa esencial, con Trip Trim y diario de fotos local.", tags: ["Mapa esencial", "Puntos de agua", "Trip Trim", "Diario local"] }
+    }
+  };
+
+  let activeLang = "it";
+  let activeMode = "trek";
 
   function detectLang() {
     const s = localStorage.getItem("traccialto_lang");
@@ -889,8 +923,35 @@
     return "en";
   }
 
+  function renderInspector() {
+    const pack = MODE_INSPECTOR[activeMode] && MODE_INSPECTOR[activeMode][activeLang];
+    if (!pack) return;
+    const titleEl = document.getElementById("insTitle");
+    const descEl = document.getElementById("insDesc");
+    const tagsEl = document.getElementById("insTags");
+    if (titleEl) titleEl.textContent = pack.title;
+    if (descEl) descEl.textContent = pack.desc;
+    if (tagsEl) {
+      tagsEl.textContent = "";
+      pack.tags.forEach(function (tag) {
+        const span = document.createElement("span");
+        span.className = "spec-chip";
+        span.textContent = tag;
+        tagsEl.appendChild(span);
+      });
+    }
+    document.querySelectorAll(".mode-strip, .mode-pill-tab").forEach(function (el) {
+      const on = el.getAttribute("data-mode") === activeMode;
+      el.classList.toggle("is-active", on);
+      if (el.hasAttribute("aria-selected")) {
+        el.setAttribute("aria-selected", on ? "true" : "false");
+      }
+    });
+  }
+
   function setLanguage(lang) {
     if (!I18N[lang]) lang = "en";
+    activeLang = lang;
     localStorage.setItem("traccialto_lang", lang);
     document.documentElement.lang = lang;
 
@@ -922,18 +983,29 @@
     document.querySelectorAll(".site-lang-pill button").forEach(function (btn) {
       btn.classList.toggle("active", btn.getAttribute("data-l") === lang);
     });
+
+    renderInspector();
   }
 
   window.setSiteLanguage = setLanguage;
 
   document.addEventListener("DOMContentLoaded", function () {
-    const current = detectLang();
-    setLanguage(current);
+    setLanguage(detectLang());
 
     document.querySelectorAll(".site-lang-pill button").forEach(function (btn) {
       btn.addEventListener("click", function () {
         const l = this.getAttribute("data-l");
         if (l) setLanguage(l);
+      });
+    });
+
+    document.querySelectorAll(".mode-strip, .mode-pill-tab").forEach(function (el) {
+      el.addEventListener("click", function () {
+        const m = this.getAttribute("data-mode");
+        if (m && MODE_INSPECTOR[m]) {
+          activeMode = m;
+          renderInspector();
+        }
       });
     });
   });
