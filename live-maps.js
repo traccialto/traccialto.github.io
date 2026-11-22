@@ -50,18 +50,23 @@ async function selectLiveMap(mode){
   setMapNotice('loading3d');await load3dLibrary();if(mapMode!=='3d')return;
   const host=document.getElementById('map3d');host.hidden=false;
   if(!live3d){
-   const c=map.getCenter();live3d=new maplibregl.Map({container:host,center:[c.lng,c.lat],zoom:Math.min(map.getZoom(),16),pitch:55,maxPitch:75,style:{version:8,sources:{satellite:{type:'raster',tiles:[satelliteUrl],tileSize:256,maxzoom:14,attribution:satelliteCredit},terrain:{type:'raster-dem',url:'https://tiles.mapterhorn.com/tilejson.json',attribution:'<a href="https://mapterhorn.com/attribution/">'+lt('terrainAttrib')+'</a>'}},layers:[{id:'background',type:'background',paint:{'background-color':'#233b32'}},{id:'satellite',type:'raster',source:'satellite'}]},terrain:{source:'terrain',exaggeration:1}});
+   const c=map.getCenter();live3d=new maplibregl.Map({container:host,center:[c.lng,c.lat],zoom:Math.min(map.getZoom(),16),pitch:55,maxPitch:75,style:{version:8,sources:{satellite:{type:'raster',tiles:[satelliteUrl],tileSize:256,maxzoom:14,attribution:satelliteCredit},terrain:{type:'raster-dem',url:'https://tiles.mapterhorn.com/tilejson.json',attribution:'<a href="https://mapterhorn.com/attribution/">'+lt('terrainAttrib')+'</a>'}},layers:[{id:'background',type:'background',paint:{'background-color':'#0e1110'}},{id:'satellite',type:'raster',source:'satellite'}]},terrain:{source:'terrain',exaggeration:1}});
    live3d.addControl(new maplibregl.NavigationControl(),'top-right');live3d.touchZoomRotate.enable();live3d.touchPitch.enable();live3d.on('dragstart',()=>following=false);
    live3d.on('error',()=>{if(mapMode==='3d')setMapNotice('error3d');});
    live3d.on('load',()=>{
     live3d.setTerrain({source:'terrain',exaggeration:1});
-    for(const [id,color] of [['planned','#3589df'],['actual','#54d8b0']]){live3d.addSource(id,{type:'geojson',data:geoLines([])});live3d.addLayer({id:id+'-halo',type:'line',source:id,paint:{'line-color':'#14332b','line-width':8}});live3d.addLayer({id,type:'line',source:id,paint:{'line-color':color,'line-width':5},layout:{'line-cap':'round','line-join':'round'}});}
-    live3d.addSource('position',{type:'geojson',data:{type:'FeatureCollection',features:[]}});live3d.addLayer({id:'position',type:'circle',source:'position',paint:{'circle-radius':8,'circle-color':'#1780df','circle-stroke-color':'white','circle-stroke-width':3}});
+    const ac=typeof activeAccent==='string'?activeAccent:'#259462';
+    for(const [id,color] of [['planned','#3b82f6'],['actual',ac]]){live3d.addSource(id,{type:'geojson',data:geoLines([])});live3d.addLayer({id:id+'-halo',type:'line',source:id,paint:{'line-color':'#0e1110','line-width':8}});live3d.addLayer({id,type:'line',source:id,paint:{'line-color':color,'line-width':5},layout:{'line-cap':'round','line-join':'round'}});}
+    live3d.addSource('position',{type:'geojson',data:{type:'FeatureCollection',features:[]}});live3d.addLayer({id:'position',type:'circle',source:'position',paint:{'circle-radius':8,'circle-color':ac,'circle-stroke-color':'white','circle-stroke-width':3}});
     live3dReady=true;syncLive3d();if(mapMode==='3d'){document.getElementById('map').hidden=true;setMapNotice('controls3dHint');}
    });
   }else{const c=map.getCenter();live3d.resize();live3d.jumpTo({center:[c.lng,c.lat],zoom:Math.min(map.getZoom(),16)});if(live3dReady){document.getElementById('map').hidden=true;syncLive3d();setMapNotice('controls3dHint');}}
  }catch(_){setMapNotice('unsupported3d');mapMode='satellite';await selectLiveMap('satellite');}
 }
+window.updateLiveAccent=function(color){
+ if(!live3dReady||!live3d||!color)return;
+ try{live3d.setPaintProperty('actual','line-color',color);live3d.setPaintProperty('position','circle-color',color);}catch(_){}
+};
 document.querySelectorAll('[data-map]').forEach(b=>b.onclick=()=>selectLiveMap(b.dataset.map));
 window.setLiveMapModeVisibility=function(activityMode){
  const isTrekking=(activityMode==='trekking');

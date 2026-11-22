@@ -245,18 +245,27 @@ function applyLang(lang) {
   }
   if (window.refreshLiveMapStrings) window.refreshLiveMapStrings();
   if (latestPosition) updateTelemetryDisplay(latestPosition);
-  else updateTelemetryDisplay({ mode: "trekking" });
+  else updateTelemetryDisplay({});
   updateFreshness();
 }
 
+const MODE_ACCENTS = { trekking: "#259462", bicycle: "#3b82f6", running: "#e85334", walking: "#149a8e" };
+function modeAccentColor(modeKey) { return MODE_ACCENTS[modeKey] || "#815ceb"; }
+function setStatusState(state) {
+  const el = document.getElementById("status");
+  if (!el) return;
+  el.classList.toggle("is-live", state === "live");
+  el.classList.toggle("is-paused", state === "paused");
+  el.classList.toggle("is-ended", state === "ended");
+}
 const text = (id, value) => { const el = document.getElementById(id); if (el) el.textContent = value; };
 const map = L.map("map", { zoomControl: false }).setView([30, 25], 3);
 L.control.zoom({ position: "topright" }).addTo(map);
 const streetLayer = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }).addTo(map);
 new ResizeObserver(() => document.documentElement.style.setProperty("--map-controls-top", (document.querySelector("header").getBoundingClientRect().bottom + 12) + "px")).observe(document.querySelector("header"));
 
-let marker = null, following = true, lastTs = 0, lastSeq = 0, lastFix = 0, lastGps = 0, isPaused = false, ended = false, expires = 0, queue = Promise.resolve(), pending = 0, points = [], clients = [], receivedTrack = [], latestPosition = null;
-const line = L.polyline([], { color: "#54d8b0", weight: 5 }).addTo(map);
+let marker = null, following = true, lastTs = 0, lastSeq = 0, lastFix = 0, lastGps = 0, isPaused = false, ended = false, expires = 0, queue = Promise.resolve(), pending = 0, points = [], clients = [], receivedTrack = [], latestPosition = null, activeAccent = "#815ceb";
+const line = L.polyline([], { color: "#259462", weight: 5 }).addTo(map);
 map.on("dragstart", () => following = false);
 document.getElementById("follow").onclick = () => { following = true; if (marker) map.setView(marker.getLatLng(), 16); if (window.syncLive3d) window.syncLive3d(); };
 const bytes = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
@@ -286,8 +295,15 @@ function filteredTrack(tail, now) {
 function updateTelemetryDisplay(p) {
   if (!p) p = {};
   const modes = (I18N[currentLang] && I18N[currentLang].modes) || I18N.en.modes;
-  const modeKey = p.mode || "trekking";
-  text("mode", modes[modeKey] || modeKey || "Live");
+  const knownMode = p.mode && MODE_ACCENTS[p.mode] ? p.mode : "";
+  const modeKey = knownMode || "trekking";
+  if (knownMode) document.documentElement.dataset.mode = knownMode;
+  else delete document.documentElement.dataset.mode;
+  activeAccent = modeAccentColor(knownMode);
+  line.setStyle({ color: activeAccent });
+  if (marker) marker.setStyle({ fillColor: activeAccent });
+  if (window.updateLiveAccent) window.updateLiveAccent(activeAccent);
+  text("mode", knownMode ? (modes[knownMode] || knownMode) : "Live");
 
   const distStr = finite(p.distance, 0, 1e7) ? (p.distance / 1000).toFixed(2) + " km" : "—";
   const elapsedStr = finite(p.elapsed, 0, 1e9) ? Math.floor(p.elapsed / 3600000) + "h " + (Math.floor(p.elapsed / 60000) % 60) + "m" : "—";
@@ -389,7 +405,7 @@ async function init() {
       }
       lastTs = p.ts; lastSeq = p.seq; expires = p.expires;
       if (p.kind === "waiting") { text("status", t("waitingFirstFix")); return; }
-      if (p.ended === true) { ended = true; text("status", t("activityEnded")); clients.forEach(c => { try { c.disconnect(); } catch (_) { } }); return; }
+      if (p.ended === true) { ended = true; setStatusState("ended"); text("status", t("activityEnded")); clients.forEach(c => { try { c.disconnect(); } catch (_) { } }); return; }
       latestPosition = p;
       const hasPlanned = Boolean((typeof p.routeVersion === "string" && p.routeVersion.length) || cachedRoute);
       if (hasPlanned) {
@@ -405,11 +421,12 @@ async function init() {
       if (finite(p.lat, -85, 85) && finite(p.lon, -180, 180) && finite(p.fixTime, 0, now + 120000) && p.fixTime > lastFix) {
         lastFix = p.fixTime;
         const ll = [p.lat, p.lon];
-        if (!marker) marker = L.circleMarker(ll, { radius: 9, color: "white", weight: 3, fillColor: "#1780df", fillOpacity: 1 }).addTo(map);
+        if (!marker) marker = L.circleMarker(ll, { radius: 9, color: "white", weight: 3, fillColor: activeAccent, fillOpacity: 1 }).addTo(map);
         else marker.setLatLng(ll);
         if (following) map.setView(ll, map.getZoom() < 12 ? 16 : map.getZoom());
       }
       if (window.syncLive3d) window.syncLive3d();
+      setStatusState(p.paused ? "paused" : "live");
       text("status", p.paused ? t("paused") : t("positionReceived"));
       updateFreshness();
     } catch (_) { }
@@ -454,14 +471,14 @@ document.addEventListener("pointerdown", () => { requestWakeLock(); }, { passive
 function updateFreshness() {
   if (ended) { releaseWakeLock(); return; }
   if (expires && Date.now() > expires) {
-    ended = true; releaseWakeLock(); text("status", t("sessionExpired"));
+    ended = true; setStatusState("ended"); releaseWakeLock(); text("status", t("sessionExpired"));
     clients.forEach(c => { try { c.disconnect(); } catch (_) { } });
     return;
   }
   if (lastGps || lastFix) {
     const seconds = Math.max(0, Math.floor((Date.now() - (lastGps || lastFix)) / 1000));
     text("updated", t("lastGps", { s: seconds }));
-    if (seconds > 20 && !isPaused) text("status", t("gpsOutdated"));
+    if (seconds > 20 && !isPaused) { setStatusState("paused"); text("status", t("gpsOutdated")); }
   }
 }
 
