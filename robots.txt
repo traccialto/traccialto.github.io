@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://traccialto.github.io/sitemap.xml

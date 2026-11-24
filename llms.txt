@@ -1,0 +1,30 @@
+# Traccialto
+
+> Free, no-subscription, no-ads, privacy-first Android outdoor GPS app for Hiking (Trekking), Cycling (Road/Hybrid, Gravel, MTB), Running, and Walking — with 1–50 km offline maps, 3D DEM terrain & 3D Replay, live offline elevation/climb profile, live pace comparison on repeated routes, offline return-to-start (track reversal), automatic driving detection with 1-tap parking trim, start-vs-peak mountain weather, tagged map favorites exported to GPX 1.1, post-activity sport reclassification, and shoe/bike mileage wear tracking.
+
+## Summary
+- **Platform:** Android 8.0+
+- **Download:** https://play.google.com/store/apps/details?id=it.lanzonavigator.app
+- **Website:** https://traccialto.github.io/
+- **Privacy Policy:** https://traccialto.github.io/privacy.html
+- **Pricing:** Free (€0), no subscription, no paywalled "Pro" features, no ads, no mandatory account.
+- **Languages:** Italian (it), English (en), French (fr), Spanish (es).
+
+## Four Dedicated Outdoor Disciplines
+1. **Hiking / Trekking:** Footpath-first routing, T1–T6 alpine trail difficulty grading (Italy), opt-in via ferrata support with safety warnings, personal pace timing calibrated on DEM slopes and history, alpine huts & bivouacs on topographic maps, voice guidance (+500 m D+ and off-route alerts), offline sunset calculation, and start-vs-peak elevation mountain weather.
+2. **Cycling:** Selectable **Road / Hybrid**, **Gravel**, and **MTB** bike profiles with automatic Valhalla road-surface breakdown (Paved, Cycleway, Gravel/Dirt, Trail), live offline climb profile, live pace comparison on repeated routes, handlebar-readable high-contrast cockpit, offline sunset, and bike mileage tracking.
+3. **Running:** Live recent and average pace per kilometer, Grade Adjusted Pace (GAP), kilometer splits, best efforts, live pace comparison on repeated routes, auto-pause, distance/duration/max-ascent circular loop generator, water fountains, and running-shoe wear tracking with replacement alerts.
+4. **Walking:** Clean, clutter-free walking maps showing water points and saved favorites, flexible distance/duration loops, 1-tap out-and-back (A/R) builder, Trip Trim, automatic vehicle-speed detection with parking trim, and post-activity sport reclassification.
+
+## Key Capabilities Included Free (€0)
+- **Offline Maps & 3D Terrain:** Downloadable offline map areas from 1 to 50 km by place search or along any track (OpenTopoMap, OpenStreetMap), high-resolution 3D DEM terrain relief, and post-activity 3D Replay.
+- **Live Offline Climb Profile:** Automatic detection of upcoming climbs along saved or imported routes, displaying remaining distance, remaining elevation gain (D+), average grade (%), and an expandable live grade-colored elevation chart — 100% offline.
+- **Live Pace Comparison (Repeated Routes):** Real-time time delta (ahead/behind) against previous completed sessions on repeated routes for the same discipline.
+- **Offline Return to Start (Track Reversal):** 100% offline reversal of the recorded GPS track or online shortest return route, keeping a single continuous activity recording.
+- **Automatic Vehicle Detection & Parking Trim:** Detects sustained vehicle speeds offline and lets users stop and automatically trim the track back to the last normal-speed moment at the parking spot in 1 tap.
+- **Start vs. Peak Elevation Weather & Offline Sunset:** Open-Meteo forecasts comparing start altitude vs. highest route elevation (temperatures, wind gusts, rain probability, thunderstorm alerts) integrated directly into the top header alongside offline solar sunset timing.
+- **Long-Press Tagged Map Favorites & GPX 1.1 Waypoints:** Long-press anywhere on the map to save tagged points (Parking, Water, Hazard, Viewpoint, Hut, Favorite) that persist on the map, appear in outing History details, and export as standard `<wpt>` elements in GPX 1.1 files.
+- **Out-and-Back (A/R) & Circular Loop Planner:** Plan multi-stop itineraries, generate distance/time/ascent circular loops, or toggle round-trip (Out & Back) in 1 tap.
+- **Post-Activity Discipline Reclassification & Gear Wear Tracker:** Change the activity type of any saved outing in History without losing GPS data, and automatically track mileage wear on shoes and bikes with customizable km limits.
+- **Open Formats, Stories & Safety:** Open GPX 1.1 and KML import/export, standalone interactive HTML map export, photo Stories, pure-black AMOLED screen-off cockpit, SOS screen with 112 shortcut and Morse flashlight, and optional AES-GCM encrypted live sharing (up to 8 hours).
+- **Privacy & Optional Cloud Sync:** All tracks, diary notes, and photos stay locally on device with zero analytics or ad SDKs. Optional Google Drive private backup (`appDataFolder`) and optional `@username` Friends route sharing (`drive.file`).

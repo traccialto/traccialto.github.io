@@ -1110,6 +1110,115 @@ section[id] {
   color: var(--ink-muted);
 }
 
+/* Complete Capability Matrix ("Tutto incluso, 0 €") */
+.included-band {
+  background: var(--paper-alt);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 64px 0;
+}
+.included-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.included-col {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  padding: 24px 24px 22px;
+}
+.included-col-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+.included-col h3 {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.015em;
+}
+.included-badge {
+  font-size: 10.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--pine);
+  background: var(--pine-soft);
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  padding: 4px 10px;
+  white-space: nowrap;
+}
+.included-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 9px;
+}
+.included-list li {
+  display: grid;
+  grid-template-columns: 16px minmax(0, 1fr);
+  gap: 8px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+.included-list li strong {
+  color: var(--ink);
+}
+.included-list .check-mark {
+  color: var(--pine);
+  font-weight: 800;
+}
+
+/* Watch Ecosystem Section (kept hidden until physical watch testing completes) */
+[data-watch-preview="true"] {
+  display: none !important;
+}
+.watch-ecosystem-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.watch-card {
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-lg);
+  padding: 26px 26px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.watch-card-kicker {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pine);
+}
+.watch-card h3 {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 22px;
+  color: var(--ink);
+  letter-spacing: -0.015em;
+}
+.watch-card p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.58;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .hero-grid,
@@ -1123,7 +1232,9 @@ section[id] {
   .steps-grid,
   .showcase-grid,
   .features-grid,
-  .privacy-points {
+  .privacy-points,
+  .included-grid,
+  .watch-ecosystem-grid {
     grid-template-columns: 1fr;
   }
   .col-7, .col-5, .col-6 {
