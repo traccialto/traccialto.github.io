@@ -1184,6 +1184,114 @@ section[id] {
 [data-watch-preview="true"] {
   display: none !important;
 }
+
+/* Real App Demo Video & Live Screenshot Gallery */
+.demo-video-card {
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-lg);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+.demo-video-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+  gap: 16px 28px;
+  align-items: end;
+  margin-bottom: 18px;
+}
+.demo-video-head h3 {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 22px;
+  color: var(--pine);
+  letter-spacing: -0.015em;
+}
+.demo-video-head p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+.demo-video-shell {
+  border-radius: var(--r-md);
+  overflow: hidden;
+  background: #0d1f16;
+  border: 1px solid #1e372a;
+  aspect-ratio: 16 / 9;
+}
+.demo-video-shell video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.real-app-strip {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 28px;
+}
+.real-app-item {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.real-phone-bezel {
+  background: #141917;
+  padding: 5px;
+  border-radius: 16px;
+  border: 1px solid #2b3530;
+  box-shadow: 0 8px 20px rgba(16, 33, 24, 0.12);
+  overflow: hidden;
+}
+.real-phone-bezel img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 11px;
+}
+.real-app-item figcaption {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--pine);
+  line-height: 1.3;
+}
+.watch-media-showcase {
+  margin-bottom: 24px;
+}
+.watch-shots-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+.watch-shot-card {
+  margin: 0;
+  background: #0f1c15;
+  border: 1px solid #243b2e;
+  border-radius: var(--r-md);
+  padding: 16px 14px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.watch-shot-card img {
+  width: 100%;
+  max-width: 172px;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+.watch-shot-card figcaption {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #e4efe8;
+  text-align: center;
+}
 .watch-ecosystem-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1224,9 +1332,16 @@ section[id] {
   .hero-grid,
   .section-head,
   .privacy-grid,
-  .faq-container {
+  .faq-container,
+  .demo-video-head {
     grid-template-columns: 1fr;
-    gap: 28px;
+    gap: 20px;
+  }
+  .real-app-strip {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .watch-shots-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .disc-matrix,
   .steps-grid,
@@ -1296,8 +1411,12 @@ section[id] {
     justify-content: center;
     width: 100%;
   }
-  .hero-spec-strip {
+  .hero-spec-strip,
+  .real-app-strip {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .demo-video-card {
+    padding: 16px;
   }
   .modes-strips {
     height: 250px;
